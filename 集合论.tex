@@ -3169,7 +3169,6 @@
 			\end{cor}
 			证明：根据公理模式\ref{Sch5}，$(x, y)\in G\Rightarrow (\exists x)((x, y)\in G)$，因此，$(x\in \{y|(\exists x)((x, y)\in G))\}\text{与}(x, y)\in G)\Leftrightarrow (x, y)\in G$，得证．				
 			
-			
 			\begin{cor}\label{cor36}
 				\hfill\par
 				$G$为图，则$G\langle\varnothing\rangle= \varnothing$．
@@ -3486,12 +3485,19 @@
 			注：如果$x$不属于函数$f$的定义域，根据定义可知，$f(x)$表示论域的第一个对象，该对象除了与自身相等外，不具有任何其他性质．
 			
 			\begin{de}
-				\textbf{族（famille），集族（famille d'ensembles），元素族（famille d'éléments），指标集（ensemble des indices），双族（famille double），子集族（famille de parties）}
+				\textbf{族（famille），集族（famille d'ensembles），元素族（famille d'éléments），指标集（ensemble des indices），双族（famille double），子集族（famille de parties），空族（famille vide），非空族（famille non vide）}
 				\par
-				函数$(X, I, E)$的图也可以称为族或集族，或称为$E$的元素族，令i为不出现在X、I、
-				E的任何一个字母，则族可以记作$(X_i)_{i\in I}(X_i\in E)$，在没有歧义的情况下也可以简记为$(X_i)_{i\in I}$，当$I$为$\{i|R\}$时，也可以记作$(X_i)R$．此时，$I$称为族的指标集．如果$I$可以表示为$A\times B$的形式，则称其为双族．如果族满足$(\forall x)(x\in E\Rightarrow x\subset F)$，则称其为$F$的子集族．			
+				函数$(X, I, E)$的图也可以称为族或集族，或称为$E$的元素族，令i为不出现在$X$、$I$、
+				$E$的任何一个字母，则族可以记作$(X_i)_{i\in I}(X_i\in E)$，在没有歧义的情况下也可以简记为\\$(X_i)_{i\in I}$，当$I$为$\{i|R\}$时，也可以记作$(X_i)R$．此时，$I$称为族的指标集．
+				\par
+				如果$I$可以表示为$A\times B$的形式，则称其为双族．
+				\par
+				如果族满足$(\forall x)(x\in E\Rightarrow x\subset F)$，则称其为$F$的子集族．			
+				\par
+				如果族的指标集为空集，则称其为空族．如果族的指标集非空，则称其为非空族．
 			\end{de}
-
+			注：在本文中，“非空集族”只表示该族的值域各元素均非空集；“非空族”则表示该族的指标集为空，以避免歧义．
+			
 			\begin{cor}\label{cor63}
 				\hfill\par
 				$F$为函数图，$x\in pr_1F$，则$(x, y)\in F$为$y$上的函数性公式．
@@ -4121,7 +4127,7 @@
 			证明：设$a\in I$，则$(\forall i)(i\in I\Rightarrow x\in X_i) \Rightarrow x\in X_a$，根据证明规则\ref{C52}得证．
 						
 			\begin{cor}\label{cor93}
-				\textbf{空集族的交集不存在}
+				\textbf{空族的交集不存在}
 				\par
 				$\text{非}Coll_x(\forall i)(i\in \varnothing\Rightarrow x\in X_i)$．
 			\end{cor}
@@ -7455,7 +7461,7 @@
 			
 			\begin{exer}\label{exer79}
 				\hfill\par
-				$I$为偏序集，$(E_i)_{i\in I}$为非空偏序集族：
+				$I$为偏序集，$(E_i)_{i\in I}$为偏序集非空族：
 				\par
 				（1）令$F$为集族$(E_i)_{i\in I}$的序数和，$G=\{(x, y)|(x, y)\text{为有序对}\text{与}x\in F\text{与}y\in F\text{与}(pr_2x<pr_2y\text{或}(pr_2x=pr_2y\text{与}\text{在}E_{pr_2x}\text{上}pr_1x\leq pr_1y))\}$，求证：
 				\par
@@ -9992,7 +9998,7 @@
 						
 			\begin{theo}\label{theo121}
 				\hfill\par
-				令$E$为右方有向集（或左方有向集、格、全序集），则E的非空有限子集有上界（或有下界、有最小上界和最大下界、有最大元和最小元）．
+				令$E$为右方有向集（或左方有向集、格、全序集），则$E$的非空有限子集有上界（或有下界、有最小上界和最大下界、有最大元和最小元）．
 			\end{theo}
 			证明：考虑右方有向集的情况，令$n$为$1$，命题显然成立．设公式对$n$成立，对于设元素数目为$n+1$的子集$X$，设$x\in X$，令$Y=X-\{x\}$，则$Y$有上界$y$，又由于$\{x, y\}$有上界，该上界也是$X$的上界，得证．其他情况同理可证．
 						
@@ -12923,7 +12929,7 @@
 			
 			\begin{exer}\label{exer182}
 				\hfill\par
-				$L$为无穷集合，$(E_l)_{l\in L}$为非空集族，对任意自然数$n>0$，$Card(\{l|l\in L\text{与}Card(E_l)>n\})=Card(L)$，$E=\prod\limits_{l\in L}E_l$，求证：存在$F\subset E$， $Card(F)=2^{Card(E)}$，并且，对$F$的元素组成的任意有限序列$(f_k)_{k\in [1, n]}$，均存在$l\in L$，使所有的$f_k(l)$各不相同．
+				$L$为无穷集合，$(E_l)_{l\in L}$为非空族，对任意自然数$n>0$，$Card(\{l|l\in L\text{与}Card(E_l)>n\})=Card(L)$，$E=\prod\limits_{l\in L}E_l$，求证：存在$F\subset E$， $Card(F)=2^{Card(E)}$，并且，对$F$的元素组成的任意有限序列$(f_k)_{k\in [1, n]}$，均存在$l\in L$，使所有的$f_k(l)$各不相同．
 			\end{exer}
 			证明：
 			\par
