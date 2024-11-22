@@ -3567,7 +3567,7 @@
 			
 			\begin{cor}\label{cor69}
 				\hfill\par
-				$G$为图，$则$G$\text{为函数图}\Leftrightarrow (\forall X)(G\langle G^{-1}\langle X \rangle \rangle\subset X)$．
+				$G$为图，则$G\text{为函数图}\Leftrightarrow (\forall X)(G\langle G^{-1}\langle X \rangle \rangle\subset X)$．
 			\end{cor}
 			证明：$(\forall X)(G\langle G^{-1}\langle X \rangle \rangle\subset X) \Leftrightarrow (\forall X)(\exists x)(\exists y)(x\in X\text{与}(y, x) \in G\text{与}(y, z)\in G\Rightarrow z\in X)$．如果$G$为函数图，则$(y, x)\in G\text{与}(y, z)\in G\Rightarrow z=x$，故$x\in X\text{与}(y, x)\in G\text{与}(y, z)\in G\Rightarrow z\in X$，因此$(\forall X)(G\langle G^{-1}\langle X \rangle \rangle\subset X)$．反过来，如果$(\forall X)(G\langle G^{-1}\langle X \rangle \rangle\subset X)$，当$(y, x)\in G\text{与}(y, z)\in G$时，$(\exists x)(x\in \{x\})\Rightarrow z\in \{x\}$，故$z=x$，因此$G$为函数图，得证．
 			
@@ -3695,7 +3695,7 @@
 			\begin{metadef}
 				\textbf{用项定义的函数（fonction par un terme）}
 				\par
-				令$T$、$A$、$C$为包含$2$元特别符号$\in$ 、显式公理\ref{ex1}、显式公理\ref{ex2}和公理模式\ref{Sch8}的等式理论$M$的项，$x$、$y$为不同的字母，$A$不包含$x$，$A$、$T$、$C$均不包含$y$．如果$(\text{对于}x\in A\text{形式为}T\text{的对象}\\\text{集合})\subset C$，公式$x\in A\text{与}y=T$对于$x$、$y$生成图的公式为F，则$(F, A, C)$称为用$T$定义的函数，记作$x\to T (x\in A, T\in C)$，在没有歧义的情况下也可以简记为$x\to T(x\in A)$、$(T)x\in A$、$x\to T$或者$T$．
+				令$T$、$A$、$C$为包含$2$元特别符号$\in$ 、显式公理\ref{ex1}、显式公理\ref{ex2}和公理模式\ref{Sch8}的等式理论$M$的项，$x$、$y$为不同的字母，$A$不包含$x$，$A$、$T$、$C$均不包含$y$．如果$(\text{对于}x\in A\text{形式为}T\text{的对象}\\\text{集合})\subset C$，公式$x\in A\text{与}y=T$对于$x$、$y$生成图的公式为F，则$(F, A, C)$称为用$T$定义的函数，记作$x\mapsto T (x\in A, T\in C)$，在没有歧义的情况下也可以简记为$x\mapsto T(x\in A)$、$(T)x\in A$、$x\mapsto T$或者$T$．
 			\end{metadef}
 
 			\begin{theo}\label{theo17}
@@ -3733,7 +3733,7 @@
 				\par
 				（4）如果$A\subset B$，则函数$(\Delta_A, A, B)$为单射．
 				\par
-				（5）$x\to (x, x)(x\in A, (x, x)\in A\times A)$为单射．
+				（5）$x\mapsto (x, x)(x\in A, (x, x)\in A\times A)$为单射．
 			\end{cor}
 			证明：根据定义可证．				
 
@@ -3746,7 +3746,7 @@
 			\begin{de}
 				\textbf{到两个集合的乘积的对角映射（application diagonale dans produit de deux ensembles）}
 				\par
-				映射$x\to (x, x)(x\in A, (x, x)\in A\times A)$称为对角映射．
+				映射$x\mapsto (x, x)(x\in A, (x, x)\in A\times A)$称为对角映射．
 			\end{de}
 
 			\begin{cor}\label{cor75}
@@ -3817,7 +3817,7 @@
 			\par
 			如果$f\circ s=Id_B$，则$f\langle s\langle B \rangle \rangle=B$，同时，根据定理\ref{theo12}，$f\langle s\langle B \rangle \rangle\subset f\langle A \rangle $，又因为$f\langle A \rangle \subset f\langle B \rangle $，故$f\langle A \rangle =f\langle B \rangle $，因此$f$为满射．
 			\par
-			如果$f$为满射，则$f\langle A \rangle =B$，根据补充定理\ref{cor35}，$x\in B\Leftrightarrow (\exists y)((y, x)\in F)$，根据补充定理\ref{cor64}（1），$(y, x)\in F\Leftrightarrow y\in A\text{与}x=f(y)$．令$T$为项$\tau_y(y\in A\text{与}x=f(y))$，根据证明规则\ref{C54}，$x\in B\Leftrightarrow f(T)=x)$．令$s$为映射$x\to T(x\in B, T\in A)$，则$x\in B\Leftrightarrow f(s(x))=x$，即$f\circ s=Id_B$．
+			如果$f$为满射，则$f\langle A \rangle =B$，根据补充定理\ref{cor35}，$x\in B\Leftrightarrow (\exists y)((y, x)\in F)$，根据补充定理\ref{cor64}（1），$(y, x)\in F\Leftrightarrow y\in A\text{与}x=f(y)$．令$T$为项$\tau_y(y\in A\text{与}x=f(y))$，根据证明规则\ref{C54}，$x\in B\Leftrightarrow f(T)=x)$．令$s$为映射$x\mapsto T(x\in B, T\in A)$，则$x\in B\Leftrightarrow f(s(x))=x$，即$f\circ s=Id_B$．
 			如果$f$为单射，且$A\neq \varnothing$，根据补充定理\ref{cor14}（2），$(\exists x)(x\in A)$，因此可以添加辅助常数$a$，令$a\in A$．令$f$的图为$F$，$R$为公式$(y, x)\in F\text{或}(y=a\text{与}x\in B-f\langle A \rangle )$．由于$(y, x)\in F\Rightarrow y\in A\text{与}x\in B$，因此$R\Rightarrow (x, y)\in B\times A$，因此，该公式为对于$x$、$y$生成图的公式．令其生成的图为$P$．
 			\par
 			$R\text{与}(z|y)R\Leftrightarrow ((y, x)\in F\text{与}(z, x)\in F)\text{或}(y=a\text{与}z=a\text{与}x\in B-f\langle A \rangle )\text{或}((y, x)\in F \text{与}z=a\text{与}x\in B-f\langle A \rangle )\text{或}((z, x)\in F \text{与}y=a\text{与}x\in B\text{与}x\notin f\langle A \rangle )$．$由于(z, x)\in F\Rightarrow x\in f\langle A \rangle )$，$(y, x)\in F\Rightarrow x\in f\langle A \rangle $，根据补充证明规则\ref{Ccor5}（13），$R\text{与}(z|y) R\Rightarrow y=z$，故$P$为函数图．
@@ -3923,7 +3923,7 @@
 			\begin{de}
 				\textbf{偏映射（application partielle）}
 				\par
-				令$f$为二元函数，定义域为$D$，到达域为$C$，令$A_y=D^{-1}\langle\{y\}\rangle$，则映射$x\to f(x, y)\\(x\in A-y, f(x, y)\in C)$称为$f$关于第二个参数值为$y$的偏映射，记作$f(., y)$、$f(, y)$或$f_y$．令$A_x=D\langle \{x\} \rangle $，则映射$y\to f(x, y)(y\in B_x, f(x, y)\in C)$称为$f$关于第一个参数值为$x$的偏映射，记作$f(x, .)$、$f(x,)$或$f_x$．
+				令$f$为二元函数，定义域为$D$，到达域为$C$，令$A_y=D^{-1}\langle\{y\}\rangle$，则映射$x\mapsto f(x, y)\\(x\in A-y, f(x, y)\in C)$称为$f$关于第二个参数值为$y$的偏映射，记作$f(., y)$、$f(, y)$或$f_y$．令$A_x=D\langle \{x\} \rangle $，则映射$y\mapsto f(x, y)(y\in B_x, f(x, y)\in C)$称为$f$关于第一个参数值为$x$的偏映射，记作$f(x, .)$、$f(x,)$或$f_x$．
 			\end{de}
 
 			\begin{cor}\label{cor82}
@@ -3946,14 +3946,14 @@
 			
 			\begin{cor}\label{cor83}
 				\hfill\par
-				令$g$为$B$到$C$的映射，则映射$z\to g(pr_2z)(z\in A\times B, g(pr_2z)\in C)$不依赖于第一个参数．
+				令$g$为$B$到$C$的映射，则映射$z\mapsto g(pr_2z)(z\in A\times B, g(pr_2z)\in C)$不依赖于第一个参数．
 			\end{cor}
-			证明：如果$B\neq \varnothing$，若$y\in B$，则该映射关于第二个参数的偏映射是$x\to g(y)(x\in A_y, g(y)\in C)$，若$y\notin B$，则该映射关于第二个参数的偏映射是$(\varnothing, \varnothing, C)$；如果$B=\varnothing$，则关于第二个参数的偏映射是$(\varnothing, \varnothing, C)$，均为常数函数，得证．
+			证明：如果$B\neq \varnothing$，若$y\in B$，则该映射关于第二个参数的偏映射是$x\mapsto g(y)(x\in A_y, g(y)\in C)$，若$y\notin B$，则该映射关于第二个参数的偏映射是$(\varnothing, \varnothing, C)$；如果$B=\varnothing$，则关于第二个参数的偏映射是$(\varnothing, \varnothing, C)$，均为常数函数，得证．
 
 			\begin{de}
 				\textbf{映射在乘积集合上的规范扩展（extension canonique de applications aux ensembles produits），映射的乘积（produit de applications）}
 				\par
-				令$u$为$A$到$C$的映射，$v$为$B$到$D$的映射，则称映射$z\to (u(pr_1z), v(pr_2z))(z\in A\times B, \\(u(pr_1z), v(pr_2z))\in C\times D)$为$u$和$v$在乘积集合上的规范扩展，或称$u$和$v$的乘积，记作$u\times v$或$(u, v)$．
+				令$u$为$A$到$C$的映射，$v$为$B$到$D$的映射，则称映射$z\mapsto (u(pr_1z), v(pr_2z))(z\in A\times B, \\(u(pr_1z), v(pr_2z))\in C\times D)$为$u$和$v$在乘积集合上的规范扩展，或称$u$和$v$的乘积，记作$u\times v$或$(u, v)$．
 			\end{de}
 
 			
@@ -4190,7 +4190,7 @@
 				$(X_i)_{i\in I}$为集族，$(\forall i)(\forall k)(i\in I\text{与}k\in I\Rightarrow X_i=X_k)$，则$(\forall a)(a\in I\Rightarrow \bigcup\limits_{i\in I}X_i=X_a)$，当$I\neq \varnothing$时，$(\forall a)(a\in I\Rightarrow \bigcap\limits_{i\in I}X_i=X_a)$．
 			\end{theo}
 			证明：
-			令$f$为常数映射$i\to a(i\in I, a\in \{a\})$，其为$I$到$\{a\}$的满射，根据定理\ref{theo23}可证．
+			令$f$为常数映射$i\mapsto a(i\in I, a\in \{a\})$，其为$I$到$\{a\}$的满射，根据定理\ref{theo23}可证．
 
 			\begin{de}
 				\textbf{多个集合的并集（réunion d'ensembles），多个集合的交集（intersection d'ensembles）}
@@ -4507,12 +4507,12 @@
 				\hfill\par
 				对于集族$(X_i)_{i\in I}$，存在满足下列性质的$X$：存在两两不相交的集族$(X'i)_{i\in I}$，使$X=\bigcup\limits_{i\in I}({X'}_i)_{i\in I}$，并且，对任意$i\in I$，存在$X_i$到${X'}_i$的双射．
 			\end{theo}
-			证明：令$A=\bigcup\limits_{i\in I}X_i$．由于$(z\text{为有序对})\text{与}pr_1z\in X_i\text{与}pr_2z=i \Rightarrow z\in A\times I$，因此其为集合化公式，令${X'}_i$为$\{z|(z\text{为有序对})\text{与}pr_1z\in X_i\text{与}pr_2z=i\}$，如果$i\in I$，则$x\to (x, i)(x\in X_i)$为$X_i$到${X'}_i$的双射，且当$i\neq k$时，假设$z\in ({X'}_i\cap X_k')$，则$pr_1z=i$，$pr_1z=k$，矛盾，故${X'}_i\cap X_k'=\varnothing$，因此，$({X'}_i)_{i\in I}$两两不相交．
+			证明：令$A=\bigcup\limits_{i\in I}X_i$．由于$(z\text{为有序对})\text{与}pr_1z\in X_i\text{与}pr_2z=i \Rightarrow z\in A\times I$，因此其为集合化公式，令${X'}_i$为$\{z|(z\text{为有序对})\text{与}pr_1z\in X_i\text{与}pr_2z=i\}$，如果$i\in I$，则$x\mapsto (x, i)(x\in X_i)$为$X_i$到${X'}_i$的双射，且当$i\neq k$时，假设$z\in ({X'}_i\cap X_k')$，则$pr_1z=i$，$pr_1z=k$，矛盾，故${X'}_i\cap X_k'=\varnothing$，因此，$({X'}_i)_{i\in I}$两两不相交．
 
 			\begin{de}
 				\textbf{集族的和（somme d'une famille），到和的规范映射（application canonique dans somme）}
 				\par
-				$(X_i)_{i\in I}$为集族，则称$\bigcup\limits_{i\in I}(X_i\times \{i\})_{i\in I}$为其和．对任意$i\in I$，映射$x\to (x, i)(x\in X_i)$称为$X_i$到$(X_i)_{i\in I}$的和的规范映射．
+				$(X_i)_{i\in I}$为集族，则称$\bigcup\limits_{i\in I}(X_i\times \{i\})_{i\in I}$为其和．对任意$i\in I$，映射$x\mapsto (x, i)(x\in X_i)$称为$X_i$到$(X_i)_{i\in I}$的和的规范映射．
 			\end{de}
 
 			\begin{de}
@@ -4525,7 +4525,7 @@
 				\hfill\par
 				$(X_i)_{i\in I}$为两两不相交的集族，$A$为其并，$S$为其和，则存在$A$到$S$的双射．
 			\end{theo}
-			证明：对任意$i\in I$，$x\to (x, i)(x\in X_i)$为$X_i$到$X_i\times \{i\}$的双射，根据定理\ref{theo33}，存在唯一的函数$f$，以$A$为定义域，以$A\times I$为到达域，且当$i\in I$时，是$x\to (x, i)(x\in X_i)$在$A$上的延拓．$f$即为$A$到$S$的双射．
+			证明：对任意$i\in I$，$x\mapsto (x, i)(x\in X_i)$为$X_i$到$X_i\times \{i\}$的双射，根据定理\ref{theo33}，存在唯一的函数$f$，以$A$为定义域，以$A\times I$为到达域，且当$i\in I$时，是$x\mapsto (x, i)(x\in X_i)$在$A$上的延拓．$f$即为$A$到$S$的双射．
 			
 			\begin{cor}\label{cor116}
 				\hfill\par
@@ -4533,7 +4533,7 @@
 				\par
 				（2）$(X_i)_{i\in I}$为集族，$S$为其和，对任意$i\in I$，令$f_i$为$X_i$到$S$的规范映射，$Y_i=f_i\langle X_i\rangle$，则$(Y_i)_{i\in I}$为$S$的划分．
 				\par
-				（3）$(X_i)_{i\in I}$为集族，对任意$i\in I$，令$f_i$为$X_i$到$S$的规范映射，$Y_i=f_i\langle X_i\rangle$，则对任意$i\in I$，$x\to (x, i)(x\in X_i)$为$X_i$到$Y_i$的双射．
+				（3）$(X_i)_{i\in I}$为集族，对任意$i\in I$，令$f_i$为$X_i$到$S$的规范映射，$Y_i=f_i\langle X_i\rangle$，则对任意$i\in I$，$x\mapsto (x, i)(x\in X_i)$为$X_i$到$Y_i$的双射．
 				\par
 				（4）$(X_i)_{i\in \varnothing}$的和为$\varnothing$．
 				\par
@@ -4541,7 +4541,7 @@
 			\end{cor}
 			证明：
 			\par
-			（1）	$z\to pr_1z(z\in S)$为$S$到$A$的满射．其右逆为$A$到$S$的单射．
+			（1）	$z\mapsto pr_1z(z\in S)$为$S$到$A$的满射．其右逆为$A$到$S$的单射．
 			\par
 			（2）	根据定义可证．
 			\par
@@ -4692,7 +4692,7 @@
 			\begin{de}
 				\textbf{在子集上的规范扩展（extension canonique aux ensembles de parties），在子集上的逆扩展（extension réciproque aux ensembles de parties）}
 				\par
-				令$F$为$A$到$B$的对应，函数$X\to F\langle X \rangle (X\in \mathcal{P}(A), F\langle X \rangle \in \mathcal{P}(B))$称为$F$在子集上的规范扩展，记作$\hat{F}$．函数$Y\to F^{-1}\langle Y \rangle (Y\in \mathcal{P}(A), F^{-1}\langle Y \rangle \in \mathcal{P}(A))$，称为$F$在子集上的逆扩展．
+				令$F$为$A$到$B$的对应，函数$X\mapsto F\langle X \rangle (X\in \mathcal{P}(A), F\langle X \rangle \in \mathcal{P}(B))$称为$F$在子集上的规范扩展，记作$\hat{F}$．函数$Y\mapsto F^{-1}\langle Y \rangle (Y\in \mathcal{P}(A), F^{-1}\langle Y \rangle \in \mathcal{P}(A))$，称为$F$在子集上的逆扩展．
 			\end{de}
 			
 			\begin{cor}\label{cor119}
@@ -4757,21 +4757,21 @@
 							
 			\begin{cor}\label{cor123}
 				\hfill\par
-				$G\to (G, A, B)$是$A^B$到$\mathcal{F}(A; B)$的双射．
+				$G\mapsto (G, A, B)$是$A^B$到$\mathcal{F}(A; B)$的双射．
 			\end{cor}
 			证明：对任意$G\in A^B$，$(G, A, B)\in \mathcal{F}(A; B)$，因此该映射的定义域是$A^B$；$G=G'\Leftrightarrow (G, A, B)=(G', A, B)$，因此该对应是映射并且是单射；对任意$f\in \mathcal{F}(A; B)$，$f$为$A$到$B$的映射，并且$f\text{的图}\in A\times B$，因此该映射为满射．得证．
 
 			\begin{de}
 				\textbf{映射的图的集合到映射的集合的规范映射（application canonique de ensemble des graphe d'applications dans ensemble des applications）}
 				\par
-				$A^B$到$\mathcal{F}(A; B)$的映射$G\to (G, A, B)$，称为$A^B$到$\mathcal{F}(A; B)$的规范映射．
+				$A^B$到$\mathcal{F}(A; B)$的映射$G\mapsto (G, A, B)$，称为$A^B$到$\mathcal{F}(A; B)$的规范映射．
 			\end{de}
 						
 			\begin{theo}\label{theo37}
 				\hfill\par
-				（1）令$u$为$A'$到$A$的满射，$v$为$B'$到$B$的单射，$f$为$A$到$B$的映射，则$f\to v\circ f\circ u(f\in \mathcal{F}(A; B))$是单射．
+				（1）令$u$为$A'$到$A$的满射，$v$为$B'$到$B$的单射，$f$为$A$到$B$的映射，则$f\mapsto v\circ f\circ u(f\in \mathcal{F}(A; B))$是单射．
 				\par
-				（2）令$u$为$A'$到$A$的单射，$v$为$B'$到$B$的满射，$f$为$A$到$B$的映射，则$f\to v\circ f\circ u(f\in \mathcal{F}(A; B))$是满射．
+				（2）令$u$为$A'$到$A$的单射，$v$为$B'$到$B$的满射，$f$为$A$到$B$的映射，则$f\mapsto v\circ f\circ u(f\in \mathcal{F}(A; B))$是满射．
 			\end{theo}
 			证明：
 			\par
@@ -4781,24 +4781,24 @@
 						
 			\begin{theo}\label{theo38}
 				\hfill\par
-				令$u$为$A'$到$A$的双射，$v$为$B'$到$B$的双射，$f$为$A$到$B$的映射，则$f\to v\circ f\circ u(f\in \mathcal{F}(A; B))$\\是双射．
+				令$u$为$A'$到$A$的双射，$v$为$B'$到$B$的双射，$f$为$A$到$B$的映射，则$f\mapsto v\circ f\circ u(f\in \mathcal{F}(A; B))$\\是双射．
 			\end{theo}
 			证明：根据定理\ref{theo37}可证．
 						
 			\begin{theo}\label{theo39}
 				\hfill\par
-				$f$为$B\times C$到$A$的映射，令$g$为映射$y\to f_y(y\in C, f_y\in \mathcal{F}(B; A))$，则$f\to g(f\in \mathcal{F}(B\times C; A), g\in \mathcal{F}(C; \mathcal{F}(B; A)))$为双射．
+				$f$为$B\times C$到$A$的映射，令$g$为映射$y\mapsto f_y(y\in C, f_y\in \mathcal{F}(B; A))$，则$f\mapsto g(f\in \mathcal{F}(B\times C; A), g\in \mathcal{F}(C; \mathcal{F}(B; A)))$为双射．
 			\end{theo}
 			证明：
 			\par
-			$f$为$B\times C$到$A$的映射，则$f_y$是$B$到$A$的映射，因此$y\to f_y$是$C$到$\mathcal{F}(B; A)$的映射．
+			$f$为$B\times C$到$A$的映射，则$f_y$是$B$到$A$的映射，因此$y\mapsto f_y$是$C$到$\mathcal{F}(B; A)$的映射．
 			\par
 			反过来，设$g$为$C$到$\mathcal{F}(B; A)$的映射，令二元函数$f=(g(y))(x)$，其定义域为$B\times C$，则当$y\in C$时，$f_y=g(y)$．同时，设定义域为$B\times C$的二元函数$f'$也满足${f'}_y=g(y)$，则当$y\in C$时，$f_y={f'}_y$，即当$x\in B$、$y\in C$时，$f_y(x)={f'}_y(x)$，根据补充定理\ref{cor82}（2），$f=f'$，即$f$是唯一的，得证．
 
 			\begin{de}
 				\textbf{映射的集合之间的规范映射（application canonique entre deux ensembles des applications）}
 				\par
-				$f$为$B\times C$到$A$的映射，令$g$为映射$y\to f_y(y\in C, f_y\in \mathcal{F}(B; A))$，则$f\to g(f\in \mathcal{F}(B\times C; A), g\in \mathcal{F}(C; \mathcal{F}(B; A)))$称为$\mathcal{F}(B\times C; A)$到$\mathcal{F}(C; \mathcal{F}(B; A))$的规范映射．			
+				$f$为$B\times C$到$A$的映射，令$g$为映射$y\mapsto f_y(y\in C, f_y\in \mathcal{F}(B; A))$，则$f\mapsto g(f\in \mathcal{F}(B\times C; A), g\in \mathcal{F}(C; \mathcal{F}(B; A)))$称为$\mathcal{F}(B\times C; A)$到$\mathcal{F}(C; \mathcal{F}(B; A))$的规范映射．			
 			\end{de}
 			
 			\begin{cor}\label{cor124}
@@ -4822,7 +4822,7 @@
 			\begin{de}
 				\textbf{坐标函数（fonction coordonnée），射影函数（fonction projection），坐标（coordonnée），射影（projection）}
 				\par
-				令$(X_i)_{i\in I}$为集族，$i\in I$，映射$F\to F(i)(F\in \prod\limits_{i\in I}X_i, F(i)\in X_i)$称为指标$i$的坐标函数或射影函数，记作$pr_i$，$pr_i(F)$可以简记为$pr_iF$．其中，$F(i)$称为$F$的指标$i$的坐标或射影．
+				令$(X_i)_{i\in I}$为集族，$i\in I$，映射$F\mapsto F(i)(F\in \prod\limits_{i\in I}X_i, F(i)\in X_i)$称为指标$i$的坐标函数或射影函数，记作$pr_i$，$pr_i(F)$可以简记为$pr_iF$．其中，$F(i)$称为$F$的指标$i$的坐标或射影．
 			\end{de}
 
 			\begin{de}
@@ -4867,7 +4867,7 @@
 				\hfill\par
 				$\prod\limits_{i\in \{a\}}X_i={X_a}^{\{a\}}$，且指标$i$的坐标函数为${X_a}^{\{a\}}$到$X_a$的双射．
 			\end{cor}
-			证明：如果$i\in \{a\}$，则$i=a$，$X_i=X_a$，根据补充定理\ref{cor128}，$\prod\limits_{i\in \{a\}}X_i=X_a^{\{a\}}$．设$F\in {X_a}^{\{a\}}$，$F' \in {X_a}^{\{a\}}$，且$F(a)=F'(a)$，则$i\in \{a\}\Rightarrow F(i)=F'(i)$，故$F=F'$．对任意$b\in X_a$，令$F$为$\{(a, b)\}$，则$F\in {X_a}^{\{a\}}$，且$F(a)=b$．故$F\to F(a)(F\in {X_a}^{\{a\}}, F(a)\in X_a)$为双射．			
+			证明：如果$i\in \{a\}$，则$i=a$，$X_i=X_a$，根据补充定理\ref{cor128}，$\prod\limits_{i\in \{a\}}X_i=X_a^{\{a\}}$．设$F\in {X_a}^{\{a\}}$，$F' \in {X_a}^{\{a\}}$，且$F(a)=F'(a)$，则$i\in \{a\}\Rightarrow F(i)=F'(i)$，故$F=F'$．对任意$b\in X_a$，令$F$为$\{(a, b)\}$，则$F\in {X_a}^{\{a\}}$，且$F(a)=b$．故$F\mapsto F(a)(F\in {X_a}^{\{a\}}, F(a)\in X_a)$为双射．			
 
 			\begin{de}
 				\textbf{乘积和集合之间的规范映射（application canonique entre le produit et un ensemble）}
@@ -4877,7 +4877,7 @@
 			
 			\begin{cor}\label{cor131}
 				\hfill\par
-				如果$a\neq b$，则$\prod\limits_{i\in \{a, b\}}X_i=\{F|(\exists x)(\exists y)(x\in X_a\text{与}y\in X_b\text{与}F=\{(a, x), (b, y)\})\}$，并且，$(x, y)\to \{(a, x), (b, y)\}$是$X_a\times X_b$到$\prod\limits_{i\in \{a, b\}}X_i$的双射．
+				如果$a\neq b$，则$\prod\limits_{i\in \{a, b\}}X_i=\{F|(\exists x)(\exists y)(x\in X_a\text{与}y\in X_b\text{与}F=\{(a, x), (b, y)\})\}$，并且，$(x, y)\mapsto \{(a, x), (b, y)\}$是$X_a\times X_b$到$\prod\limits_{i\in \{a, b\}}X_i$的双射．
 			\end{cor}
 			证明：
 			\par
@@ -4889,7 +4889,7 @@
 			\par
 			综上，$\prod\limits_{i\in \{a, b\}}X_i=\{F|(\exists x)(\exists y)(x\in X_a\text{与}y\in X_b\text{与}F=\{(a, x), (b, y)\})\}$．
 			\par
-			因此，$(x, y)\to \{(a, x), (b, y)\}$是$X_a\times X_b$到$\prod\limits_{i\in \{a, b\}}X_i$的映射，对任意$F\in \prod\limits_{i\in \{a, b\}}X_i$，\\$(\exists x)(\exists y)(x\in X_a\text{与}y\in X_b\text{与}F=\{(a, x), (b, y)\})$，因此该映射为满射；对于$(x, y) \in X_a\times X_b$，$(x', y') \in X_a\times X_b$，由于$a\neq b$，若$\{(a, x), (b, y)\}=\{(a, x'), (b, y')\}$，则$x=x'$，$y=y'$，故该映射为单射．得证．
+			因此，$(x, y)\mapsto \{(a, x), (b, y)\}$是$X_a\times X_b$到$\prod\limits_{i\in \{a, b\}}X_i$的映射，对任意$F\in \prod\limits_{i\in \{a, b\}}X_i$，\\$(\exists x)(\exists y)(x\in X_a\text{与}y\in X_b\text{与}F=\{(a, x), (b, y)\})$，因此该映射为满射；对于$(x, y) \in X_a\times X_b$，$(x', y') \in X_a\times X_b$，由于$a\neq b$，若$\{(a, x), (b, y)\}=\{(a, x'), (b, y')\}$，则$x=x'$，$y=y'$，故该映射为单射．得证．
 						
 			\begin{cor}\label{cor132}
 				\hfill\par
@@ -4912,7 +4912,7 @@
 				\par
 				（1）$pr_1z\in I\text{与}pr_2z=x$是$z$上的集合化公式．
 				\par
-				（2）令$G_x$表示图$\{z|pr_1z\in I\text{与}pr_2z=x\}$，则$G_x$为函数图，并且$(\exists x)(x\in E\text{与}G=G_x)$是$G$上的集合化公式．同时，$\{G|(\exists x)(x\in E\text{与}G=G_x)\}\subset E^I$，且$x\to G_x$是$E$到$E^I$的单射．
+				（2）令$G_x$表示图$\{z|pr_1z\in I\text{与}pr_2z=x\}$，则$G_x$为函数图，并且$(\exists x)(x\in E\text{与}G=G_x)$是$G$上的集合化公式．同时，$\{G|(\exists x)(x\in E\text{与}G=G_x)\}\subset E^I$，且$x\mapsto G_x$是$E$到$E^I$的单射．
 			\end{cor}
 			证明：
 			\par
@@ -4925,14 +4925,14 @@
 			\begin{de}
 				\textbf{到映射的图的集合的对角映射（application diagonale dans ensemble des graphe d'applications）}
 				\par
-				令$G_x$为函数图$\{z|pr_1z\in I\text{与}pr_2z=x\}$，则映射$x\to G_x(x\in E, G_x\in E^I)$称为对角映射．
+				令$G_x$为函数图$\{z|pr_1z\in I\text{与}pr_2z=x\}$，则映射$x\mapsto G_x(x\in E, G_x\in E^I)$称为对角映射．
 			\end{de}
 						
 			\begin{theo}\label{theo40}
 				\hfill\par
-				令$(X_i)_{i\in I}$为集族，$u$是$K$到$I$的双射，其图为$U$，则映射$F\to F\circ U$为$\prod\limits_{i\in I}X_i$到$\prod\limits_{k\in K}X_{u(k)}$\\的双射．
+				令$(X_i)_{i\in I}$为集族，$u$是$K$到$I$的双射，其图为$U$，则映射$F\mapsto F\circ U$为$\prod\limits_{i\in I}X_i$到$\prod\limits_{k\in K}X_{u(k)}$\\的双射．
 			\end{theo}
-			证明：根据定理\ref{theo23}，$\bigcup\limits_{i\in I}X_i=\bigcup\limits_{k\in K}X_{u(k)}$，设其为$A$，根据定理\ref{theo37}，映射$F\to F\circ U(F\in A^I)$为$A^I$到$A^K$的双射，根据补充定理\ref{cor75}，$\prod\limits_{i\in I}X_i$到$\prod\limits_{k\in K}X_{u(k)}$的映射$F\to F\circ U$为单射．由于$u$为\\$K$到$I$的双射，因此，若对任意$i\in I$，$F(i)\in X_i$，则对任意$k$，设$k=u^{-1}(i)$，则$F\circ U(k)\in X_{u(k)}$，反之，同理可证$(\forall i)(i\in I\Rightarrow F(i)\in X_i)\Leftrightarrow (\forall k)(k\in K\Rightarrow F\circ U(k)\in X_{u(k)})$．因此，对于$\prod\limits_{i\in I}X_i$到$\prod\limits_{k\in K}X_{u(k)}$的映射$F\to F\circ U$，若$F\circ U\in \prod\limits_{k\in K}X_{u(k)}$，则$F\in \prod\limits_{i\in I}X_i$，故为满射，得证．
+			证明：根据定理\ref{theo23}，$\bigcup\limits_{i\in I}X_i=\bigcup\limits_{k\in K}X_{u(k)}$，设其为$A$，根据定理\ref{theo37}，映射$F\mapsto F\circ U(F\in A^I)$为$A^I$到$A^K$的双射，根据补充定理\ref{cor75}，$\prod\limits_{i\in I}X_i$到$\prod\limits_{k\in K}X_{u(k)}$的映射$F\mapsto F\circ U$为单射．由于$u$为\\$K$到$I$的双射，因此，若对任意$i\in I$，$F(i)\in X_i$，则对任意$k$，设$k=u^{-1}(i)$，则$F\circ U(k)\in X_{u(k)}$，反之，同理可证$(\forall i)(i\in I\Rightarrow F(i)\in X_i)\Leftrightarrow (\forall k)(k\in K\Rightarrow F\circ U(k)\in X_{u(k)})$．因此，对于$\prod\limits_{i\in I}X_i$到$\prod\limits_{k\in K}X_{u(k)}$的映射$F\mapsto F\circ U$，若$F\circ U\in \prod\limits_{k\in K}X_{u(k)}$，则$F\in \prod\limits_{i\in I}X_i$，故为满射，得证．
 
 			\begin{de}
 				\textbf{部分乘积（produit partiel）}
@@ -4957,7 +4957,7 @@
 			\begin{de}
 				\textbf{指标集的子集的射影（projection de partie de ensemble des indices）}
 				\par
-				令$(X_i)_{i\in I}$为集族，$J\subset I$，$F$为函数图，则映射$F\to F\circ \Delta_J(F\in \prod\limits_{i\in I}X_i , F\circ \Delta_J\in \prod\limits_{i\in J}X_i)$称为指标$J$的射影，记作$pr_J$．
+				令$(X_i)_{i\in I}$为集族，$J\subset I$，$F$为函数图，则映射$F\mapsto F\circ \Delta_J(F\in \prod\limits_{i\in I}X_i , F\circ \Delta_J\in \prod\limits_{i\in J}X_i)$称为指标$J$的射影，记作$pr_J$．
 			\end{de}
 			
 			\begin{theo}\label{theo41}
@@ -4979,7 +4979,7 @@
 			证明：
 			根据补充定理\ref{cor130}，$\prod\limits_{i\in J}X\{a\}={X_a}^{\{a\}}$，根据定理\ref{theo42}，$pr_{\{a\}}$为$\prod\limits_{i\in I}X_i $到${X_a}^{\{a\}}$的满射，令其图为$G_1$．
 			\par
-			同时，$pr_{\{a\}}$为$F\to F\circ \{(a, a)\}$，且$F\circ \{(a, a)\}\in \prod\limits_{i\in \{a\}}X_i$．根据补充定理\ref{cor130}，$\prod\limits_{i\in \{a\}}X_i$的指标$i$的坐标函数为${X_a}^{\{a\}}$到$X_a$的满射，令该函数为$g$，其图为$G_2$．
+			同时，$pr_{\{a\}}$为$F\mapsto F\circ \{(a, a)\}$，且$F\circ \{(a, a)\}\in \prod\limits_{i\in \{a\}}X_i$．根据补充定理\ref{cor130}，$\prod\limits_{i\in \{a\}}X_i$的指标$i$的坐标函数为${X_a}^{\{a\}}$到$X_a$的满射，令该函数为$g$，其图为$G_2$．
 			\par
 			由于$F\circ \{(a, a)\}(a)=F(a)$，即对任意$F\in \prod\limits_{i\in I}X_i$ ，$(F, F\circ \{(a, a)\})\in G_1$，$(F\circ \{(a, a)\}, F(a))\in G_2$，因此$pr_a=g\circ pr_{\{a\}}$，根据定理\ref{theo21}（2），$pr_a$为$\prod\limits_{i\in I}X_i$ 到$X_a$的满射．
 						
@@ -5008,41 +5008,41 @@
 			\begin{theo}\label{theo46}
 				\textbf{乘积的结合律}
 				\par
-				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in L}$为$I$的划分，则映射$f\to (prJ_lf)_{l\in L}$为$\prod\limits_{i\in I}X_i$到$\prod\limits_{l\in L}(\prod\limits_{i\in J}lX_i)$的双射．
+				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in L}$为$I$的划分，则映射$f\mapsto (prJ_lf)_{l\in L}$为$\prod\limits_{i\in I}X_i$到$\prod\limits_{l\in L}(\prod\limits_{i\in J}lX_i)$的双射．
 			\end{theo}
 			证明：根据补充定理\ref{cor135}，$prJ_lf=f|J_l$．设$w\in \prod\limits_{l\in L}(\prod\limits_{i\in J}lX_i )$，则当$l\in L$时，$w(l)\in \prod\limits_{i\in J}lX_i$ ，即$(w(l), J_l, \bigcup\limits_{i\in J_l}X_i)$为映射，又因为$J_l\subset I$，因此$(w(l), J_l, \bigcup\limits_{i\in I}X_i)$为映射，将其记为$v_l$．对于集族$(v_l)_{l\in L}$，根据定理\ref{theo32}，存在唯一的$I$到$\bigcup\limits_{i\in I}X_i$的映射$u$，使对任意$l\in L$，$u$在$J_l$上的限制为$v_l$．得证．
 			
 			\begin{cor}\label{cor138}
 				\hfill\par
-				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in \{a, b\}}$为$I$的划分，则映射$f\to (pr_{J_a}f, pr_{J_b}f)$为$\prod\limits_{i\in I}X_i$到$(\prod\limits_{i\in J_a}X_i)\times (\prod\limits_{i\in J_b}X_i)$的双射．如果对任意$i\in J_b$，$X_i$均为单元素集合，则$f\to pr_{J_a}f$为$\prod\limits_{i\in I}X_i$到$\prod\limits_{i\in J_a}X_i$的双射．
+				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in \{a, b\}}$为$I$的划分，则映射$f\mapsto (pr_{J_a}f, pr_{J_b}f)$为$\prod\limits_{i\in I}X_i$到$(\prod\limits_{i\in J_a}X_i)\times (\prod\limits_{i\in J_b}X_i)$的双射．如果对任意$i\in J_b$，$X_i$均为单元素集合，则$f\mapsto pr_{J_a}f$为$\prod\limits_{i\in I}X_i$到$\prod\limits_{i\in J_a}X_i$的双射．
 			\end{cor}
-			证明：根据定理\ref{theo46}，$f\to (pr_{J_l}f)(l\in \{a, b\})$为$\prod\limits_{i\in I}X_i$ 到$\prod\limits_{l\in \{a, b\}}(\prod\limits_{i\in J_l}X_i)$的双射，令其为$f$．
+			证明：根据定理\ref{theo46}，$f\mapsto (pr_{J_l}f)(l\in \{a, b\})$为$\prod\limits_{i\in I}X_i$ 到$\prod\limits_{l\in \{a, b\}}(\prod\limits_{i\in J_l}X_i)$的双射，令其为$f$．
 			\par
-			根据补充定理\ref{cor131}，$(x, y)\to \{(a, x), (b, y)\}$是$\prod\limits_{i\in J_a}X_i\times \prod\limits_{i\in J_b}X_i$到$\prod\limits_{l\in \{a, b\}}(\prod\limits_{i\in J_l}X_i)$的双射，令其为$g$．
+			根据补充定理\ref{cor131}，$(x, y)\mapsto \{(a, x), (b, y)\}$是$\prod\limits_{i\in J_a}X_i\times \prod\limits_{i\in J_b}X_i$到$\prod\limits_{l\in \{a, b\}}(\prod\limits_{i\in J_l}X_i)$的双射，令其为$g$．
 			\par
-			则$g^{-1}\circ f$即为映射$f\to (pr{J_a}f, pr_{J_b}f)$，前半部分得证．
-			如果对任意$i\in J_b$，$X_i$均为单元素集合，根据补充定理\ref{cor132}，令$\prod\limits_{i\in J_b}X_i=\{y\}$，则对任意$z\in (\prod\limits_{i\in J_a}X_i)\times (\prod\limits_{i\in J_b}X_i)$，$pr_2z=y$，因此，$z\to pr_1f$为$(\prod\limits_{i\in J}aX_i)\times (\prod\limits_{i\in J_b}X_i)$到$\prod\limits_{i\in J_a}X_i$的双射，后半部分得证．
+			则$g^{-1}\circ f$即为映射$f\mapsto (pr{J_a}f, pr_{J_b}f)$，前半部分得证．
+			如果对任意$i\in J_b$，$X_i$均为单元素集合，根据补充定理\ref{cor132}，令$\prod\limits_{i\in J_b}X_i=\{y\}$，则对任意$z\in (\prod\limits_{i\in J_a}X_i)\times (\prod\limits_{i\in J_b}X_i)$，$pr_2z=y$，因此，$z\mapsto pr_1f$为$(\prod\limits_{i\in J}aX_i)\times (\prod\limits_{i\in J_b}X_i)$到$\prod\limits_{i\in J_a}X_i$的双射，后半部分得证．
 			
 			\begin{cor}\label{cor139}
 				\hfill\par
-				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为集族，则映射$f\to ((pr_1(pr_if))_{i\in I}, (pr_2(pr_if))_{i\in I})$为$\prod\limits_{i\in I}(X_i\times Y_i)$到\\$(\prod\limits_{i\in I}X_i)\times (\prod\limits_{i\in I}Y_i)$的双射．
+				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为集族，则映射$f\mapsto ((pr_1(pr_if))_{i\in I}, (pr_2(pr_if))_{i\in I})$为$\prod\limits_{i\in I}(X_i\times Y_i)$到\\$(\prod\limits_{i\in I}X_i)\times (\prod\limits_{i\in I}Y_i)$的双射．
 			\end{cor}
 			证明：
 			\par
 			设$f\in \prod\limits_{i\in I}(X_i\times Y_i)$，则当$i\in I$时，$f(i)\in X_i\times Y_i$，故$pr_1f(i)\in X_i$，因此$(pr_1(pr_if))_{i\in I}\in \prod\limits_{i\in I}X_i$，同理$(pr_2(pr_if))_{i\in I}\in \prod\limits_{i\in I}Y_i$，故$((pr_1(pr_if))_{i\in I}, (pr_2(pr_if))_{i\in I})\in (\prod\limits_{i\in I}X_i)\times (\prod\limits_{i\in I}Y_i)$．
 			\par
-			对任意$x\in (\prod\limits_{i\in I}X_i)$，$y\in (\prod\limits_{i\in I}Y_i)$，设$f$为$i\to (pr_ix, pr_iy)$，则$(pr_1(pr_if))_{i\in I}=(pr_ix)_{i\in I}$，根据补充定理\ref{cor133}，$(pr_1(pr_if))_{i\in I}=x$，同理$(pr_2(pr_if))_{i\in I}=y$．同时，当$i\in I$时，$pr_ix \in X_i$，$pr_iy \in Y_i$，因此$(pr_ix, pr_iy)\in X_i \times Y_i$，所以$f\in \prod\limits_{i\in I}(X_i\times Y_i)$，故该映射为满射．
+			对任意$x\in (\prod\limits_{i\in I}X_i)$，$y\in (\prod\limits_{i\in I}Y_i)$，设$f$为$i\mapsto (pr_ix, pr_iy)$，则$(pr_1(pr_if))_{i\in I}=(pr_ix)_{i\in I}$，根据补充定理\ref{cor133}，$(pr_1(pr_if))_{i\in I}=x$，同理$(pr_2(pr_if))_{i\in I}=y$．同时，当$i\in I$时，$pr_ix \in X_i$，$pr_iy \in Y_i$，因此$(pr_ix, pr_iy)\in X_i \times Y_i$，所以$f\in \prod\limits_{i\in I}(X_i\times Y_i)$，故该映射为满射．
 			\par
 			对任意$f\in \prod\limits_{i\in I}(X_i\times Y_i)$，$f'\in \prod\limits_{i\in I}(X_i\times Y_i)$，若$(pr_1(pr_if))_{i\in I}=(pr_1(pr_if'))_{i\in I}$，令其为$A$，则对任意$i'\in I$，$(i', pr_1f(i'))\in A$，因此$(\exists i)(i\in I\text{与}i=i'\text{与}pr_1f(i')=pr_1f'(i))$，因此$(\forall i)(i\in I\Rightarrow pr_1f(i)=pr_1f'(i))$，同理$(\forall i)(i\in I\Rightarrow pr_2f(i)=pr_2f'(i))$，故$(\forall i)(i\in I\Rightarrow f(i)=f'(i))$，根据补充定理\ref{cor133}，$f=f'$，故该映射为单射．得证．
 			
 			\begin{de}
 				\textbf{两个集族乘积之间的规范映射（application canonique entre deux produits d'familles d'ensembles）}
 				\par
-				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in L}$为$I$的划分，则映射$f\to (prJ_lf)_{l\in L}$称为$\prod\limits_{i\in I}X_i$到$\prod\limits_{l\in L}(\prod\limits_{i\in J_l}X_i)$的规范映射．
+				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in L}$为$I$的划分，则映射$f\mapsto (prJ_lf)_{l\in L}$称为$\prod\limits_{i\in I}X_i$到$\prod\limits_{l\in L}(\prod\limits_{i\in J_l}X_i)$的规范映射．
 				\par
-				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in \{a, b\}}$为$I$的划分，则映射$f\to (pr_{J_a}f, pr_{J_b}f)$称为$\prod\limits_{i\in I}X_i$到$(\prod\limits_{i\in J_a}X_i)\times (\prod\limits_{i\in J_b}X_i)$的规范映射．
+				令$(X_i)_{i\in I}$为集族，$(J_l)_{l\in \{a, b\}}$为$I$的划分，则映射$f\mapsto (pr_{J_a}f, pr_{J_b}f)$称为$\prod\limits_{i\in I}X_i$到$(\prod\limits_{i\in J_a}X_i)\times (\prod\limits_{i\in J_b}X_i)$的规范映射．
 				\par
-				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为集族，则映射$f\to ((pr_1(pr_if))_{i\in I}, (pr_2(pr_if))_{i\in I})$称为$\prod\limits_{i\in I}(X_i\times Y_i)$到\\$(\prod\limits_{i\in I}X_i)\times (\prod\limits_{i\in I}Y_i)$的规范映射．
+				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为集族，则映射$f\mapsto ((pr_1(pr_if))_{i\in I}, (pr_2(pr_if))_{i\in I})$称为$\prod\limits_{i\in I}(X_i\times Y_i)$到\\$(\prod\limits_{i\in I}X_i)\times (\prod\limits_{i\in I}Y_i)$的规范映射．
 			\end{de}
 			
 			\begin{theo}\label{theo47}
@@ -5130,14 +5130,14 @@
 			
 			\begin{cor}\label{cor140}
 				\hfill\par
-				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为指标集相同的集族．对任意$i\in I$，$g_i$为$X_i$到$Y_i$的映射．对任意$f\in \prod\limits_{i\in I}X_i$，令$u_f$为映射$i\to g_i(f(i))(i\in I)$，则$u_f\in \prod\limits_{i\in I}Y_i$．
+				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为指标集相同的集族．对任意$i\in I$，$g_i$为$X_i$到$Y_i$的映射．对任意$f\in \prod\limits_{i\in I}X_i$，令$u_f$为映射$i\mapsto g_i(f(i))(i\in I)$，则$u_f\in \prod\limits_{i\in I}Y_i$．
 			\end{cor}
 			证明：对任意$f\in \prod\limits_{i\in I}X_i$、任意$i\in I$，$g_i(f(i))\in Y_i$，故$u_f\in \prod\limits_{i\in I}Y_i$．
 			
 			\begin{de}
 				\textbf{映射族在乘积上的规范扩展（extension canonique de famille d'applications aux produit），映射族的乘积（produit de famille d'applications）}
 				\par
-				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为指标集相同的集族，$(g_i)_{i\in I}$为函数族，且对任意$i\in I$，$g_i$为$X_i$到$Y_i$的映射．对任意$f\in \prod\limits_{i\in I}X_i$，令$u_f$为映射$i\to g_i(f(i))(i\in I)$的图，则映射$f\to u_f(f\in \prod\limits_{i\in I}X_i, u_f\\\in \prod\limits_{i\in I}Y_i)$称为映射族$(g_i)_{i\in I}$在乘积上的规范扩展，或称为映射族的乘积．
+				令$(X_i)_{i\in I}$、$(Y_i)_{i\in I}$为指标集相同的集族，$(g_i)_{i\in I}$为函数族，且对任意$i\in I$，$g_i$为$X_i$到$Y_i$的映射．对任意$f\in \prod\limits_{i\in I}X_i$，令$u_f$为映射$i\mapsto g_i(f(i))(i\in I)$的图，则映射$f\mapsto u_f(f\in \prod\limits_{i\in I}X_i, u_f\\\in \prod\limits_{i\in I}Y_i)$称为映射族$(g_i)_{i\in I}$在乘积上的规范扩展，或称为映射族的乘积．
 			\end{de}
 			
 			\begin{theo}\label{theo54}
@@ -5150,7 +5150,7 @@
 				\hfill\par
 				令$(X_i)_{i\in I}$为集族，$\prod\limits_{i\in I}X_i=A$，则$(Id_{x_i}){i\in I}$在乘积上的规范扩展为$Id_A$．
 			\end{cor}
-			证明：令$u_f$为映射$i\to Id_{x_i}(f(i))(i\in I)$的图，即为映射$i\to f(i)$的图，因此，$u_f=f$，得证．
+			证明：令$u_f$为映射$i\mapsto Id_{x_i}(f(i))(i\in I)$的图，即为映射$i\mapsto f(i)$的图，因此，$u_f=f$，得证．
 
 			\begin{theo}\label{theo55}
 				\hfill\par
@@ -5170,24 +5170,24 @@
 				\hfill\par
 				令$(X_i)_{i\in I}$为集族，$f$为$E$到$\prod\limits_{i\in I}X_i$的映射，$\tilde{f}$为$(pr_i\circ f)_{i\in I}$在乘积上的规范扩展，$d$为$E$到$E^I$\\的对角映射，则$f=\tilde{f}\circ d$．
 			\end{cor}
-			证明：设$x\in E$，则$d(x)=\{z|pr_1z\in I\text{与}pr_2z=x\}$，$\tilde{f}\circ d(x)$为映射$i\to pr_i\circ f(x)(i\in I)$，即为映射$i\to (f(x))(i)(i\in I)$，即为映射$f(x)$，得证．
+			证明：设$x\in E$，则$d(x)=\{z|pr_1z\in I\text{与}pr_2z=x\}$，$\tilde{f}\circ d(x)$为映射$i\mapsto pr_i\circ f(x)(i\in I)$，即为映射$i\mapsto (f(x))(i)(i\in I)$，即为映射$f(x)$，得证．
 			
 			\begin{cor}\label{cor143}
 				\hfill\par
 				令$(X_i)_{i\in I}$为集族，$(f_i)_{i\in I}$为函数族，且对任意$i\in I$，$f_i$为$E$到$X_i$的映射，$\tilde{f}$为$(f_i)_{i\in I}$在乘积上的规范扩展，$d$为$E$到$E^I$的对角映射，则对任意$i\in I$，$pr_i\circ (\tilde{f}\circ d)=f_i$．
 			\end{cor}
-			证明：设$x\in E$，则$d(x) =\{z|pr_1z\in I\text{与}pr_2z=x\}$，$\tilde{f}\circ d(x)$为映射$i\to f_i(x)$，故$pr_i\circ (\tilde{f}\circ d)=f_i$．
+			证明：设$x\in E$，则$d(x) =\{z|pr_1z\in I\text{与}pr_2z=x\}$，$\tilde{f}\circ d(x)$为映射$i\mapsto f_i(x)$，故$pr_i\circ (\tilde{f}\circ d)=f_i$．
 			
 			\begin{cor}\label{cor144}
 				\hfill\par
-				令$(X_i)_{i\in I}$为集族，$(f_i)_{i\in I}$为函数族，且对任意$i\in I$，$f_i$为$E$到$X_i$的映射，$\tilde{f}$为$(f_i)_{i\in I}$在乘积上的规范扩展，则$f\to \tilde{f}$为$(\prod\limits_{i\in I}X_i)^E$到$\prod\limits_{i\in I}({X_i}^E)$的双射．
+				令$(X_i)_{i\in I}$为集族，$(f_i)_{i\in I}$为函数族，且对任意$i\in I$，$f_i$为$E$到$X_i$的映射，$\tilde{f}$为$(f_i)_{i\in I}$在乘积上的规范扩展，则$f\mapsto \tilde{f}$为$(\prod\limits_{i\in I}X_i)^E$到$\prod\limits_{i\in I}({X_i}^E)$的双射．
 			\end{cor}
 			证明：根据补充定理\ref{cor142}、补充定理\ref{cor143}可证．
 
 			\begin{de}
 				\textbf{积和映射的图的集合之间的规范映射（application canonique entre le produit et la ensemble des graphe d'applications）}
 			\end{de}			
-			令$(X_i)_{i\in I}$为集族，$f$为$E$到$\prod\limits_{i\in I}X_i$的映射，令$\tilde{f}$为$(pr_i\circ f)_{i\in I}$在乘积上的规范扩展，则称映射$f\to \tilde{f}$为$(\prod\limits_{i\in I}X_i)^E$到$\prod\limits_{i\in I}({X_i}^E)$的规范映射，其逆映射为$\prod\limits_{i\in I}({X_i}^E)$到$(\prod\limits_{i\in I}X_i)^E$的规范映射．			
+			令$(X_i)_{i\in I}$为集族，$f$为$E$到$\prod\limits_{i\in I}X_i$的映射，令$\tilde{f}$为$(pr_i\circ f)_{i\in I}$在乘积上的规范扩展，则称映射$f\mapsto \tilde{f}$为$(\prod\limits_{i\in I}X_i)^E$到$\prod\limits_{i\in I}({X_i}^E)$的规范映射，其逆映射为$\prod\limits_{i\in I}({X_i}^E)$到$(\prod\limits_{i\in I}X_i)^E$的规范映射．			
 			
 			\begin{exer}\label{exer62}
 				\hfill\par
@@ -5216,9 +5216,9 @@
 			
 			\begin{exer}\label{exer65}
 				\hfill\par
-				对任意$G\subset A\times B$，令$\tilde{G}$为$A$到 $\mathcal{P}(B)$的映射$x\to G\langle \{x\} \rangle $，求证：$G\to \tilde{G}$为 $\mathcal{P}(A\times B)$到$( \mathcal{P}(B))^A$的双射．
+				对任意$G\subset A\times B$，令$\tilde{G}$为$A$到 $\mathcal{P}(B)$的映射$x\mapsto G\langle \{x\} \rangle $，求证：$G\mapsto \tilde{G}$为 $\mathcal{P}(A\times B)$到$( \mathcal{P}(B))^A$的双射．
 			\end{exer}
-			证明：对任意$A$到$\mathcal{P}(B)$的映射$f$，令$G=\bigcup\limits_{x\in A}(\{x\}\times f(x))$，则对任意$x\in A$，$G\langle \{x\} \rangle =f(x)$；设对任意$x\in A$，$G'\langle \{x\} \rangle =f(x)$，则$G'\langle \{x\} \rangle =G\langle \{x\} \rangle $，故$\{y|(x, y)\in G\}=\{y|(x, y)\\\in G'\}$，则$G=G'$，故$G$具有唯一性．因此$G\to f$为$\mathcal{P}(A\times B)$到$\mathcal{F}(A; \mathcal{P}(B))$的双射．根据补充定理\ref{cor123}，$\tilde{G}\to f$为$( \mathcal{P}(B))^A$到$\mathcal{F}(A; \mathcal{P}(B))$的双射．根据定理\ref{theo21}（3）、\ref{theo21}（5）得证．
+			证明：对任意$A$到$\mathcal{P}(B)$的映射$f$，令$G=\bigcup\limits_{x\in A}(\{x\}\times f(x))$，则对任意$x\in A$，$G\langle \{x\} \rangle =f(x)$；设对任意$x\in A$，$G'\langle \{x\} \rangle =f(x)$，则$G'\langle \{x\} \rangle =G\langle \{x\} \rangle $，故$\{y|(x, y)\in G\}=\{y|(x, y)\\\in G'\}$，则$G=G'$，故$G$具有唯一性．因此$G\mapsto f$为$\mathcal{P}(A\times B)$到$\mathcal{F}(A; \mathcal{P}(B))$的双射．根据补充定理\ref{cor123}，$\tilde{G}\mapsto f$为$( \mathcal{P}(B))^A$到$\mathcal{F}(A; \mathcal{P}(B))$的双射．根据定理\ref{theo21}（3）、\ref{theo21}（5）得证．
 			
 			\begin{exer}\label{exer66}
 				\hfill\par
@@ -5452,7 +5452,7 @@
 			\begin{metadef}
 				\textbf{商集（ensemble quotient），到商集的规范映射（l'application canonique dans l'ensemble quotient）}
 				\par
-				包含$2$元特别符号$\in$ 、显式公理\ref{ex1}、显式公理\ref{ex2}、显式公理\ref{ex3}和公理模式\ref{Sch8}的等式理论$M$中，令$R$为关于$x$、$y$在$E$上的等价关系，$R$生成的图为$G$，则称$\{X|(\exists x)(x\in E\text{与}X=G(x))\}$为$E$\\除以$R$的商集，记作$E/R$．$x\to G(x)((x\in E, G(x)\in E/R)$称为$E$到$E/R$的规范映射．
+				包含$2$元特别符号$\in$ 、显式公理\ref{ex1}、显式公理\ref{ex2}、显式公理\ref{ex3}和公理模式\ref{Sch8}的等式理论$M$中，令$R$为关于$x$、$y$在$E$上的等价关系，$R$生成的图为$G$，则称$\{X|(\exists x)(x\in E\text{与}X=G(x))\}$为$E$\\除以$R$的商集，记作$E/R$．$x\mapsto G(x)((x\in E, G(x)\in E/R)$称为$E$到$E/R$的规范映射．
 			\end{metadef}
 
 			\begin{Ccor}\label{Ccor34}
@@ -5534,7 +5534,7 @@
 
 			\begin{cor}\label{cor148}
 				\hfill\par
-				令$(X_i)_{i\in I}$为$E$的划分，且$i\neq \varnothing$，$(\forall i)(i\in I\Rightarrow X_i\neq \varnothing)$，设$R$为$(\exists i)(i\in I\text{与}x\in X_i\text{与}y\in X_i)$，则$R$为关于$x$、$y$在$E$上的等价关系，且$i\to X_i(i\in I)$为$I$到$E/R$的双射．
+				令$(X_i)_{i\in I}$为$E$的划分，且$i\neq \varnothing$，$(\forall i)(i\in I\Rightarrow X_i\neq \varnothing)$，设$R$为$(\exists i)(i\in I\text{与}x\in X_i\text{与}y\in X_i)$，则$R$为关于$x$、$y$在$E$上的等价关系，且$i\mapsto X_i(i\in I)$为$I$到$E/R$的双射．
 			\end{cor}
 			证明：$(\exists i)(i\in I\text{与}x\in X_i\text{与}y\in X_i)\Leftrightarrow (\exists i)(i\in I\text{与}y\in X_i\text{与}x\in X_i)$，故该公式具有对称性．若$(\exists i)(i\in I\text{与}x\in X_i\text{与}y\in X_i)$、$(\exists i)(i\in I\text{与}y\in X_i\text{与}z\in X_i)$，设$i\in I$、$i'\in I$，$x\in X_i\text{与}y\in X_i$，使$y\in X_i'$、$z\in X_i'$，故$i=i'$，因此$(\exists i)(i\in I\text{与}x\in X_i\text{与}z\in X_i)$，即该公式具有传递性．若$x\in E$，则存在$i$，使$(i\in I\text{与}x\in X_i)$，故反身性成立．综上，$R$为关于$x$、$y$在$E$上的等价关系．
 			\par
@@ -5987,9 +5987,9 @@
 
 			\begin{exer}\label{exer69}
 				\hfill\par
-				$A\subset E$，$R$是同恒等映射$X\to X\cap A(X\in \mathcal{P}(E), X\bigcap\limits_A\in \mathcal{P}(E))$相关的等价关系．求证：存在$\mathcal{P}(A)$到$\mathcal{P}(E)/R$的双射．
+				$A\subset E$，$R$是同恒等映射$X\mapsto X\cap A(X\in \mathcal{P}(E), X\bigcap\limits_A\in \mathcal{P}(E))$相关的等价关系．求证：存在$\mathcal{P}(A)$到$\mathcal{P}(E)/R$的双射．
 			\end{exer}
-			证明：令映射$X\to X\cap A(X\in \mathcal{P}(E), X\bigcap\limits_A\in \mathcal{P}(E))$为$f$，对任意$Y\in \mathcal{P}(A)$，$Y\cap A=Y$，故$f(Y)=Y$，因此$f\langle\mathcal{P}(E)\rangle=\mathcal{P}(A)$，对$f$做规范分解$f=g\circ k\circ j$，其中，$k$为$E/R$到$\mathcal{P}(A)$的映射，根据补充定理\ref{cor150}得证．
+			证明：令映射$X\mapsto X\cap A(X\in \mathcal{P}(E), X\bigcap\limits_A\in \mathcal{P}(E))$为$f$，对任意$Y\in \mathcal{P}(A)$，$Y\cap A=Y$，故$f(Y)=Y$，因此$f\langle\mathcal{P}(E)\rangle=\mathcal{P}(A)$，对$f$做规范分解$f=g\circ k\circ j$，其中，$k$为$E/R$到$\mathcal{P}(A)$的映射，根据补充定理\ref{cor150}得证．
 			
 			\begin{exer}\label{exer70}
 				\hfill\par
@@ -6040,7 +6040,7 @@
 				\hfill\par
 				$R$为在$F$上的等价关系，$p$为$F$到$F/R$的规范映射，$f$为$G$到$F/R$的满射，求证：存在$E$，以及$E$到$F$的满射$g$、$E$到$G$的满射$h$，使$p\circ g=f\circ h$．
 			\end{exer}
-			证明：$(\exists X)(z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R)\Rightarrow z\in F\times G$，故$(\exists X)(z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R)$为集合化公式，令$E=\{z|(\exists X)(z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R)\}$，映射$g$为$z\to pr_1z(z\in E, pr_1z\in F)$，映射$h$为$z\to pr_2z(z\in E, pr_2z\in G)$．对任意$z\in E$，设$z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R$，故$p(g(z))=X$，$f(h(z))=X$，同时，由于$p$、$f$均为满射，故对任意$x\in F$，令$G(x)=X$，故$p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \neq \varnothing$，因此存在$z\in E$，使$g(z)=x$，故$g$为满射，同理可证$h$为满射．			
+			证明：$(\exists X)(z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R)\Rightarrow z\in F\times G$，故$(\exists X)(z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R)$为集合化公式，令$E=\{z|(\exists X)(z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R)\}$，映射$g$为$z\mapsto pr_1z(z\in E, pr_1z\in F)$，映射$h$为$z\mapsto pr_2z(z\in E, pr_2z\in G)$．对任意$z\in E$，设$z\in p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \text{与}X\in F/R$，故$p(g(z))=X$，$f(h(z))=X$，同时，由于$p$、$f$均为满射，故对任意$x\in F$，令$G(x)=X$，故$p^{-1}\langle X \rangle \times f^{-1}\langle X \rangle \neq \varnothing$，因此存在$z\in E$，使$g(z)=x$，故$g$为满射，同理可证$h$为满射．			
 			
 			\begin{exer}\label{exer75}
 				\hfill\par
@@ -6442,7 +6442,7 @@
 				\hfill\par
 				令$h$为$B^A$到$\mathcal{F}(A; B)$的规范映射，$F$为偏序集（或预序集），$R$为公式$f\in \mathcal{F}(A; B)\text{与}g\in \mathcal{F}(A; B)\text{与} x\in A\Rightarrow f(x)\leq g(x)$，$R'$为公式$F\in B^A\text{与}g\in B^A\text{与}x\in A\Rightarrow (F, A, B)(x)\leq (G, A, B)(y)$，则$R$为在$\mathcal{F}(A; B)$上的偏序关系（或预序关系），$R'$为在$B^A$上的的偏序关系（或预序关系），并且$h$为$B^A$到$\mathcal{F}(A; B)$的同构．
 			\end{cor}
-			证明：根据定义可证$R$和$R'$为偏序关系（或预序关系），根据补充定理\ref{cor123}，$G\to \\(G, A, B)$为双射，得证．
+			证明：根据定义可证$R$和$R'$为偏序关系（或预序关系），根据补充定理\ref{cor123}，$G\mapsto \\(G, A, B)$为双射，得证．
 
 			\begin{de}
 				\textbf{单增映射（application croissante），单减映射（application décroissante），单调映射（application monotone），严格单增映射（application strictement croissante），严格单减映射（application strictement décroissante），严格单调映射\\（application trictement monotone）}
@@ -6473,7 +6473,7 @@
 			\begin{de}
 				\textbf{单增子集族（famille de parties croissante），单减子集族（famille de parties décroissante），严格单增子集族（famille de parties strictement croissante），严格单减子集族（famille de parties strictement décroissante）}
 				\par
-				$(X_i)_{i\in I}$为$E$的子集族，其指标集$I$为偏序集，$\mathcal{P}(E)$为按包含关系排序的偏序集，如果映射$i\to X_i(i\in I, X_i\in \mathcal{P}(E))$为单增映射（或单减映射、严格单增映射、严格单减映射），则称$(X_i)_{i\in I}$为单增子集族（或单减子集族、严格单增子集族、严格单减子集族）．
+				$(X_i)_{i\in I}$为$E$的子集族，其指标集$I$为偏序集，$\mathcal{P}(E)$为按包含关系排序的偏序集，如果映射$i\mapsto X_i(i\in I, X_i\in \mathcal{P}(E))$为单增映射（或单减映射、严格单增映射、严格单减映射），则称$(X_i)_{i\in I}$为单增子集族（或单减子集族、严格单增子集族、严格单减子集族）．
 			\end{de}
 
 			\begin{theo}
@@ -6553,14 +6553,14 @@
 				\hfill\par
 				$I$为偏序集，$(E_i)_{i\in I}$、$(Fi)_{i\in I}$为偏序集族，对任意$i\in I$，$E_i$同构于$F_i$，则$(E_i)_{i\in I}$的序数和同构于$(F_i)_{i\in I}$的序数和．
 			\end{cor}
-			证明：令$E_i$到$F_i$的同构为$f_i$，则映射$x\to (f_{pr_2x}(pr_1x), pr_2x)$为$(E_i)_{i\in I}$的序数和到$(F_i)_{i\in I}$\\的序数和的同构．
+			证明：令$E_i$到$F_i$的同构为$f_i$，则映射$x\mapsto (f_{pr_2x}(pr_1x), pr_2x)$为$(E_i)_{i\in I}$的序数和到$(F_i)_{i\in I}$\\的序数和的同构．
 
 			\begin{cor}\label{cor169}
 				\textbf{偏序集族的序数和的结合律}
 				\par
 				$L$为偏序集，$I$为偏序集族$(J_l)_{l\in L}$的序数和，令$F_l$为偏序集族$(E_i)_{i\in J_l}$的序数和，则集族\\$(E_i)_{i\in I}$的序数和同构于集族$(F_l)_{l\in L}$的序数和．
 			\end{cor}
-			证明：令$f$为映射$x\to ((pr_1x, pr_1(pr_2x)), pr_2(pr_2x))$，其为同构．
+			证明：令$f$为映射$x\mapsto ((pr_1x, pr_1(pr_2x)), pr_2(pr_2x))$，其为同构．
 
 			\begin{de}
 				\textbf{极大元（élément maximal），极小元（éléments minimal）}
@@ -6756,7 +6756,7 @@
 			
 			\begin{theo}\label{theo63}
 				\hfill\par
-				令$E$为偏序集，$E$的元素族$(x_i)_{i\in I}$、$(y_i)_{i\in I}$是两个$E$的子集族，其指标集相同且均有最小上界（或最大下界），如果$(\forall i)(i\in I\Rightarrow x_i\leq y_i)，则\mathop{sup}\limits_{i\in I}x_i\leq \mathop{sup}\limits_{i\in I}y_i$（$\mathop{inf}\limits_{i\in I}x_i\leq \mathop{inf}\limits_{i\in I}y_i$）．
+				令$E$为偏序集，$E$的元素族$(x_i)_{i\in I}$、$(y_i)_{i\in I}$是两个$E$的子集族，其指标集相同且均有最小上界（或最大下界），如果$(\forall i)(i\in I\Rightarrow x_i\leq y_i)$，则$\mathop{sup}\limits_{i\in I}x_i\leq \mathop{sup}\limits_{i\in I}y_i$（$\mathop{inf}\limits_{i\in I}x_i\leq \mathop{inf}\limits_{i\in I}y_i$）．
 			\end{theo}
 			证明：设$a=\mathop{sup}\limits_{i\in I}y_i$，则$(\forall i)(i\in I\Rightarrow yi\leq a)$，故$(\forall i)(i\in I\Rightarrow x_i\leq a)$，因此$a是(x_i)_{i\in I}$的上界，上界的情况得证．下界的情况同理可证．
 			
@@ -6976,7 +6976,7 @@
 				\par
 				（1）$X\in F\text{与}Y\in F\text{与}(\forall x)(x\in X\Rightarrow (\exists y)(y\in Y\text{与}x\leq y))$为关于$X$、$Y$在$F$上的偏序关系；
 				\par
-				（2）$F$按（1）的偏序关系排序，则$x\to \{x\}$为$E$到$F$的子集的同构；
+				（2）$F$按（1）的偏序关系排序，则$x\mapsto \{x\}$为$E$到$F$的子集的同构；
 				\par
 				（3）$F$按（1）的偏序关系排序，则如果$X\in F$、$Y\in F$、$X\subset Y$，则$X\leq Y$；
 				\par
@@ -7041,7 +7041,7 @@
 			\par
 			充分性：
 			\par
-			对$A(E, F)$的任何子集$G$，映射$x\to (\{y|(y, E, F)(x)\}\text{的最小上界})$的图，是$G$的最小上界，同理可证$G$有最大下界．
+			对$A(E, F)$的任何子集$G$，映射$x\mapsto (\{y|(y, E, F)(x)\}\text{的最小上界})$的图，是$G$的最小上界，同理可证$G$有最大下界．
 			\par
 			必要性：
 			\par
@@ -7140,7 +7140,7 @@
 
 			\begin{cor}\label{cor201}
 				\hfill\par
-				$E$为布尔网络，最大元为$z$，对任意$x\in E$，令$x^*$为$x$对$z$的补，则$x\to x^*$为$E$到按在$E$上的偏序关系的相反关系排序的偏序集的同构，并且$(x^*)^*=x$．
+				$E$为布尔网络，最大元为$z$，对任意$x\in E$，令$x^*$为$x$对$z$的补，则$x\mapsto x^*$为$E$到按在$E$上的偏序关系的相反关系排序的偏序集的同构，并且$(x^*)^*=x$．
 			\end{cor}
 			证明：根据定义可证$(x^*)^*=x$．对任意$x\leq y$，$sup(y, inf(x^*, y^*))=sup(y, x^*)$．根据定理\ref{theo63}，$sup(y, x^*)\geq sup(x, x^*)$，故$sup(y, x^*)=z$，因此$sup(y, inf(x^*, y^*))=z$，又因为$inf(y, inf(x^*, y^*))=a$，因此$inf(x^*, y^*)=y^*$，所以$x^*\geq y^*$，得证．
 									
@@ -7252,9 +7252,9 @@
 				\par
 				（2）$U$为开集，$x\in E$，如果对任意$y\geq x$，均存在$z\in U$使$y\leq z$，则$x\in \tilde{U}$．
 				\par
-				（3）$\mathcal{P}(E)$按包含关系排序，则映射$U\to \tilde{U}$为单增映射．
+				（3）$\mathcal{P}(E)$按包含关系排序，则映射$U\mapsto \tilde{U}$为单增映射．
 				\par
-				（4）$\mathcal{P}(E)$按包含关系排序，则映射$U\to \tilde{U}$为闭包．
+				（4）$\mathcal{P}(E)$按包含关系排序，则映射$U\mapsto \tilde{U}$为闭包．
 				\par
 				（5）对开集$U$、$V$，如果$U\cap V=\varnothing$，则$\tilde{U}\cap \tilde{V}=\varnothing$．
 			\end{cor}
@@ -7266,17 +7266,17 @@
 			\par
 			（2）由于$U\cup [x, \to [$也是开集并且$U$是其共尾子集，根据补充定理\ref{cor207}（1）的证明过程，$U\cup [x, \to [\subset \tilde{U}$，得证．
 			\par
-			（3）设$U\subset V$，$x\in \tilde{U}$，对任意$y\geq x$，由于$y\in \tilde{U}$，故存在$z\geq y$且$z\in U$，因此$z\in V$，根据补充定理\ref{cor207}（2），$x\in \tilde{V}$，因此映射$U\to \tilde{U}$为单增映射．
+			（3）设$U\subset V$，$x\in \tilde{U}$，对任意$y\geq x$，由于$y\in \tilde{U}$，故存在$z\geq y$且$z\in U$，因此$z\in V$，根据补充定理\ref{cor207}（2），$x\in \tilde{V}$，因此映射$U\mapsto \tilde{U}$为单增映射．
 			\par
 			（4）根据补充定理\ref{cor207}（1）、补充定理\ref{cor207}（3）可证．
 			\par
-			（5）$U\to \tilde{U}$为单增映射．若存在$a\in \tilde{U}$且$a\in \tilde{V}$，则存在$x\geq a$且$x\in U$，因此$x\in \tilde{V}$，故存在$y\geq x$且$y\in V$，因此$y\in U$，矛盾，得证．
+			（5）$U\mapsto \tilde{U}$为单增映射．若存在$a\in \tilde{U}$且$a\in \tilde{V}$，则存在$x\geq a$且$x\in U$，因此$x\in \tilde{V}$，故存在$y\geq x$且$y\in V$，因此$y\in U$，矛盾，得证．
 			
 			\begin{cor}\label{cor208}
 				\hfill\par
 				$E$为偏序集，$U$、$V$为正则开集，则$U\cap V$为正则开集．
 			\end{cor}
-			证明：令$\tilde{X}$为正则开集且使$U$为$\tilde{X}$的共尾子集，$f$为映射$X\to \tilde{X}$．
+			证明：令$\tilde{X}$为正则开集且使$U$为$\tilde{X}$的共尾子集，$f$为映射$X\mapsto \tilde{X}$．
 			\par
 			根据补充定理\ref{cor207}（3），$f(U\cap V)\subset f(U)$，$f(U\cap V)\subset f(V)$，故$f(U\cap V)\subset f(U)$．根据补充定理\ref{cor207}（1），$f(U)=U$、$f(V)=V$，因此$f(U\cap V)\subset U\cap V$．又因为$U\cap V\subset f(U\cap V)$，得证．
 			
@@ -7494,7 +7494,7 @@
 			\par
 			第二部分根据定义可证．
 			\par
-			第三部分：令$g$为映射$x\to E_x\times{x}(x\in I)$，则$g$为双射，且$g^{-1}$为$E/S$到$I$的同构，
+			第三部分：令$g$为映射$x\mapsto E_x\times{x}(x\in I)$，则$g$为双射，且$g^{-1}$为$E/S$到$I$的同构，
 			\par
 			（2）前一部分即补充定理\ref{cor169}．设$a$、$b$、$c$互不相等，$E_1=\{a\}$，$E_2=\{b, c\}$，均按偏序关系$x=y$排序，则偏序集族$(E_i)_{i\in I}$的序数和不同构于偏序集族$(F_i)_{i\in I}$的序数和．
 			\par
@@ -7530,7 +7530,7 @@
 				\par
 				（1）$X\in F\text{与}Y\in F\text{与}(\forall x)(x\in X\Rightarrow (\exists y)(y\in Y\text{与}x\leq y))$为关于$X$、$Y$在$F$上的偏序关系；
 				\par
-				（2）$F$按（1）的偏序关系排序，则$x\to \{x\}$为$E$到$F$的子集的同构；
+				（2）$F$按（1）的偏序关系排序，则$x\mapsto \{x\}$为$E$到$F$的子集的同构；
 				\par
 				（3）$F$按（1）的偏序关系排序，则如果$X\in F$、$Y\in F$、$X\subset Y$，则$X\leq Y$；
 				\par
@@ -7552,9 +7552,9 @@
 			\end{exer}
 			证明：
 			\par
-			（1）映射$X\to (x\to pr_1(X, E, F\times G)(x)\text{的图}, x\to pr_2(X, E, F\times G)(x)\text{的图})$，为其同构，得证．
+			（1）映射$X\mapsto (x\mapsto pr_1(X, E, F\times G)(x)\text{的图}, x\mapsto pr_2(X, E, F\times G)(x)\text{的图})$，为其同构，得证．
 			\par
-			（2）映射$X\to (x\to (y\to (X, E\times F, G)(x, y)\text{的图})\text{的图})$ ，为其同构，得证．
+			（2）映射$X\mapsto (x\mapsto (y\mapsto (X, E\times F, G)(x, y)\text{的图})\text{的图})$ ，为其同构，得证．
 			\par
 			（3）类似补充定理\ref{cor197}可证．
 			\par
@@ -7606,7 +7606,7 @@
 			\par
 			充分性：如果$x\leq y$，则$f(x)\leq inf(f(x), f(y))$，故$f(x)\leq f(y)$．
 			\par
-			不成立的例子：令$f$为$(x, y)\to x+y$，$x=(0, 1)$，$y=(1, 0)$，则$f(inf(x, y))=0$，$inf(f(x), f(y))=1$．
+			不成立的例子：令$f$为$(x, y)\mapsto x+y$，$x=(0, 1)$，$y=(1, 0)$，则$f(inf(x, y))=0$，$inf(f(x), f(y))=1$．
 			\par
 			注：习题\ref{exer86}涉及尚未介绍的“自然数”知识．
 			
@@ -7674,7 +7674,7 @@
 			
 			\begin{exer}\label{exer91}
 				\hfill\par
-				（1）$E$为偏序集，对任意$X\subset E$，令$r(X)=\{A|A\text{为}X\text{在}E\text{上的上界}\}$，$s(X)=\\\{A|A\text{为}X\text{在}E\text{上的下界}\}$，映射$i$为$x\to s(\{x\})$．
+				（1）$E$为偏序集，对任意$X\subset E$，令$r(X)=\{A|A\text{为}X\text{在}E\text{上的上界}\}$，$s(X)=\\\{A|A\text{为}X\text{在}E\text{上的下界}\}$，映射$i$为$x\mapsto s(\{x\})$．
 				\par
 				求证：
 				\par
@@ -7726,7 +7726,7 @@
 				\hfill\par
 				（1）求证：按包含关系排序的维数不小于$2$的向量空间的子空间集合$E$，是互补格．但对$x\in E$、$y\in E$、$x\neq y$，通常$x$对$y$的补不是唯一的．
 				\par
-				（2）$E$为分配格和互补格，求证：对任意$x\in E$、$y\in E$、$x\neq y$，$x$对$y$的补唯一．如果$E$为分配格和互补格，并且有最大元$z$，则称$E$为布尔网络．对任意$x\in E$，令$x^*$为$x$对$z$的补，则$x\to x^*$为$E$到按在$E$上的偏序关系的相反关系排序的同构，并且$(x^*)^*=x$．对任意集合$A$，按包含关系排序的$\mathcal{P}(A)$，是布尔网络．
+				（2）$E$为分配格和互补格，求证：对任意$x\in E$、$y\in E$、$x\neq y$，$x$对$y$的补唯一．如果$E$为分配格和互补格，并且有最大元$z$，则称$E$为布尔网络．对任意$x\in E$，令$x^*$为$x$对$z$的补，则$x\mapsto x^*$为$E$到按在$E$上的偏序关系的相反关系排序的同构，并且$(x^*)^*=x$．对任意集合$A$，按包含关系排序的$\mathcal{P}(A)$，是布尔网络．
 				\par
 				（3）$E$为布尔网络，且为完备格，$(x_i)_{i\in I}$为$E$的元素族，求证：$inf(y, sup(x_i)_{i\in I})=sup(inf(y, x_i))_{i\in I}$．
 			\end{exer}
@@ -7803,11 +7803,11 @@
 			
 			\begin{exer}\label{exer98}
 				\hfill\par
-				（1）$E$为偏序集，求证：对任意开集$U\subset E$，存在唯一的正则开集$\tilde{U}$，使$U$为$\tilde{U}$的共尾子集，并且，映射$U\to \tilde{U}$为单增映射．同时，对开集$U$、$V$，如果$U\cap V=\varnothing$，则$\tilde{U}\cap \tilde{V}=\varnothing$．
+				（1）$E$为偏序集，求证：对任意开集$U\subset E$，存在唯一的正则开集$\tilde{U}$，使$U$为$\tilde{U}$的共尾子集，并且，映射$U\mapsto \tilde{U}$为单增映射．同时，对开集$U$、$V$，如果$U\cap V=\varnothing$，则$\tilde{U}\cap \tilde{V}=\varnothing$．
 				\par
 				（2）$E$为偏序集，令$R(E)$为$E$的正则开子集集合，并按包含关系排序，求证：$R(E)$为布尔网络，且为完备格．并且，当且仅当$E$非空且为右方有向集时，$R(E)$为仅有两个元素的结合．
 				\par
-				（3）令$F$为$E$的共尾子集，$R(E)$、$R(F)$均按包含关系排序，求证：映射$U\to U\cap F$为$R(E)$到$R(F)$的同构．
+				（3）令$F$为$E$的共尾子集，$R(E)$、$R(F)$均按包含关系排序，求证：映射$U\mapsto U\cap F$为$R(E)$到$R(F)$的同构．
 				\par
 				（4）$E_1$、$E_2$为偏序集，$E1\times E2$按偏序关系$(pr_1x\leq pr_1y)\text{与}(pr_2x\leq pr_2y)$排序，求证：$E_1\times E_2$的任意开集，均可表示为$U_1\times U_2$的形式，其中$U_1$、$U_2$分别为在$E_1$上的开集、在$E_2$上的开集．并确定$R(E1\times E2)$是否同构于$R(E1)\times R(E2)$．
 			\end{exer}
@@ -7819,7 +7819,7 @@
 			\par
 			（3）$U\in R(E)$，因此在$F$上$U\cap F$是开集，设$U\cap F$在$F$上相应的正则开集是$V$，对任意$x\in V$，显然$x\in F$，同时，对任意$y\geq $x，存在$z\in F$且$y\leq z$，因此，$z\in V$，因此存在$z\leq t$且$t\in U\cap F$，根据补充定理\ref{cor207}（2），$x\in \tilde{U}$，故$x\in U$，因此$x\in U\cap F$，所以$U\cap F$在$F$上是正则开集．
 			\par
-			对任意$V\in R(F)$，设$V$在$E$上相应的正则开集为$U$，则$U$是唯一的；同时，对任意$x\in U\cap F$，对任意$y\geq x$且$y\in F$，存在$z\in F$且$y\leq z$，故$z\in U\cap F$，故存在$t\in V$使$t\geq z$，根据补充定理\ref{cor207}（2），$x\in V$，因此，$U\cap F=V$．因此，$U\to U\cap F$为$R(E)$到$R(F)$的双射．根据定义$U\subset V\Rightarrow U\cap F\subset V\cap F$；反过来，如果$U\cap F\subset V\cap F$，如果$x\in U$，对任意$y\geq x$，存在$z\in F$且$y\leq z$，因此$z\in V$，根据补充定理\ref{cor207}（2），$x\in V$，故$U\subset V$，综上，该映射为同构．
+			对任意$V\in R(F)$，设$V$在$E$上相应的正则开集为$U$，则$U$是唯一的；同时，对任意$x\in U\cap F$，对任意$y\geq x$且$y\in F$，存在$z\in F$且$y\leq z$，故$z\in U\cap F$，故存在$t\in V$使$t\geq z$，根据补充定理\ref{cor207}（2），$x\in V$，因此，$U\cap F=V$．因此，$U\mapsto U\cap F$为$R(E)$到$R(F)$的双射．根据定义$U\subset V\Rightarrow U\cap F\subset V\cap F$；反过来，如果$U\cap F\subset V\cap F$，如果$x\in U$，对任意$y\geq x$，存在$z\in F$且$y\leq z$，因此$z\in V$，根据补充定理\ref{cor207}（2），$x\in V$，故$U\subset V$，综上，该映射为同构．
 			\par
 			（4）	对于$F\subset E_1\times E_2$，且$F$为开集，令$U_1=pr_1F$，$U_2=pr_2F$，根据定义可证$F=U_1\times U_2$且$U_1$、$U_2$均为开集．
 			\par
@@ -8018,13 +8018,13 @@
 				\hfill\par
 				E为良序集：
 				\par
-				（1）偏序集$F=\{X|(X\text{为}E\text{的片段})\text{与}X\neq E\}$，并按包含关系排序，则映射$x\to S_x$为$E$到$F$的同构．
+				（1）偏序集$F=\{X|(X\text{为}E\text{的片段})\text{与}X\neq E\}$，并按包含关系排序，则映射$x\mapsto S_x$为$E$到$F$的同构．
 				\par
 				（2）$E^*=\{S|S\text{为}E\text{的片段}\}$，则$E^*$为按包含关系排序的良序集．
 			\end{theo}
 			证明：
 			\par
-			（1）$x<y\Rightarrow S_x\subset S_y$，因此$S_x\neq S_y$，根据定理\ref{theo69}，映射$x\to S_x$为$E$到$F$的同构．
+			（1）$x<y\Rightarrow S_x\subset S_y$，因此$S_x\neq S_y$，根据定理\ref{theo69}，映射$x\mapsto S_x$为$E$到$F$的同构．
 			\par
 			（2）$E^*=F\cup\{E\}$，根据补充定理\ref{cor224}（1），$F$的任意非空子集$G$均有最小元，进而，$G\cup\{E\}$也有同样的最小元，同时，$\{E\}$也有最小元$E$，得证．
 						
@@ -8180,7 +8180,7 @@
 				\hfill\par
 				任何偏序集同构于全序集族的乘积的一个子集．
 			\end{cor}
-			证明：对于按偏序$F$排序的偏序集$E$，令$F$的图为$G$，$M=\\\{H|H\neq F\text{与}(H\text{为比}F\text{更细的全序})\}$，根据补充定理\ref{cor228}，$G=\bigcap\limits_{H\in M}(H\text{的图})$．根据定义，映射$x\to (x)_{i\in M}(x\in E)$为$E$到$\prod\limits_{H\in M}E$的同构．
+			证明：对于按偏序$F$排序的偏序集$E$，令$F$的图为$G$，$M=\\\{H|H\neq F\text{与}(H\text{为比}F\text{更细的全序})\}$，根据补充定理\ref{cor228}，$G=\bigcap\limits_{H\in M}(H\text{的图})$．根据定义，映射$x\mapsto (x)_{i\in M}(x\in E)$为$E$到$\prod\limits_{H\in M}E$的同构．
 						
 			\begin{cor}\label{cor230}
 				\hfill\par
@@ -8417,7 +8417,7 @@
 				\hfill\par
 				令$I$为良序集，$(E_i)_{i\in I}$、$(F_i)_{i\in I}$为偏序集族，且对任意$i\in I$，$E_i$同构于$F_i$，则$(E_i)_{i\in I}$的字典式乘积同构于$(F_i)_{i\in I}$的字典式乘积．
 			\end{cor}
-			证明：令$f_i$为$E_i$到$F_i$的同构，则$x\to\bigcap\limits_{i\in I}\{(i, f_i(pr_ix))\}$是$(E_i)_{i\in I}$的字典式乘积到$(F_i)_{i\in I}$的字典式乘积的同构．
+			证明：令$f_i$为$E_i$到$F_i$的同构，则$x\mapsto\bigcap\limits_{i\in I}\{(i, f_i(pr_ix))\}$是$(E_i)_{i\in I}$的字典式乘积到$(F_i)_{i\in I}$的字典式乘积的同构．
 			
 			\begin{cor}\label{cor242}
 				\hfill\par
@@ -8436,7 +8436,7 @@
 				\hfill\par
 				$I$为良序集，$(m)_{i\in I}$为偏序类族，$Ord(I)=l$，则$\sum\limits_{i\in I}m=ml$．
 			\end{cor}
-			证明：令$a\neq b$，$J={a, b}$，$E_a=I$，$E_b=m$的定义域，偏序集族$(E_i)_{i\in J}$的序数乘积为$E$．$(E_b)i\in I$的序数为$F$，则$x\to\{(a, pr_2x), (b, pr_1x)\}$是E到F的同构，得证．
+			证明：令$a\neq b$，$J={a, b}$，$E_a=I$，$E_b=m$的定义域，偏序集族$(E_i)_{i\in J}$的序数乘积为$E$．$(E_b)i\in I$的序数为$F$，则$x\mapsto\{(a, pr_2x), (b, pr_1x)\}$是E到F的同构，得证．
 			
 			\begin{cor}\label{cor245}
 				\textbf{两个序数的和与乘积的结合律、分配律}
@@ -9095,7 +9095,7 @@
 			\par
 			（1）当$u\leq v$时，根据定义可证$I(v)\subset I(u)$；反过来，当$I(v)\subset I(u)$时，对任意$x\in E$，$u(v(x))=v(x)$，由于$u(v(x))\geq u(x)$，得证．
 			\par
-			（2）对任意$u\in F$、$v\in F$，令$t$为映射$x\to inf(u(x), v(x))$，根据定义，$t\in F$，且$t$为$u$、$v$的最大下界．同理可证映射$x\to sup(u(x), v(x))$ 为$u$、$v$的最小上界，因此，如果$E$是完备格，则$F$是完备格．
+			（2）对任意$u\in F$、$v\in F$，令$t$为映射$x\mapsto inf(u(x), v(x))$，根据定义，$t\in F$，且$t$为$u$、$v$的最大下界．同理可证映射$x\mapsto sup(u(x), v(x))$ 为$u$、$v$的最小上界，因此，如果$E$是完备格，则$F$是完备格．
 			\par
 			（3）对于$u\in F$、$v\in F$，令$f=u\circ v$，根据定义，$I(f)=I(u)\bigcap\limits_I(v)$．对任意$x\in E$，令$w(x)$为$x$的链$C_x$的最大元．则对任意$x\in E$、$y\in E$、$x\leq y$，$x\leq w(y)$，同时，根据习题\ref{exer106}（1），$C_x$为良序集．令$X=\{a|a\in C_x\text{与}a\leq w(y)\}$，则$X$非空，令$Y=C_x-X$，如果$Y$非空，则$Y$有最小元$b$，因此对任意$c\in X$，$c\leq w(y)$，故$f(c)\leq w(y)$，因此$f(c)\in X$，故$f(c)<b$．所以$w(y)$、$b$都是X的上界．根据定义，存在$X$的子集$Z$，$Z$在$X$上有最小上界，且该最小上界是$Y$的元素，故$sup\ Z=b$．又因为$w(y)$也是$X$的上界，故也是$Z$的上界，因此$b\leq w(y)$，矛盾．故$Y$为空，即$w(x)\leq w(y)$．$w$满足闭包的其他条件，故$w$是闭包，并且，$I(w)=I(u)\cap I(v)$；根据习题\ref{exer107}（1），$w$为最小上界．
 			
@@ -9380,7 +9380,7 @@
 			\par
 			令$F$的最小元为$m$，$I_g=F-\{y|y\in F\text{与}(y, E\text{的最小元})\in g\}$，对$G$的任意子集$Y$，令$A_Y=\bigcup\limits_{g\in Y}I_g$．对于$G$的子集$X$，考虑所有满足$(\forall x)(\forall y)(x\in Y\text{与}y\in X-Y\Rightarrow x<y)$的集合$Y$，则所有$A_Y$均为有限集合，
 			\par
-			设其中元素数目最小的是$A_Z$，如果$A_Z=\varnothing$，即$x\to m$的图是$G$的最小元；如果$A_Z\neq \varnothing$，令其最小元为$v$，设$\{u|(\exists g)(g\in Z\text{与}(g, F, E)(v)=u)\}$的最小元为$w$，且$x\in Z$、\\$(g, F, E)(v)=u$，若有$y\in Z$、$(g, F, E)(v)=u$、$y\neq x$，则$A\{g|(g, F, E)(v)=u)\}$的元素数目小于$A_Z$的元素数目，矛盾，故$x$为$G$的最小元．
+			设其中元素数目最小的是$A_Z$，如果$A_Z=\varnothing$，即$x\mapsto m$的图是$G$的最小元；如果$A_Z\neq \varnothing$，令其最小元为$v$，设$\{u|(\exists g)(g\in Z\text{与}(g, F, E)(v)=u)\}$的最小元为$w$，且$x\in Z$、\\$(g, F, E)(v)=u$，若有$y\in Z$、$(g, F, E)(v)=u$、$y\neq x$，则$A\{g|(g, F, E)(v)=u)\}$的元素数目小于$A_Z$的元素数目，矛盾，故$x$为$G$的最小元．
 			\par
 			如果良序集$E$和$E'$同构、$F$和$F'$同构，则相应的$G$、$G'$同构．令$P_{a,b}$为和$a$、$b$相应的\\$Ord(G)$，则$P_{a,0}=1$，当$b=c+d$时，$P_{a,b}=P_{a,c}P_{a,d}$，同时，当$b<b'$时，$P_{a,b}\leq P_{a,b'}$，因此，$P_{a,b}\geq \mathop{sup}\limits_{i\in ]0, b[}P_{a^i,a}$．如果$P_{a,b}>\mathop{sup}\limits_{i\in ]0, b[}P_{a^i,a}$，设在$G$上，$\mathop{sup}\limits_{i\in ]0, b[}P_{a^i,a}=Ord(S_x)$，$Q=\{i|(i, m)\notin x\}$，设$Q$的最大元是$t$，则$x\in P_{a,Ord[0, t]}$．一方面，$Ord(]0, x])> \mathop{sup}\limits_{i\in ]0, b[}P_{a^i,a}$，另一方面，$P_{a,Ord([0, t])}=P_{a,Ord([0, t[)}a$，$Ord(]0, x])\leq P_{a,t}a$，同时，$Ord([0, t[)<b$，矛盾．故$P_{a,b}=\mathop{sup}\limits_{i\in ]0, b[}P_{a^i,a}$．因此$P_{a,b}=a^b$．
 			\par
@@ -9736,7 +9736,7 @@
 				\hfill\par
 				$Card(X)=a$，则$Card(\mathcal{P}(X))=2^a$．
 			\end{theo}
-			证明：令$A=\{a, b\}$．对任意$Y\subset X$，令$f_Y$为$X$到$A$的映射，对于$x\in X$，如果$x\in Y$，则$f_Y(x)=a$，如果$x\in X-Y$，则$f_Y(x)=b$，令$u$为映射$Y\to f_Y(Y\in \mathcal{P}(X), f_Y\in A^X)$．反过来，对任意$X$到$A$的映射$g$，$g^{-1}(a)\subset X$，令$v$为映射$g\to g^{-1}(a)(g\in A^X, g^{-1}(a)\in \mathcal{P}(X))$，则$u\circ v$和$v\circ u$均为恒等映射，根据定理\ref{theo20}，$u$、$v$均为双射，故$Card(\mathcal{P}(X))= Card(A^X)$，得证．
+			证明：令$A=\{a, b\}$．对任意$Y\subset X$，令$f_Y$为$X$到$A$的映射，对于$x\in X$，如果$x\in Y$，则$f_Y(x)=a$，如果$x\in X-Y$，则$f_Y(x)=b$，令$u$为映射$Y\mapsto f_Y(Y\in \mathcal{P}(X), f_Y\in A^X)$．反过来，对任意$X$到$A$的映射$g$，$g^{-1}(a)\subset X$，令$v$为映射$g\mapsto g^{-1}(a)(g\in A^X, g^{-1}(a)\in \mathcal{P}(X))$，则$u\circ v$和$v\circ u$均为恒等映射，根据定理\ref{theo20}，$u$、$v$均为双射，故$Card(\mathcal{P}(X))= Card(A^X)$，得证．
 						
 			\begin{theo}\label{theo109}
 				\hfill\par
@@ -9773,7 +9773,7 @@
 				\par
 				$a$为基数，则$2^a>a$．
 			\end{theo}
-			证明：由于$x\to \{x\}$为$a$到$\mathcal{P}(a)$的单射，故$a\leq 2^a$．
+			证明：由于$x\mapsto \{x\}$为$a$到$\mathcal{P}(a)$的单射，故$a\leq 2^a$．
 			\par
 			对任意$a$到$\mathcal{P}(a)$的映射$f$，令$X$为$a$的元素中满足$x\notin f(x)$的元素集合，如果$x\notin X$，则$f(x)\neq X$，如果$x\in f(x)$，则$x\in a-X$，故$f(x)\neq X$，因此，$X\notin f(a)$，因此不存在$a$到$\mathcal{P}(a)$的满射，故$2^a>a$．
 						
@@ -9806,7 +9806,7 @@
 			\end{cor}
 			证明：
 			\par
-			（1）对任意$i\in I$，令$p_i$为$a_i$到$b_i$的单射，$p$为映射$x\to p_{pr_2x}(pr_1x)$．
+			（1）对任意$i\in I$，令$p_i$为$a_i$到$b_i$的单射，$p$为映射$x\mapsto p_{pr_2x}(pr_1x)$．
 			\par
 			如果$Card(I)=0$，根据补充定理\ref{cor296}，命题成立．
 			\par
@@ -9814,7 +9814,7 @@
 			\par
 			如果$Card(I)=2$，令$I=\{i, j\}$，令$c_i=b_{i-1}$，$c_j=b_{j-1}$，则$b_ib_j\geq c_ic_j+c_i+c_j+1$，大于等于$b_i+b_j$，大于等于$a_i+a_j$，命题成立．
 			\par
-			如果$Card(I)>2$，令$f$为映射$i\to \tau_x(x\in b_i)$，$g$为映射$i\to \tau_x(x\in b_i-f(i))$．令$A$\\为$(a_i)_{i\in I}$的和，对任意$x\in A$，如果$p(x)\neq f(pr_2x)$，令$h(x)=(\bigcup\limits_{i\in I-pr_2x}\{(f(i), i)\})\cup\\\{f(pr_2x), pr_2x\}$，如果$p(x)=f(pr_2x)$，令$h(x)=(\bigcup\limits_{i\in I-pr_2x}\{(g(i), i)\})\cup\{f(pr_2x), pr_2x\}$，根据定义，$h$为$A$到$\prod\limits_{i\in I}a_i$的单射，故$\sum\limits_{i\in I}a_i\leq\mathop{\mathsf{P}}\limits_{i\in I}b_i$．
+			如果$Card(I)>2$，令$f$为映射$i\mapsto \tau_x(x\in b_i)$，$g$为映射$i\mapsto \tau_x(x\in b_i-f(i))$．令$A$\\为$(a_i)_{i\in I}$的和，对任意$x\in A$，如果$p(x)\neq f(pr_2x)$，令$h(x)=(\bigcup\limits_{i\in I-pr_2x}\{(f(i), i)\})\cup\\\{f(pr_2x), pr_2x\}$，如果$p(x)=f(pr_2x)$，令$h(x)=(\bigcup\limits_{i\in I-pr_2x}\{(g(i), i)\})\cup\{f(pr_2x), pr_2x\}$，根据定义，$h$为$A$到$\prod\limits_{i\in I}a_i$的单射，故$\sum\limits_{i\in I}a_i\leq\mathop{\mathsf{P}}\limits_{i\in I}b_i$．
 			\par
 			（2）类似补充定理\ref{cor300}（1）可证．
 
@@ -9862,7 +9862,7 @@
 				\hfill\par
 				$f$为$E$到$F$的映射，$g$为$F$到$E$的映射，求证：存在$E$的子集$A$、$B$以及$F$的子集$A'$、$B'$，使$B=E-A$，$B'=F-A'$，且$A'=f\langle A\rangle$，$B=g\langle B'\rangle$．
 			\end{exer}
-			证明：考虑$X\to E-g\langle F-f\langle X\rangle\rangle(X\in \mathcal{P}(E))$，根据习题\ref{exer63}，存在$A$使$A= E-g\langle F-f\langle A\rangle\rangle$，令$A'=f\langle A\rangle$，$B'=F-f\langle A\rangle$，$B=E-A$，则$B=g\langle B'\rangle$．
+			证明：考虑$X\mapsto E-g\langle F-f\langle X\rangle\rangle(X\in \mathcal{P}(E))$，根据习题\ref{exer63}，存在$A$使$A= E-g\langle F-f\langle A\rangle\rangle$，令$A'=f\langle A\rangle$，$B'=F-f\langle A\rangle$，$B=E-A$，则$B=g\langle B'\rangle$．
 			\par
 			注：原书习题\ref{exer121}中$f$为单射的条件，是多余的．
 			
@@ -10100,7 +10100,7 @@
 			\begin{cor}\label{cor308}
 				\textbf{霍尔定理}
 				\par
-				$E$、$F$为有限集合，$x\to A(x)$为$E$到$\mathcal{P}(F)$的映射．则当且仅当对$E$的任意子集$H$均有\\$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有$f(x)\in A(x)$．	
+				$E$、$F$为有限集合，$x\mapsto A(x)$为$E$到$\mathcal{P}(F)$的映射．则当且仅当对$E$的任意子集$H$均有\\$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有$f(x)\in A(x)$．	
 			\end{cor}
 			证明：
 			\par
@@ -10110,11 +10110,11 @@
 			\par
 			令$a$、$b$互不相等，$G=\Delta_{(E\times \{a\})\cup(F\times \{b\})}\cup\{(x, y)|(x\in (E\times \{a\}))\text{与}(y\in (A(x)\times \{b\}))\text{与}y\in A(x)\}$，根据补充定理\ref{cor306}，$(E\times \{a\})\bigcup\limits_(F\times \{b\})$存在$Card(F)$个全序集的划分\\$(x_i)_{i\in [0, Card(F)]}$．
 			\par
-			对任意$x_i$，$Card(x_i\cap(F\times \{b\}))\leq 1$，$Card(x_i\cap(E\times \{a\}))\leq 1$．因此，对任意$x_i$，$Card(x_i\cap(F\times \{b\}))=1$，令$g$为映射$v\to x_i(v\in E)$，其中$x_i$为$(v, a)$所在的集合，$h$为映射$x_i\to pr_1(x_i\cap(F\times \{b\}))$，令$f=h\circ g$，$f$即满足要求．
+			对任意$x_i$，$Card(x_i\cap(F\times \{b\}))\leq 1$，$Card(x_i\cap(E\times \{a\}))\leq 1$．因此，对任意$x_i$，$Card(x_i\cap(F\times \{b\}))=1$，令$g$为映射$v\mapsto x_i(v\in E)$，其中$x_i$为$(v, a)$所在的集合，$h$为映射$x_i\mapsto pr_1(x_i\cap(F\times \{b\}))$，令$f=h\circ g$，$f$即满足要求．
 						
 			\begin{cor}\label{cor309}
 				\hfill\par
-				$E$、$F$为有限集合，$x\to A(x)$为$E$到$\mathcal{P}(F)$的映射，$G\subset F$．则当且仅当对$E$的任意子集$H$均有$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$，并且对任意$L\subset G$均有$Card(\{x|x\in E\text{与}A(x)\cap L\neq \varnothing\}\geq Card(L))$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有$f(x)\in A(x)$，且$G\subset f(E)$．
+				$E$、$F$为有限集合，$x\mapsto A(x)$为$E$到$\mathcal{P}(F)$的映射，$G\subset F$．则当且仅当对$E$的任意子集$H$均有$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$，并且对任意$L\subset G$均有$Card(\{x|x\in E\text{与}A(x)\cap L\neq \varnothing\}\geq Card(L))$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有$f(x)\in A(x)$，且$G\subset f(E)$．
 			\end{cor}
 			证明：
 			\par
@@ -10166,7 +10166,7 @@
 			\par
 			（3）当$Card(E)=0$时，命题显然成立，设命题对$Card(E)=n$成立，当$Card(E)=n+1$时：
 			\par
-			令$x\in E$，$E'=E-\{x\}$，则$\mathcal{P}(E)=\mathcal{P}(E')\cup g(\mathcal{P}(E'))$，其中$g$为$\mathcal{P}(E')$到$\mathcal{P}(E)$的映射$X\to X\bigcup\limits_\{x\}$．由于$\mathcal{P}(E)$为有限集合，$g$为$\mathcal{P}(E')$到$g(\mathcal{P}(E')$的双射，故$g(\mathcal{P}(E')$为有限集合，根据习题\ref{exer127}（2），$\mathcal{P}(E)$为有限集合，根据证明规则\ref{C61}得证．
+			令$x\in E$，$E'=E-\{x\}$，则$\mathcal{P}(E)=\mathcal{P}(E')\cup g(\mathcal{P}(E'))$，其中$g$为$\mathcal{P}(E')$到$\mathcal{P}(E)$的映射$X\mapsto X\bigcup\limits_\{x\}$．由于$\mathcal{P}(E)$为有限集合，$g$为$\mathcal{P}(E')$到$g(\mathcal{P}(E')$的双射，故$g(\mathcal{P}(E')$为有限集合，根据习题\ref{exer127}（2），$\mathcal{P}(E)$为有限集合，根据证明规则\ref{C61}得证．
 			
 			\begin{exer}\label{exer128}
 				\hfill\par
@@ -10208,9 +10208,9 @@
 				\par
 				求证：存在$A$的有限集合$B$，其元素数目小于等于$n+h$，并且所有的$X_i$（$i\in [1, m]$）和所有的$Y_j$（$j\in [m+1, m+n]$）均和$B$相交．
 				\par
-				（2）$E$、$F$为有限集合，$x\to A(x)$为$E$到$\mathcal{P}(F)$的映射．求证：当且仅当对$E$的任意子集$H$均有$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有\\$f(x)\in A(x)$．
+				（2）$E$、$F$为有限集合，$x\mapsto A(x)$为$E$到$\mathcal{P}(F)$的映射．求证：当且仅当对$E$的任意子集$H$均有$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有\\$f(x)\in A(x)$．
 				\par
-				（3）$E$、$F$为有限集合，$x\to A(x)$为$E$到$\mathcal{P}(F)$的映射，$G\subset F$．求证：当且仅当对$E$的任意子集$H$均有$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$，并且对任意$L\subset G$均有$Card(\{x|x\in E\text{与}A(x)\cap L\neq \varnothing\}\geq Card(L))$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有$f(x)\in A(x)$，且$G\subset f(E)$．
+				（3）$E$、$F$为有限集合，$x\mapsto A(x)$为$E$到$\mathcal{P}(F)$的映射，$G\subset F$．求证：当且仅当对$E$的任意子集$H$均有$Card(\bigcup\limits_{x\in H}A(x))\geq Card(H)$，并且对任意$L\subset G$均有$Card(\{x|x\in E\text{与}A(x)\cap L\neq \varnothing\}\geq Card(L))$时，存在$E$到$F$的单射$f$，使对任意$x\in E$均有$f(x)\in A(x)$，且$G\subset f(E)$．
 			\end{exer}
 			证明：
 			\par
@@ -10224,7 +10224,7 @@
 				\hfill\par
 				（1）$E$为有限格，求证：$E$的任意元素$a$，都是有限个不可约元素的最小上界．
 				\par
-				（2）$E$为有限格，$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，求证：$x\to S(x)$为$E$到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(inf(x, y))=S(x)\cap S(y)$．
+				（2）$E$为有限格，$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，求证：$x\mapsto S(x)$为$E$到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(inf(x, y))=S(x)\cap S(y)$．
 			\end{exer}
 			证明：
 			\par
@@ -10236,7 +10236,7 @@
 				\hfill\par
 				（1）$E$为分配格，$a$是$E$的不可约元素，求证：$a\leq sup(x, y)\Rightarrow a\leq x\text{或}a\leq y$．
 				\par
-				（2）$E$为有限分配格，$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，求证：$x\to S(x)$为$E$到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(sup(x, y))=S(x)\cup S(y)$；同时，令$J^*$为按在$J$上的偏序关系的相反关系排序的偏序集，$I=\{0, 1\}$，$A(J^*, I)$为\\$J^*$到$I$的单增映射的集合，按$f\in A(J^*, I)\text{与}g\in A(J^*, I)\text{与}(\forall x)(x\in J^*\Rightarrow f(x)\leq g(x))$排序，则$E$同构于$A(J^*, I)$．
+				（2）$E$为有限分配格，$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，求证：$x\mapsto S(x)$为$E$到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(sup(x, y))=S(x)\cup S(y)$；同时，令$J^*$为按在$J$上的偏序关系的相反关系排序的偏序集，$I=\{0, 1\}$，$A(J^*, I)$为\\$J^*$到$I$的单增映射的集合，按$f\in A(J^*, I)\text{与}g\in A(J^*, I)\text{与}(\forall x)(x\in J^*\Rightarrow f(x)\leq g(x))$排序，则$E$同构于$A(J^*, I)$．
 				\par
 				（3）$E$为有限分配格，$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$．令$(y_i)i\in [1, k]$为$]x, \to [$的所有两两不相等的极小元组成的元素族．对任意$i\in [1, k]$，令$q_i$为$S(y_i)-S(x)$的一个元素，求证：对任意$i\in [1, k]$、$j\in [1, k]$且$i\neq j$，$q_i$和$q_j$是不可比较的．
 				\par
@@ -10262,7 +10262,7 @@
 			\par
 			（1）若$A$有$r$个两两不可比较的不可约元素且$r>n$，设其组成元素族$(a_i)_{i\in [1, r]}$．令$u=\mathop{sup}\limits_{i\in [1, r]}a_i$，$v_j=\mathop{sup}\limits_{i\in [1, r]-\{j\}}a_i$．则对任意$i\in [1, n]$，$pr_i(v_j)$之中最多有一个不等于$pr_i(u)$，因此，存在$j\in [1, r]$，使$v_j=u$，故$a_i\leq v_i$．根据补充定理\ref{cor199}（1）、补充定理\ref{cor199}（2）、补充定理\ref{cor199}（3），$A$为分配格．但根据补充定理\ref{cor199}（4），运用数学归纳法可得，$a_i\leq v_i$为假，矛盾．
 			\par
-			（2）根据补充定理\ref{cor306}，存在的$P$的划分$\Delta_G$，其中$G$的元素均为全序集并且元素数目为$n$．将最小元$a$加入$G$的每个元素，得到全序集族$(Ci)_{i\in [1, n]}$．对任意$x\in F$，令$x_i$为$\{b|b\in Ci\text{与}b\leq x\}$在$C_i$上的最小上界，根据定义可证，$x\to \{(i, c)|(i, c)\text{为有序对}\text{与}(\exists i)(i\in [1, n]\text{与}c\\=x_i)\}$为$F$到$\prod\limits_{i\in [1, n]}C_i$的某个内部格的同构．同时，令该映射为$f$，令$f_i=pr_if$，当$x\in F$、$y\in F$时，令$z=sup(x, y)$，则对任意$i\in [1, n]$，$f_i(z)\geq sup(f_i(x), f_i(y))$，同时，$f_i(z)\leq sup(x, y)$，根据补充定理\ref{cor199}（4），$fi_(z)\leq x\text{或}f_i(z)\leq y$，故$f_i(z)\leq sup(f_i(x), f_i(y))$，因此$f_i(z)=\\sup(f_i(x), f_i(y))$，故$f(z)=sup(f(x), f(y))$，同理可证最大下界的情况．故该映射的值域为内部格．得证．
+			（2）根据补充定理\ref{cor306}，存在的$P$的划分$\Delta_G$，其中$G$的元素均为全序集并且元素数目为$n$．将最小元$a$加入$G$的每个元素，得到全序集族$(Ci)_{i\in [1, n]}$．对任意$x\in F$，令$x_i$为$\{b|b\in Ci\text{与}b\leq x\}$在$C_i$上的最小上界，根据定义可证，$x\mapsto \{(i, c)|(i, c)\text{为有序对}\text{与}(\exists i)(i\in [1, n]\text{与}c\\=x_i)\}$为$F$到$\prod\limits_{i\in [1, n]}C_i$的某个内部格的同构．同时，令该映射为$f$，令$f_i=pr_if$，当$x\in F$、$y\in F$时，令$z=sup(x, y)$，则对任意$i\in [1, n]$，$f_i(z)\geq sup(f_i(x), f_i(y))$，同时，$f_i(z)\leq sup(x, y)$，根据补充定理\ref{cor199}（4），$fi_(z)\leq x\text{或}f_i(z)\leq y$，故$f_i(z)\leq sup(f_i(x), f_i(y))$，因此$f_i(z)=\\sup(f_i(x), f_i(y))$，故$f(z)=sup(f(x), f(y))$，同理可证最大下界的情况．故该映射的值域为内部格．得证．
 			
 			\begin{exer}\label{exer136}
 				\hfill\par
@@ -10413,9 +10413,9 @@
 			
 			\begin{theo}\label{theo136}
 				\hfill\par
-				$a$、$b$为自然数，则映射$x\to x+a$为区间$[0, b]$到区间$[a, a+b]$的同构，且为严格单增映射，$y\to y-a$为其逆同构．
+				$a$、$b$为自然数，则映射$x\mapsto x+a$为区间$[0, b]$到区间$[a, a+b]$的同构，且为严格单增映射，$y\mapsto y-a$为其逆同构．
 			\end{theo}
-			证明：令$y=x+a$，则$x=y-a$．根据补充定理\ref{cor310}，$x\in [0, b]\Leftrightarrow y\in [a, a+b]$．因此，$x\to x+a$、$y\to y-a$均为双射，且互为逆映射．同时，$x\to x+a$、$y\to y-a$均为严格单增映射．根据定义得证．
+			证明：令$y=x+a$，则$x=y-a$．根据补充定理\ref{cor310}，$x\in [0, b]\Leftrightarrow y\in [a, a+b]$．因此，$x\mapsto x+a$、$y\mapsto y-a$均为双射，且互为逆映射．同时，$x\mapsto x+a$、$y\mapsto y-a$均为严格单增映射．根据定义得证．
 			
 			\begin{theo}\label{theo137}
 				\hfill\par
@@ -10531,7 +10531,7 @@
 			
 			\begin{theo}\label{theo141}
 				\hfill\par
-				令$b$、$k$、$h$为自然数，$b>1$、$k>0$，$(J_h)_{h\in [0, k-1]}$，对任意$h\in [0, k-1]$, $J_h \in [0, b-1]$，令$E_k$为该族的字典式乘积，令$r$为$(r_h)_{h\in [0, k-1]}$，则映射$r\to \sum\limits_{h\in [0, k-1]}r_hb^{k-h-1}$为$E_k$到$[0, b^k-1]$的同构．
+				令$b$、$k$、$h$为自然数，$b>1$、$k>0$，$(J_h)_{h\in [0, k-1]}$，对任意$h\in [0, k-1]$, $J_h \in [0, b-1]$，令$E_k$为该族的字典式乘积，令$r$为$(r_h)_{h\in [0, k-1]}$，则映射$r\mapsto \sum\limits_{h\in [0, k-1]}r_hb^{k-h-1}$为$E_k$到$[0, b^k-1]$的同构．
 			\end{theo}
 			证明：
 			\par
@@ -10539,7 +10539,7 @@
 			\par
 			如果命题对$k$成立，令$E_k$到$[0, b^k-1]$的映射为$f$：
 			\par
-			令$(r_h)_{h\in [0, k]}\in E_{k+1}$，则$\sum\limits_{h\in [0, k]}r_hb^{k-h}\leq r_0b^k+b^k-1$，由于$r_0+1\leq b$，故$\sum\limits_{h\in [0, k]}r_hb^{k-h}<b^{k+1}-1$，即$r\to \sum\limits_{h\in [0, k]}r_hb^{k-h}$为$E_{K+1}$到$[0, b^{k+1}-1]$的映射，设该映射为$g$．
+			令$(r_h)_{h\in [0, k]}\in E_{k+1}$，则$\sum\limits_{h\in [0, k]}r_hb^{k-h}\leq r_0b^k+b^k-1$，由于$r_0+1\leq b$，故$\sum\limits_{h\in [0, k]}r_hb^{k-h}<b^{k+1}-1$，即$r\mapsto \sum\limits_{h\in [0, k]}r_hb^{k-h}$为$E_{K+1}$到$[0, b^{k+1}-1]$的映射，设该映射为$g$．
 			\par
 			对于$r\in E_{k+1}$（$r=(r_h)_{h\in [0, k]}$），$r'\in E_{k+1}$（$r'=({r'}_h)_{h\in [0, k]}$），令$s=(r_{i+1})_{i\in [0, k-1]}$，$s'=({r'}_{i+1})_{i\in [0, k-1]}$，则$g(r)=r_0b^k+f(s)$，$g(r')={r'}_0b^k+f(s')$：
 			\par
@@ -10601,7 +10601,7 @@
 			\par
 			设命题对$m$成立，考虑$m+1$：
 			\par
-			设$a\in A$，令$A'=A-\{a\}$．$F$为$A$到$B$的单射，$F'$为$A'$到$B$的单射，$g$为映射$f\to f'|A$，由于$f(a)\in B-f'(A')$，其元素数目为$n-m$，故对任意$f'$，$g^{-1}\langle f'\rangle$的元素数目为$n-m$，根据定理\ref{theo142}，$F$的数目为$(n!/(n-m)!)\cdot (n-m)$，得证．
+			设$a\in A$，令$A'=A-\{a\}$．$F$为$A$到$B$的单射，$F'$为$A'$到$B$的单射，$g$为映射$f\mapsto f'|A$，由于$f(a)\in B-f'(A')$，其元素数目为$n-m$，故对任意$f'$，$g^{-1}\langle f'\rangle$的元素数目为$n-m$，根据定理\ref{theo142}，$F$的数目为$(n!/(n-m)!)\cdot (n-m)$，得证．
 			
 			\begin{theo}\label{theo144}
 				\hfill\par
@@ -10679,7 +10679,7 @@
 			\par
 			令$E$的元素数目为$n+1$，其中一个元素为$a$，令$E'=E-\{a\}$，$F$为$E$的元素数目为$p+1$的子集的集合，$G$为$E'$的元素数目为$p$或$p+1$的子集的集合．
 			\par
-			对任意$A\in F$，$A\cap E'\in G$，因此，$A\to A\cap E'$为$F$到$G$的映射，令其为$f$；且对任意$B\in G$，如果$B$的元素数目为$p$，则$f(B\cup\{a\})=B$，如果B的元素数目为$p+1$，则$f(B)=B$．令$A\neq A'$，如果$a\notin A$、$a\notin A'$，则$f(A)=A$，$f(A')=A'$，$f(A)\neq f(A')$；如果$a\in A$、$a\in A'$，则$f(A)=A-\{a\}$，$f(A')=A'-\{a\}$，$f(A)\neq f(A')$；如果$a\in A$、$a\notin A'$，则$f(A)$元素数目为$p$，$f(A')$元素数目为$p+1$，$f(A)\neq f(A')$ ；如果$a\in A'$、$a\notin A$，同理$f(A)\neq f(A')$．
+			对任意$A\in F$，$A\cap E'\in G$，因此，$A\mapsto A\cap E'$为$F$到$G$的映射，令其为$f$；且对任意$B\in G$，如果$B$的元素数目为$p$，则$f(B\cup\{a\})=B$，如果B的元素数目为$p+1$，则$f(B)=B$．令$A\neq A'$，如果$a\notin A$、$a\notin A'$，则$f(A)=A$，$f(A')=A'$，$f(A)\neq f(A')$；如果$a\in A$、$a\in A'$，则$f(A)=A-\{a\}$，$f(A')=A'-\{a\}$，$f(A)\neq f(A')$；如果$a\in A$、$a\notin A'$，则$f(A)$元素数目为$p$，$f(A')$元素数目为$p+1$，$f(A)\neq f(A')$ ；如果$a\in A'$、$a\notin A$，同理$f(A)\neq f(A')$．
 			\par
 			综上，$f$是$F$到$G$的双射．得证．
 			
@@ -10727,7 +10727,7 @@
 			\par
 			设$g$为$[1, h]$到$E$的双射．
 			\par
-			对于$E$到$[0, n]$且满足$\sum\limits_{x\in E}u(x)\leq n$的映射$u$，定义$f_u$如下：$f_u(1)=u(g(1))+1$，当$1\leq i\text{与}i\leq h-1$时，$f_u(i+1)=f_u(i)+1+u(g(i+1))$；则$f_u$为$[1, h]$到$[1, n+h]$的严格单增映射．根据定义可证$u\to f_u$为双射，故$u$的集合的元素数目为$\binom{n+h}{n}$．
+			对于$E$到$[0, n]$且满足$\sum\limits_{x\in E}u(x)\leq n$的映射$u$，定义$f_u$如下：$f_u(1)=u(g(1))+1$，当$1\leq i\text{与}i\leq h-1$时，$f_u(i+1)=f_u(i)+1+u(g(i+1))$；则$f_u$为$[1, h]$到$[1, n+h]$的严格单增映射．根据定义可证$u\mapsto f_u$为双射，故$u$的集合的元素数目为$\binom{n+h}{n}$．
 			\par
 			满足$\sum\limits_{x\in E}u(x)=n$的$u$的集合的元素数目为$\binom{n+h}{n}-\binom{n+h-1}{n-1}$，故等于$\binom{n+h-1}{h-1}$．
 			
@@ -10914,7 +10914,7 @@
 				令$q_{n,k}$为$[1, k]$到$[1, n]$的满足下列条件的严格单增映射u的数目：
 				对任意奇数（或偶数）$x\in [1, k]$，$u(x)$为偶数（或奇数），则$q_{n,k}=C([(n+k)/2], k)$．
 			\end{exer}
-			证明：令$u'(x)=u(x)+x$，则$u\to u'$为双射，故所求映射数目等于$[1, k]$到$[1, n+k]$中的偶数组成的集合的映射数目，得证．
+			证明：令$u'(x)=u(x)+x$，则$u\mapsto u'$为双射，故所求映射数目等于$[1, k]$到$[1, n+k]$中的偶数组成的集合的映射数目，得证．
 			
 			\begin{exer}\label{exer148}
 				\hfill\par
@@ -10928,7 +10928,7 @@
 			\end{exer}
 			证明：
 			\par
-			（1）长度为$2n-2$的字符串，其中$n-1$个符号为$f$（权重为$2$）、$n-1$个符号为$g$（权重为$0$），其数目为$\binom{2n-2}{n-1}$)；而其中“不合法”即存在$m<n-1$，使前$m$个字符权重之和小于$m$，对任意不合法的字符串$S$，对其中满足条件的最小$m$，从$m+1$个字符开始，将$f$和$g$调换，则得到长度$2n-2$的字符串$S'$，其中$n-2$个符号为$f$，$n$个符号位$g$．$S\to S'$为双射，故“合法”的字符串为$\binom{2n-2}{n-1}-\binom{2n-2}{n-2}=\binom{2n-2}{n-1}/n$，因此$u_n=(2n-2)!/(n-1)!$，因此$u_{n+1}=(4n-2)u_n$，用数学归纳法可证当$n\geq 2$时，$u_n=\mathop{\mathsf{P}}\limits_{i\in [2, n]}(4n-6)$．
+			（1）长度为$2n-2$的字符串，其中$n-1$个符号为$f$（权重为$2$）、$n-1$个符号为$g$（权重为$0$），其数目为$\binom{2n-2}{n-1}$)；而其中“不合法”即存在$m<n-1$，使前$m$个字符权重之和小于$m$，对任意不合法的字符串$S$，对其中满足条件的最小$m$，从$m+1$个字符开始，将$f$和$g$调换，则得到长度$2n-2$的字符串$S'$，其中$n-2$个符号为$f$，$n$个符号位$g$．$S\mapsto S'$为双射，故“合法”的字符串为$\binom{2n-2}{n-1}-\binom{2n-2}{n-2}=\binom{2n-2}{n-1}/n$，因此$u_n=(2n-2)!/(n-1)!$，因此$u_{n+1}=(4n-2)u_n$，用数学归纳法可证当$n\geq 2$时，$u_n=\mathop{\mathsf{P}}\limits_{i\in [2, n]}(4n-6)$．
 			\par
 			（2）根据习题\ref{exer148}（1）可证．
 			
@@ -11163,7 +11163,7 @@
 				\hfill\par
 				$Card(N\times N)=Card(N)$．
 			\end{theo}
-			证明：考虑映射$(m, n)\to (m+n)(m+n)+m$，如果$(m'+n')(m'+n')+m'=(m+n)(m+n)+m$，假设$m'+n'>m+n$，则$(m'+n')(m'+n')\geq (m+n+1)(m+n+1)$，故$(m'+n')(m'+n')>(m+n)(m+n)+m$，矛盾；同理$m'+n'<m+n$也矛盾，故$m'+n'=m+n$，因此$m=m'$，$n=n'$，故该映射为$N\times N$到$N$的单射．故$Card(N\times N)\leq Card(N)$．考虑映射$n\to (n, 0)$，其为$N$到$N\times N$的单射．故$Card(N)\leq Card(N\times N)$．得证．
+			证明：考虑映射$(m, n)\mapsto (m+n)(m+n)+m$，如果$(m'+n')(m'+n')+m'=(m+n)(m+n)+m$，假设$m'+n'>m+n$，则$(m'+n')(m'+n')\geq (m+n+1)(m+n+1)$，故$(m'+n')(m'+n')>(m+n)(m+n)+m$，矛盾；同理$m'+n'<m+n$也矛盾，故$m'+n'=m+n$，因此$m=m'$，$n=n'$，故该映射为$N\times N$到$N$的单射．故$Card(N\times N)\leq Card(N)$．考虑映射$n\mapsto (n, 0)$，其为$N$到$N\times N$的单射．故$Card(N)\leq Card(N\times N)$．得证．
 
 			\begin{theo}\label{theo156}
 				\hfill\par
@@ -11288,7 +11288,7 @@
 			\end{theo}
 			证明：令$F_n$为$E$的元素数目为$n$的子集的集合，对任意$X\in F_n$，均存在$[1, n]$到$X$的双射，则$F_n$的基数小于等于区间$[1, n]$到$E$的映射数目，即$(Card(E))^n$，等于$Card(E)$．因此\\$Card(F)\leq Card(E)Card(N)$，等于$Card(E)$；
 			\par
-			另一方面，$x\to \{x\}$是$E$到$F$的映射，故$Card(E) \leq Card(F)$，得证．
+			另一方面，$x\mapsto \{x\}$是$E$到$F$的映射，故$Card(E) \leq Card(F)$，得证．
 			
 			\begin{theo}\label{theo166}
 				\hfill\par
@@ -11382,9 +11382,9 @@
 			\par
 			令$a\in F$，对任意$A\subset E$且$Card(A)=Card(E)$，设$A$到$F-\{a\}$的双射为$f$，当$x\in A时$，$g(x)=f(x)$，当$x\in E-A$时，$g(x)=a$，则$g$是$E$到$F$的满射，根据补充定理\ref{cor337}（2），以上映射的集合，势为$\mathcal{P}(F)$．
 			\par
-			（4）	对任意$X$，如果$X\subset F\text{与}Card(X)=E$，则存在$E$到$X$的双射$f$，则$f$在$F$上的延拓，是$F^E$的元素，故$Card(\{X|X\subset F\text{与}Card(X)=E\})\leq Card(F^E)$．反过来，任意$E$到$F$的映射，对应$x\to (x, f(x))$，其函数图是$E\times E\times F$的子集且势为$Card(E)$，根据定理\ref{theo160}，$Card(E\times E\times F)=Card(F)$，故$Card(\{X|X\subset F\text{与}Card(X)=E\})\geq Card(F^E)$，得证．
+			（4）	对任意$X$，如果$X\subset F\text{与}Card(X)=E$，则存在$E$到$X$的双射$f$，则$f$在$F$上的延拓，是$F^E$的元素，故$Card(\{X|X\subset F\text{与}Card(X)=E\})\leq Card(F^E)$．反过来，任意$E$到$F$的映射，对应$x\mapsto (x, f(x))$，其函数图是$E\times E\times F$的子集且势为$Card(E)$，根据定理\ref{theo160}，$Card(E\times E\times F)=Card(F)$，故$Card(\{X|X\subset F\text{与}Card(X)=E\})\geq Card(F^E)$，得证．
 			\par
-			（5）	根据定义，$Card(\{f|f\text{为}E\text{到}F\text{的单射}\})\leq Card(F^E)$．反过来，对任意$E$到$F$的映射，对应$x\to (x, f(x))$，是$E$到$E\times F$的单射．得证．
+			（5）	根据定义，$Card(\{f|f\text{为}E\text{到}F\text{的单射}\})\leq Card(F^E)$．反过来，对任意$E$到$F$的映射，对应$x\mapsto (x, f(x))$，是$E$到$E\times F$的单射．得证．
 			\par
 			（6）	令$Card(\{X|X\subset F\text{与}Card(X)=m\})=A$，根据定理\ref{theo165}，$A\leq E$，同时，令$B$为$E$的子集，且$Card(B)=m-1$，则$Card(E-B)=Card(E)$．且对任意$x\in E-B$，$Card(B\cup\{x\})=m$，故$A\geq E$，得证．
 			\par
@@ -11532,7 +11532,7 @@
 				\hfill\par
 				令$a$为序数：
 				\par
-				（1）$O'(a)=\{x|x\text{为序数}\text{与}x\leq a\}$，$W'(a)=\{x|x\text{为无穷基数}\text{与}x\leq \aleph_a\}$，则映射$x\to \aleph_x(x\in O'(a))$为$O'(a)$到$W'(a)$的同构．
+				（1）$O'(a)=\{x|x\text{为序数}\text{与}x\leq a\}$，$W'(a)=\{x|x\text{为无穷基数}\text{与}x\leq \aleph_a\}$，则映射$x\mapsto \aleph_x(x\in O'(a))$为$O'(a)$到$W'(a)$的同构．
 				\par
 				（2）$a\leq \omega_a$．
 				\par
@@ -11921,7 +11921,7 @@
 				\par
 				（7）$a$为无穷序数，如果$a$没有前导，则$a$的共尾性是无穷序数．
 				\par
-				（8）$b$为序数，$I=\{y|y\text{为序数}\text{与}y<b\}$，$(x_i)_{i\in I}$为序数族，且$x\to x_i$为单增函数，则$\mathop{sup}\limits_{i\in I}(x_i)$的共尾性小于等于$b$，
+				（8）$b$为序数，$I=\{y|y\text{为序数}\text{与}y<b\}$，$(x_i)_{i\in I}$为序数族，且$x\mapsto x_i$为单增函数，则$\mathop{sup}\limits_{i\in I}(x_i)$的共尾性小于等于$b$，
 				\par
 				（9）$b$为序数，$I=\{y|y\text{为序数}\text{与}y<b\}$，$(x_i)_{i\in I}$为序数族，则$\sum\limits_{i\in I}x_i$的共尾性小于等于$b$，
 			\end{cor}
@@ -11943,7 +11943,7 @@
 			\par
 			（8）令$a=\mathop{sup}\limits_{i\in I}(x_i)$，$O_a=\{x|x\text{为序数}\text{与}x<a\}$，$A=\bigcup\limits_{i\in I}x_i$，则根据补充定理\ref{cor253}（1），$Ord(O_a)=a$，$Ord(I)=b$．且$A$是$(O_a)$的共尾子集．
 			\par
-			同时，令$g$为映射$i\to x_i$，$f$为映射$y\to (g^{-1}\langle y \rangle \text{的最小元})$，则$f$为$A$到$I$的子集的同构，故$Ord(A)\geq b$，得证．
+			同时，令$g$为映射$i\mapsto x_i$，$f$为映射$y\mapsto (g^{-1}\langle y \rangle \text{的最小元})$，则$f$为$A$到$I$的子集的同构，故$Ord(A)\geq b$，得证．
 			\par
 			（9）根据补充定理\ref{cor371}（8）可证．
 			
@@ -12084,7 +12084,7 @@
 			\par
 			根据定理\ref{theo85}，$Ord(S_{n_f})< \omega_{a+1}$，故$Card(S_{n_f})<\aleph_a$．因此$Card(S_{n_f})\leq \aleph_a$．
 			\par
-			令映射$g$为$f\to n_f$，对任意$p\in \aleph_{a+1}$，$Card(g^{-1}\langle p \rangle=			)=Card(S_{n_f})^m$，因此\\$Card(g^{-1}\langle p \rangle)\\={\aleph_a}^m$．
+			令映射$g$为$f\mapsto n_f$，对任意$p\in \aleph_{a+1}$，$Card(g^{-1}\langle p \rangle=			)=Card(S_{n_f})^m$，因此\\$Card(g^{-1}\langle p \rangle)\\={\aleph_a}^m$．
 			\par
 			因此，$m$到$\aleph_{a+1}$的映射$f$的数目，小于等于${\aleph_a}^m\aleph_{a+1}$．
 			\par
@@ -12104,11 +12104,11 @@
 			
 			\begin{cor}\label{cor383}
 				\hfill\par
-				$a$、$b$为序数，$a$没有前导，$x\to s_x$为$[0, \omega_b[$到$[0, a[$的严格单增映射，且$\mathop{sup}\limits_{x\in [0, \omega_b[}s_x=a$，则${\aleph_a}^{\aleph_b}=\mathop{\mathsf{P}}\limits_{x\in [0, \omega_b[}\aleph_{s_x}$．
+				$a$、$b$为序数，$a$没有前导，$x\mapsto s_x$为$[0, \omega_b[$到$[0, a[$的严格单增映射，且$\mathop{sup}\limits_{x\in [0, \omega_b[}s_x=a$，则${\aleph_a}^{\aleph_b}=\mathop{\mathsf{P}}\limits_{x\in [0, \omega_b[}\aleph_{s_x}$．
 			\end{cor}
 			证明：
 			\par
-			$x\to s_x$为$[0, \omega_b[$到$[0, a[$的严格单增映射，故$[0, a[\neq \varnothing$，因此$a$为无穷序数．同时，对任意$x\in [0, \omega_b[$、$y\in [0, \omega_b[$、$x\neq y$、均有$s_x\neq s_y$．
+			$x\mapsto s_x$为$[0, \omega_b[$到$[0, a[$的严格单增映射，故$[0, a[\neq \varnothing$，因此$a$为无穷序数．同时，对任意$x\in [0, \omega_b[$、$y\in [0, \omega_b[$、$x\neq y$、均有$s_x\neq s_y$．
 			\par
 			对任意$[0, \omega_b[$到$[0, \omega_a[$的映射$f$，用通过超限归纳法定义$[0, \omega_b[$到$[0, \omega_b[$的映射$h_f$：
 			\par
@@ -12118,7 +12118,7 @@
 			\par
 			故$h_f$为单射．
 			\par
-			令$g$为映射$f\to h_f(f\in \mathcal{F}([0, \omega_b[; [0, \omega_a[, h_f\in \mathcal{F}([0, \omega_b[); [0, \omega_b[))$，
+			令$g$为映射$f\mapsto h_f(f\in \mathcal{F}([0, \omega_b[; [0, \omega_a[, h_f\in \mathcal{F}([0, \omega_b[); [0, \omega_b[))$，
 			\par
 			对任意$t\in [0, \omega_b[$，$Card([0, \omega_{s_{h_f(t)}}])=\aleph{s_{h_f(t)}}+1$，等于$\aleph{s_{h_f(t)}}$，则对任意$u\in\\\mathcal{F}([0, \omega_b[; [0, \omega_b[)$，$g^{-1}\langle z\rangle=\mathop{\mathsf{P}}\limits_{t\in [0, \omega_b[}\aleph_{s_{h_t}}$，小于等于$\mathop{\mathsf{P}}\limits_{x\in [0, \omega_b[}\aleph_{s_x}$，
 			\par			
@@ -12488,7 +12488,7 @@
 			\end{exer}
 			证明：
 			\par
-			设$a\neq b$，则$Card(E\times \{a\}\cup E\times \{b\})=E$，设$f$为$(E\times \{a\})\cup (E\times \{b\})$到$E$的双射，令$g$为$X\to f\langle (X\times \{a\})\bigcup\limits_(E\times \{b\})\rangle (X\in \mathcal{P}(E))$，
+			设$a\neq b$，则$Card(E\times \{a\}\cup E\times \{b\})=E$，设$f$为$(E\times \{a\})\cup (E\times \{b\})$到$E$的双射，令$g$为$X\mapsto f\langle (X\times \{a\})\bigcup\limits_(E\times \{b\})\rangle (X\in \mathcal{P}(E))$，
 			\par
 			由于$Card((X\times \{a\})\cup(E\times \{b\}))=Card(E)$，故$Card f\langle (X\times \{a\})\bigcup\limits_(E\times \{b\})\rangle)=Card(E)$，因此$g$为$\mathcal{P}(E)$到$\{X|X\subset E\text{与}Card(X)=Card(E)\}$的单射，故$Card(\{X|X\subset E\text{与}\\Card(X)=Card(E)\}\geq Card(\mathcal{P}(E))$，得证，
 			
@@ -12502,7 +12502,7 @@
 			\par
 			由于$H\subset F$，故$Card(F)\geq Card(\mathcal{P}(E))$．
 			\par
-			反过来，令$f$为$X\to \{\{x, y\}|x=y\text{与}x\in X\}$，则$f(X)\subset E\times E$，故$Card(F)\leq Card(\mathcal{P}(E\times E))$，即$Card(F)\leq Card(\mathcal{P}(E))$，得证．
+			反过来，令$f$为$X\mapsto \{\{x, y\}|x=y\text{与}x\in X\}$，则$f(X)\subset E\times E$，故$Card(F)\leq Card(\mathcal{P}(E\times E))$，即$Card(F)\leq Card(\mathcal{P}(E))$，得证．
 			
 			\begin{exer}\label{exer160}
 				\hfill\par
@@ -12564,7 +12564,7 @@
 				\par
 				令$a$为序数，$O'(a)=\{x|x\text{为序数}\text{与}x\leq a\}$，$W'(a)=\{x|x\text{为无穷基数}\text{与}x\leq \aleph_a\}$，则：
 				\par
-				映射$x\to \aleph_x(x\in O'(a))$为$O'(a)$到$W'(a)$的同构；
+				映射$x\mapsto \aleph_x(x\in O'(a))$为$O'(a)$到$W'(a)$的同构；
 				\par
 				特别是，令$a$为序数，则$(\forall x)(x\text{为基数}\Rightarrow x\leq \aleph_a\text{或}x\geq \aleph_a+1)$．
 				\par
@@ -12787,7 +12787,7 @@
 			
 			\begin{exer}\label{exer174}
 				\hfill\par
-				（1）$a$、$b$为序数，$a$没有前导，$x\to s_x$为$[0, \omega_b[$到$[0, a[$的严格单增映射，且$\mathop{sup}\limits_{x\in [0, \omega_b[}s_x=a$，求证：$\aleph_a\aleph_b=\mathop{\mathsf{P}}\limits_{x\in [0, \omega_b[}\aleph_{s_x}$．
+				（1）$a$、$b$为序数，$a$没有前导，$x\mapsto s_x$为$[0, \omega_b[$到$[0, a[$的严格单增映射，且$\mathop{sup}\limits_{x\in [0, \omega_b[}s_x=a$，求证：$\aleph_a\aleph_b=\mathop{\mathsf{P}}\limits_{x\in [0, \omega_b[}\aleph_{s_x}$．
 				\par
 				（2）$a$、$a'$为序数，令$\omega_{a'}$为$\omega_a$的共尾性，则${\aleph_a}^{\aleph_{a'}}>\aleph_a$．并且，令$c$为序数，如果存在基数$n$使$\aleph_a=n^{\aleph_c}$，则$c<a'$．
 				\par
@@ -12983,9 +12983,9 @@
 				\par
 				对任意$a\in E$，$a$可以表示为$\mathop{sup}\limits_{i\in [1, n]}e_i$，其中，$n$为自然数，并且，对任意$i\in [1, n]$，$e_i$为$E$\\的不可约元素．
 				\par
-				$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，则$x\to S(x)$为$E$到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(inf(x, y))=S(x)\cap S(y)$．
+				$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，则$x\mapsto S(x)$为$E$到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(inf(x, y))=S(x)\cap S(y)$．
 				\par
-				$E$为分配格，$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，则$x\to S(x)$为$E$\\到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(sup(x, y))=S(x)\cup S(y)$；同时，令$J^*$为按在$J$上的偏序关系的相反关系排序的偏序集，$I=\{0, 1\}$，$A(J^*, I)$为$J^*$到$I$的单增映射的集合，按$f\in A(J^*, I)\text{与}g\in A(J^*, I)\text{与}(\forall x)(x\in J^*\Rightarrow f(x)\leq g(x))$排序,则$E$同构于$A(J^*, I)$．
+				$E$为分配格，$J$为其不可约元素集合．令$S(x)=\{y|y\in J\text{与}y\leq x\}$，则$x\mapsto S(x)$为$E$\\到按包含关系排序的$\mathcal{P}(J)$的一个子集的同构，并且，$S(sup(x, y))=S(x)\cup S(y)$；同时，令$J^*$为按在$J$上的偏序关系的相反关系排序的偏序集，$I=\{0, 1\}$，$A(J^*, I)$为$J^*$到$I$的单增映射的集合，按$f\in A(J^*, I)\text{与}g\in A(J^*, I)\text{与}(\forall x)(x\in J^*\Rightarrow f(x)\leq g(x))$排序,则$E$同构于$A(J^*, I)$．
 				\par
 				$E$为分配格，$J$为其不可约元素集合．$a$为$E$的最小元，$P=J-\{a\}$．令$A=\\\{a|(\exists X)((X\text{为}P\text{的自由子集})\text{与}Card(X)=a)\}$，$A$的最大元为$n$，则$E$同构于全序集有限族的乘积的某个内部格．
 			\end{exer}
@@ -13092,7 +13092,7 @@
 				\par
 				$I$为预序集，$((E_a)_{a\in I}, (f_{ab})_{a\in I\text{与}b\in I\text{与}a\leq b})$为关于$I$的集合射影系统，$J$为$I$的预序子集，则\\$((E_a)_{a\in J}, (f_{ab})_{a\in J\text{与}b\in J\text{与}a\leq b})$称为通过将指标集限制在$J$上得到的集合射影系统．
 				\par
-				令$(E_a)_{a\in I}$对于$(f_{ab})_{a\in I\text{与}b\in I\text{与}a\leq b}$的射影极限为$E$，为$(E_a){a\in J}$对于$(f_{ab})_{a\in J\text{与}b\in J\text{与}a\leq b}$的射影极限为$E'$，对任意$a\in I$，$E$到$E_a$的规范映射为$f_a$，则函数$x\to (f_a(x))_{a\in J}$称为$E$到$E'$的规范映射．
+				令$(E_a)_{a\in I}$对于$(f_{ab})_{a\in I\text{与}b\in I\text{与}a\leq b}$的射影极限为$E$，为$(E_a){a\in J}$对于$(f_{ab})_{a\in J\text{与}b\in J\text{与}a\leq b}$的射影极限为$E'$，对任意$a\in I$，$E$到$E_a$的规范映射为$f_a$，则函数$x\mapsto (f_a(x))_{a\in J}$称为$E$到$E'$的规范映射．
 			\end{de}
 			
 			\begin{cor}\label{cor416}
@@ -13198,9 +13198,9 @@
 				\hfill\par
 				$I$、$L$均为预序集，$I\times L$的预序关系为$(x\in I\times L\text{与}y\in I\times L\text{与}pr_1x\leq pr_1y\text{与}pr_2x\leq pr_2y)$，$(E_a^x, f_{ab}^{xy})$为关于$I\times L$的集合射影系统，令$\prod\limits_{(a, x)\in I\times L}E_a^x$到$\prod\limits_{x\in L}(\prod\limits_{a\in I}E_a^x)$的规范映射为$f$，$\prod\limits_{(a, x)\in I\times L}E_a^x$到$\prod\limits_{a\in I}(\prod\limits_{x\in L}E_a^x)$的规范映射为$g$，则$f$在$(\lim\limits_{\gets a, x}E_a^x)$上的限制为$(\lim\limits_{\gets a, x}E_a^x)$到$\lim\limits_{\gets x}(\lim\limits_{\gets a}E_a^x)$\\的双射；$g$在$(\lim\limits_{\gets a, x}E_a^x)$上的限制为$(\lim\limits_{\gets a, x}E_a^x)$到$\lim\limits_{\gets a}(\lim\limits_{\gets x}E_a^x)$的双射．
 			\end{theo}
-			证明：令$g^{xy}= \lim\limits_{\gets a}f_{aa}^{xy}$，$F^x=\lim\limits_{\gets a}E_a^x$，$F= \lim\limits_{\gets x}F^x$，$G=\lim\limits_{\gets a, x}E_a^x$．根据定理\ref{theo46}，$f$为$h\to (pr_{I\times \{x\}}h)_{x\in L}$．
+			证明：令$g^{xy}= \lim\limits_{\gets a}f_{aa}^{xy}$，$F^x=\lim\limits_{\gets a}E_a^x$，$F= \lim\limits_{\gets x}F^x$，$G=\lim\limits_{\gets a, x}E_a^x$．根据定理\ref{theo46}，$f$为$h\mapsto (pr_{I\times \{x\}}h)_{x\in L}$．
 			\par
-			对任意$u\in F$，如果$x\leq y$，则$pr_xu=g^{xy}(pr_yu)$；如果$a\leq b$，则$pr_a(pr_xu)=\\f_{ab}^{xy}(pr_b(pr_yu))$．由于$h\to (pr_{I\times \{x\}}h)_{x\in L}$为双射，故令$u=(pr_{I\times \{x\}}u')_{x\in L}$，则$pr_{(a, x)}u'=\\f_{ab}^{xy}(pr_{(b, y)}u')$．故$u'\in G$．
+			对任意$u\in F$，如果$x\leq y$，则$pr_xu=g^{xy}(pr_yu)$；如果$a\leq b$，则$pr_a(pr_xu)=\\f_{ab}^{xy}(pr_b(pr_yu))$．由于$h\mapsto (pr_{I\times \{x\}}h)_{x\in L}$为双射，故令$u=(pr_{I\times \{x\}}u')_{x\in L}$，则$pr_{(a, x)}u'=\\f_{ab}^{xy}(pr_{(b, y)}u')$．故$u'\in G$．
 			\par
 			反过来，如果$u'\in G$，且$a\leq b$、$x\leq y$，则$pr_{(a, x)}u'=f_{ab}^{xy}(pr_{(b, y)}u')$，令$u=\\(pr_{I\times \{x\}}u')_{x\in L}$，因此$pr_a(pr_xu)=f_{ab}^{xy}(pr_b(pr_yu))$，因此，对任意$a\in I$，$pr_a(pr_xu)=\\pr_a(g^{xy}(pr_yu))$，故$pr_xu= g^{xy}(pr_yu)$，因此$u\in F$．故$f$的限制为双射．
 			\par
@@ -13298,7 +13298,7 @@
 				第二，$f_{aa}=Id_{E_a}$，
 				则$(E_a)_{a\in I}$, $(f_{ba})_{a\in I\text{与}b\in I\text{与}a\leq b)}$称为关于$I$的集合归纳系统，在没有歧义的情况下可以简记为$((E_a), (f_{ba}))$或$(E_a, f_{ba})$．
 				\par
-				令$G$为集族$(E_a)_{a\in I}$的和，令$R$为等价关系$x\in G\text{与}y\in G \text{与}(\exists c)(c\in I\text{与}c\geq pr_2x\text{与}c\geq pr_2y\text{与}f_{c\ pr_2x}(pr_1x)= f_{c\ pr_2y}(pr_1y)$，则称商集$G/R$为集族$(E_a)_{a\in I}$对于函数族$(f_{ba})_{a\in I\text{与}b\in I\text{与}a\leq b}$\\的归纳极限，记作$\lim\limits_{\to a}(E_a, f_{ba})$，在没有歧义的情况下可以简记为$\lim\limits_\to (E_a, f_{ba})$或$\lim\limits_\to E_a$．令$f$为\\$G$到$E/R$的规范映射，$g_a$为映射$x\to (x, a)(x\in E_a)$，则映射$f\circ g_a$称为$E_a$到$\lim\limits_\to E_a$的规范映射．
+				令$G$为集族$(E_a)_{a\in I}$的和，令$R$为等价关系$x\in G\text{与}y\in G \text{与}(\exists c)(c\in I\text{与}c\geq pr_2x\text{与}c\geq pr_2y\text{与}f_{c\ pr_2x}(pr_1x)= f_{c\ pr_2y}(pr_1y)$，则称商集$G/R$为集族$(E_a)_{a\in I}$对于函数族$(f_{ba})_{a\in I\text{与}b\in I\text{与}a\leq b}$\\的归纳极限，记作$\lim\limits_{\to a}(E_a, f_{ba})$，在没有歧义的情况下可以简记为$\lim\limits_\to (E_a, f_{ba})$或$\lim\limits_\to E_a$．令$f$为\\$G$到$E/R$的规范映射，$g_a$为映射$x\mapsto (x, a)(x\in E_a)$，则映射$f\circ g_a$称为$E_a$到$\lim\limits_\to E_a$的规范映射．
 			\end{de}
 			
 			\begin{cor}\label{cor423}
@@ -13317,7 +13317,7 @@
 			\end{cor}
 			证明：
 			\par
-			（1）根据补充证明规则\ref{Ccor35}，$G$到$E$的规范映射$f$为满射，因此存在$y\in G$，使$f(y)=x$．令$y=(z, a)$，则$a\in I$、$z\in E_a$，令$g_a$为映射$x\to (x, a)(x\in E_a)$，则$g_a(z) =y$，故$f(g_a(z))=x$，得证．
+			（1）根据补充证明规则\ref{Ccor35}，$G$到$E$的规范映射$f$为满射，因此存在$y\in G$，使$f(y)=x$．令$y=(z, a)$，则$a\in I$、$z\in E_a$，令$g_a$为映射$x\mapsto (x, a)(x\in E_a)$，则$g_a(z) =y$，故$f(g_a(z))=x$，得证．
 			\par
 			（2）对任意$x\in E_a$，$f_a(x)\in E$；反过来，对任意$x\in E$，根据补充定理\ref{cor424}（1），存在$a\in I$、$z\in E_a$，使$f_a(z)=x$．得证．
 			
@@ -13325,7 +13325,7 @@
 				\hfill\par
 				$((E_a)_{a\in I}, (f_{ba})_{a\in I\text{与}b\in I\text{与}a\leq b})$为关于$I$的集合归纳系统，$E=\lim\limits_\to (E_a, f_{ba})$，对任意$a\in I$，令$E_a$到$E$的规范映射为$f_a$，则对任意$a\in I$、$x\in E$、$y\in E$，如果$f_a(x)=f_a (y)$，则$(\exists b)(b\in I\text{与}b\geq a\text{与}f_{ba}(x)= f_{ba}(y))$．
 			\end{cor}
-			证明：令$g_a$为映射$x\to (x, a)(x\in E_a)$，则$f(g_a(x))=f(g_a(y))$，根据证明规则\ref{C55}，\\$(\exists b)(b\in I\text{与}b\geq a\text{与}f_{ba}(x)= f_{ba}(y))$．
+			证明：令$g_a$为映射$x\mapsto (x, a)(x\in E_a)$，则$f(g_a(x))=f(g_a(y))$，根据证明规则\ref{C55}，\\$(\exists b)(b\in I\text{与}b\geq a\text{与}f_{ba}(x)= f_{ba}(y))$．
 			
 			\begin{cor}\label{cor426}
 				\hfill\par
@@ -13359,7 +13359,7 @@
 			\end{theo}
 			证明：
 			\par
-			（1）令$G$到$E$的规范映射为$f$，$g_a$为映射$x\to (x, a)(x\in E_a)$，$F_a=g_a\langle E_a\rangle$，则 $v_a=u_a\circ {g_a}^{-1}$，故$v_a$为$F_a$到$F$的映射，令$v$为$G$到$F$的映射，且对任意$a\in I$，$v$在$F_a$上与$v_a$重合．令$R$为等价关系$x\in G\text{与}y\in G \text{与}(\exists c)(c\in I\text{与}c\geq pr_2x\text{与}c\geq pr_2y\text{与}f_{c\ pr_2x}(pr_1x)= f_{c\ pr_2y}(pr_1y)$，设$x\in F_a$，$y\in F_b$，如果$R$为真，则存在$c$，使$f_{ca}(pr_1x)=f_{cb}(pr_1y)$，由于$v_a=u_a\circ {g_a}^{-1}$，故$v_a(x)=u_a(pr_1x)$，因此$v(x)=u_c(f_{ca}(pr_1x))$，同理$v(y)=u_c(f_{cb}(pr_1y))$，因此$R\Rightarrow v(x)=v(y)$，因此$v$是同等价关系相容的映射，根据证明规则\ref{C57}，存在唯一的映射$u$，使$u\circ f=v$．由于$u_a=v\circ g_a$，$f_a=f\circ g_a$，因此$u_a=u\circ f_a$，得证．
+			（1）令$G$到$E$的规范映射为$f$，$g_a$为映射$x\mapsto (x, a)(x\in E_a)$，$F_a=g_a\langle E_a\rangle$，则 $v_a=u_a\circ {g_a}^{-1}$，故$v_a$为$F_a$到$F$的映射，令$v$为$G$到$F$的映射，且对任意$a\in I$，$v$在$F_a$上与$v_a$重合．令$R$为等价关系$x\in G\text{与}y\in G \text{与}(\exists c)(c\in I\text{与}c\geq pr_2x\text{与}c\geq pr_2y\text{与}f_{c\ pr_2x}(pr_1x)= f_{c\ pr_2y}(pr_1y)$，设$x\in F_a$，$y\in F_b$，如果$R$为真，则存在$c$，使$f_{ca}(pr_1x)=f_{cb}(pr_1y)$，由于$v_a=u_a\circ {g_a}^{-1}$，故$v_a(x)=u_a(pr_1x)$，因此$v(x)=u_c(f_{ca}(pr_1x))$，同理$v(y)=u_c(f_{cb}(pr_1y))$，因此$R\Rightarrow v(x)=v(y)$，因此$v$是同等价关系相容的映射，根据证明规则\ref{C57}，存在唯一的映射$u$，使$u\circ f=v$．由于$u_a=v\circ g_a$，$f_a=f\circ g_a$，因此$u_a=u\circ f_a$，得证．
 			\par
 			（2）当$F=\bigcup\limits_{a\in I}u_a(E_a)$时，对任意$x\in F$，存在$a\in I$、$z\in E_a$，使$x=u_a(z)$，因此$x=u(f_a(z))$，故$u$为满射．反过来，若$u$为满射，则对任意$x\in F$，存在$y\in E$使$x=u(y)$，根据补充定理\ref{cor424}（1），存在$a\in I$、$z\in E_a$，使$y=f_a(z)$，故$x=u_a(z)$，因此$x\in u_a(E_a)$．
 			\par
@@ -13546,7 +13546,7 @@
 			\par
 			根据补充定理\ref{cor416}可以证明$(F_i, g_{ij})$为关于I的集合射影系统．
 			\par
-			对任意$x\in E$，根据定义可证$((f_i(x))_{i\in J_j})_{j\in L}\in F$；反过来，对任意$y\in F$、$i\in L$、$j\in L$，如果$a\in J_i\cap J_j$，则$pr_a(pr_iy)=pr_a(pr_jy)$．令$x=(pr_a(pr_{\tau_i(i\in L\text{与}a\in J_i)}y))_{a\in I}$，对任意$a\in I$、$b\in I$，存在$i\in L$，使$a\in J_i$、$b\in J_i$，因此$f_{ab}(pr_b(pr_{\tau_i(i\in L\text{与}a\in J_i)}y))=pr_a(pr_{\tau_i(i\in L\text{与}a\in J_i)}y)$，故$x\in E$，因此，可定义$F$到$E$的规范双射为$y\to (pr_a(pr_{\tau_i(i\in L\text{与}a\in J_i)}y))_{a\in I}$．
+			对任意$x\in E$，根据定义可证$((f_i(x))_{i\in J_j})_{j\in L}\in F$；反过来，对任意$y\in F$、$i\in L$、$j\in L$，如果$a\in J_i\cap J_j$，则$pr_a(pr_iy)=pr_a(pr_jy)$．令$x=(pr_a(pr_{\tau_i(i\in L\text{与}a\in J_i)}y))_{a\in I}$，对任意$a\in I$、$b\in I$，存在$i\in L$，使$a\in J_i$、$b\in J_i$，因此$f_{ab}(pr_b(pr_{\tau_i(i\in L\text{与}a\in J_i)}y))=pr_a(pr_{\tau_i(i\in L\text{与}a\in J_i)}y)$，故$x\in E$，因此，可定义$F$到$E$的规范双射为$y\mapsto (pr_a(pr_{\tau_i(i\in L\text{与}a\in J_i)}y))_{a\in I}$．
 			
 			\begin{exer}\label{exer190}
 				\hfill\par
@@ -13558,7 +13558,7 @@
 				\hfill\par
 				$I$为预序集，$(E_a, f_{ab})$、$(F_a, g_{ab})$均为关于$I$的集合射影系统，映射族$(u_a)_{a\in I}$为$(E_a, f_{ab})$到\\$(F_a, g_{ab})$的映射射影系统．对任意$a\in I$，令$G_a$为$u_a$的图，$u=\lim\limits_\gets u_a$．求证：$(G_a)$为某个映射射影系统的集族，并给出其射影极限．
 			\end{exer}
-			证明：令$h_{ab}$为映射$(x, y)\to (f_{ab}(x), g_{ab}(y))$，则$(G_a, h_{ab})$为映射射影系统，其射影极限为$\bigcup\limits_{z\in u\text{的图}}\{(pr_i(pr_1z), pr_i(pr_2z))_{i\in I}\}$．
+			证明：令$h_{ab}$为映射$(x, y)\mapsto (f_{ab}(x), g_{ab}(y))$，则$(G_a, h_{ab})$为映射射影系统，其射影极限为$\bigcup\limits_{z\in u\text{的图}}\{(pr_i(pr_1z), pr_i(pr_2z))_{i\in I}\}$．
 			
 			\begin{exer}\label{exer192}
 				\hfill\par
@@ -13635,7 +13635,7 @@
 			\par
 			根据补充定理\ref{cor430}可以证明$(F_i, g_{j_i})$为关于$I$的集合归纳系统．
 			\par
-			令$G$为$(E_a)_{i\in I}$的和，其等价关系为$R$，$H$为$(F_i)_{i\in L}$的和，其等价关系为$S$．对任意$X\in F$，令关于$S$的等价类的代表为$K$，将指标集限制在$J_{pr_2k}$上得到的集合归纳系统的等价关系为$T$，$pr_1k$关于$T$的等价类的代表为$x$，$x$关于$R$的等价类为$G(x)$，则$X\to G(x)$为$F$到$E$的规范双射．			
+			令$G$为$(E_a)_{i\in I}$的和，其等价关系为$R$，$H$为$(F_i)_{i\in L}$的和，其等价关系为$S$．对任意$X\in F$，令关于$S$的等价类的代表为$K$，将指标集限制在$J_{pr_2k}$上得到的集合归纳系统的等价关系为$T$，$pr_1k$关于$T$的等价类的代表为$x$，$x$关于$R$的等价类为$G(x)$，则$X\mapsto G(x)$为$F$到$E$的规范双射．			
 			
 			\begin{exer}\label{exer195}
 				\hfill\par
@@ -13645,13 +13645,13 @@
 			\par
 			对任意$x\in E_a$、$y\in E_a$，如果$f_a(x)= f_a(y)$，则存在$c$使$f_{ac}(x)=f_{ac}(y)$．令$d=sup(b, c)$，则$f_{bd}(f_{ab}(x))=f_{bd}(f_{ab}(y))$，故$f_b(f_{ab}(x))=f_b(f_{ab}(y))$，因此，$f_{ba}$是同$R_a$和$R_b$相容的映射．
 			\par
-			设${f'}_{ba}(x)={f'}_{ba}(y)$，$x=f_a(u)$，$y=f_a(v)$，则$f_b(f_{ab}(u))= f_b(f_{ab}(v))$，故$f_a(u)=f_a(v)$，因此$x=y$，所以${f'}_{ba}$为单射．同时，根据定义可证$({E'}_a, {f'}_{ba})$为关于$I$的集合归纳系统．$x\to \bigcup\limits_{a\in I}\{pr_1(x\cap(E_a\times \{a\})\}\times \{a\}$为$E$到$\lim\limits_\to {E'}_a$的规范双射．			
+			设${f'}_{ba}(x)={f'}_{ba}(y)$，$x=f_a(u)$，$y=f_a(v)$，则$f_b(f_{ab}(u))= f_b(f_{ab}(v))$，故$f_a(u)=f_a(v)$，因此$x=y$，所以${f'}_{ba}$为单射．同时，根据定义可证$({E'}_a, {f'}_{ba})$为关于$I$的集合归纳系统．$x\mapsto \bigcup\limits_{a\in I}\{pr_1(x\cap(E_a\times \{a\})\}\times \{a\}$为$E$到$\lim\limits_\to {E'}_a$的规范双射．			
 			
 			\begin{exer}\label{exer196}
 				\hfill\par
 				$I$为右方有向集，$(E_a, f_{ba})$、$(F_a, g_{ba})$为关于$I$的集合归纳系统，映射族$(u_a)_{a\in I}$为$(E_a, f_{ba})$\\到$(F_a, g_{ba})$的映射归纳系统．对任意$a\in I$，令$G_a$为$u_a$的图，$u=\lim\limits_\to u_a$．求证：$(G_a)$为某个映射归纳系统的集族，并给出其归纳极限．
 			\end{exer}
-			证明：令$h_{ba}$为映射$(x, y)\to (f_{ba}(x), g_{ba}(y))$，则$(G_a, h_{ba})$为映射归纳系统，其归纳极限为$\bigcup\limits_z\in u\text{的图}\{\{(x, y)|x\in pr_1(pr_1z)\text{与}y=u_{pr_2(pr_1z)}(x)\}\}$．
+			证明：令$h_{ba}$为映射$(x, y)\mapsto (f_{ba}(x), g_{ba}(y))$，则$(G_a, h_{ba})$为映射归纳系统，其归纳极限为$\bigcup\limits_z\in u\text{的图}\{\{(x, y)|x\in pr_1(pr_1z)\text{与}y=u_{pr_2(pr_1z)}(x)\}\}$．
 					
 			\begin{exer}\label{exer197}
 				\hfill\par
@@ -13666,7 +13666,7 @@
 				\par
 				“$\text{存在自然数}n>0\text{以及}(x_i)_{i\in [0, n]}\text{（}(\forall i)(i\in [0, n]\Rightarrow x_i\in G)\text{），其中}x_0=x\text{，}x_n=y\text{，并且，}\text{对任意}i\in [0, n-1]\text{，}(x_{i+1}|y)(x_i|x)R\text{或}(x_i|y)(x_{i+1}|x)R\text{为真}$”．
 				\par
-				令E=G/R'，则称$E$为集族\\$(E_a)_{a\in I}$对于函数族$(f_{ba})_{a\in I\text{与}b\in I\text{与}a\leq b}$的归纳极限，记作$\lim\limits_{\to a}(E_a, f_{ba})$，在没有歧义的情况下可以简记为$\lim\limits_\to (E_a, f_{ba})$或$\lim\limits_\to E_a$．令$f$为$G$到$E/R'$的规范映射，$g_a$为映射$x\to (x, a)(x\in E_a)$，则映射$f\circ g_a$称为$E_a$到$\lim\limits_\to E_a$的规范映射．
+				令E=G/R'，则称$E$为集族\\$(E_a)_{a\in I}$对于函数族$(f_{ba})_{a\in I\text{与}b\in I\text{与}a\leq b}$的归纳极限，记作$\lim\limits_{\to a}(E_a, f_{ba})$，在没有歧义的情况下可以简记为$\lim\limits_\to (E_a, f_{ba})$或$\lim\limits_\to E_a$．令$f$为$G$到$E/R'$的规范映射，$g_a$为映射$x\mapsto (x, a)(x\in E_a)$，则映射$f\circ g_a$称为$E_a$到$\lim\limits_\to E_a$的规范映射．
 			\end{exer}
 			证明：根据定义可证$I$为右方有向集时，$\lim\limits_\to E_a$,即为集族归纳系统$(E_a, f_{ba})$的归纳极限．
 			\par
@@ -14143,9 +14143,9 @@
 			
 			\begin{CST}\label{CST15}
 				\hfill\par
-				令$M$为比集合论强的理论，$X$是仅有一个基集合的结构种类，$\sigma$为$X$的态射集合．令$M'$\\为比$M$强的理论，在理论$M'$中，$(A_i)_{i\in I}$为集族，并且，对任意$i\in I$，令$K_i$为$X$在$A_i$上的结构，$f_i$为$E$到$A_i$的映射，$K$为$(K_i)_{i\in I}$的乘积结构．则当且仅当结构$K$在$E$到$A$的映射$x\to (f_i(x))_{i\in I}$下存在原像时，存在关于$(A_i, K_i, f_i)_{i\in I}$的起始结构．并且，两个结构相等．
+				令$M$为比集合论强的理论，$X$是仅有一个基集合的结构种类，$\sigma$为$X$的态射集合．令$M'$\\为比$M$强的理论，在理论$M'$中，$(A_i)_{i\in I}$为集族，并且，对任意$i\in I$，令$K_i$为$X$在$A_i$上的结构，$f_i$为$E$到$A_i$的映射，$K$为$(K_i)_{i\in I}$的乘积结构．则当且仅当结构$K$在$E$到$A$的映射$x\mapsto (f_i(x))_{i\in I}$下存在原像时，存在关于$(A_i, K_i, f_i)_{i\in I}$的起始结构．并且，两个结构相等．
 			\end{CST}
-			证明：令$E$到$A$的映射$x\to (f_i(x))_{i\in I}$为$f$，则$f_i=pr_i\circ f$，根据结构规则\ref{CST10}可证．
+			证明：令$E$到$A$的映射$x\mapsto (f_i(x))_{i\in I}$为$f$，则$f_i=pr_i\circ f$，根据结构规则\ref{CST10}可证．
 			
 			\begin{CST}\label{CST16}
 				\hfill\par
@@ -14155,7 +14155,7 @@
 			
 			\begin{CST}\label{CST17}
 				\hfill\par
-				令$M$为比集合论强的理论，$X$是仅有一个基集合的结构种类，$\sigma$为$X$的态射集合，令$M'$\\为比$M$强的理论，在理论$M'$中，集合$A$、$B$分别具有结构$K_A$、$K_B$，$K_A$和$K_B$的乘积结构为$K$．令$f$为$A$到$B$的映射，$F\subset A\times B$，$p$为$A$到$F$的双射$x\to (x, f(x))$，则当且仅当$K$在$F$上导出的结构$K'$存在，且$p$为$A$到具有$K'$的$F$的同构时，$f$为$A$到$B$的$\sigma$态射．
+				令$M$为比集合论强的理论，$X$是仅有一个基集合的结构种类，$\sigma$为$X$的态射集合，令$M'$\\为比$M$强的理论，在理论$M'$中，集合$A$、$B$分别具有结构$K_A$、$K_B$，$K_A$和$K_B$的乘积结构为$K$．令$f$为$A$到$B$的映射，$F\subset A\times B$，$p$为$A$到$F$的双射$x\mapsto (x, f(x))$，则当且仅当$K$在$F$上导出的结构$K'$存在，且$p$为$A$到具有$K'$的$F$的同构时，$f$为$A$到$B$的$\sigma$态射．
 			\end{CST}
 			证明：
 			\par
@@ -14330,7 +14330,7 @@
 				\par
 				同时，试给出$X$在$A$上的结构族$(S_i)$，使$(S_i)$的最大下界存在，但不是$(A_i, S_i, Id_i)$的最终结构，其中$A_i$是具有结构$S_i$的集合$A$，$Id_i$是$A_i$到$A$的规范映射．
 			\end{exer}
-			答：对于前半段，考虑多项式环$A=k[T]$，则$A$的不可约理想是极大理想的幂．令$F$为$k$\\代数结构，$p$、$q$为$A$的不同极大理想．考虑$X$在$A$上的结构$A_p=(F, p)$、$A_q=(F, q)$，其最小上界是$(F, (0))$．令$B= p\cap q$，考虑$B$到$A$的映射$f=(x\to x)$，其不是同态，但$f\circ Id_p$、$f\circ Id_q$是同态，故$(F, (0))$不是起始结构．
+			答：对于前半段，考虑多项式环$A=k[T]$，则$A$的不可约理想是极大理想的幂．令$F$为$k$\\代数结构，$p$、$q$为$A$的不同极大理想．考虑$X$在$A$上的结构$A_p=(F, p)$、$A_q=(F, q)$，其最小上界是$(F, (0))$．令$B= p\cap q$，考虑$B$到$A$的映射$f=(x\mapsto x)$，其不是同态，但$f\circ Id_p$、$f\circ Id_q$是同态，故$(F, (0))$不是起始结构．
 			对于后半段，$A$的对偶空间和结构$A_p$、$A_q$的转置，符合题目条件．
 			\par
 			注：习题\ref{exer204}涉及尚未介绍的“代数结构”知识．
@@ -14347,7 +14347,7 @@
 			\par
 			根据定义可证该态射可以通过习题\ref{exer199}的方式来定义．
 			\par
-			令$A_1$具有结构$(V_1, f_1)$，$f_1$的定义域为$[0, a_1]$，$A_2$具有结构$(V_2, f_2)$，$f_2$的定义域为$[0, a_2]$，则结构$(V_1\times V_2, f)$为其乘积结构，其中$f$为$x\to (f_1(x), f_2(x))(x\in [0, a_1]\cap[0, a_2])$．
+			令$A_1$具有结构$(V_1, f_1)$，$f_1$的定义域为$[0, a_1]$，$A_2$具有结构$(V_2, f_2)$，$f_2$的定义域为$[0, a_2]$，则结构$(V_1\times V_2, f)$为其乘积结构，其中$f$为$x\mapsto (f_1(x), f_2(x))(x\in [0, a_1]\cap[0, a_2])$．
 			\par
 			如果$a_1>a_2$，则直像的第二射影，是$f_1$在$[0, a_2]$上的限制．
 			\par
@@ -14397,7 +14397,7 @@
 			\par
 			根据定义可证$\sigma$符合态射集合的条件．
 			\par
-			令$k$为映射$x\to a_x$（当$x\geq 0$时，$a=2$，当$x<0$时，$a=1/2$），$f=g_B^{-1}\circ k\circ g_A$，则$f$为$A$到$B$的双射态射，但不是同构．
+			令$k$为映射$x\mapsto a_x$（当$x\geq 0$时，$a=2$，当$x<0$时，$a=1/2$），$f=g_B^{-1}\circ k\circ g_A$，则$f$为$A$到$B$的双射态射，但不是同构．
 			\par
 			注：习题\ref{exer208}涉及尚未介绍的“域”知识．
 			
@@ -14469,7 +14469,7 @@
 			令$s\in S(x)$为$X$的类型化，$L$是符合下列条件的三元组$(C, Q, P)$的集合：
 			\par
 			$C\subset m$，$Q$是$X$在$C$上的结构，$P$是$E$到具有$Q$的$C$的$\alpha$映射的图．
-			对任意$l\in L$，令$l=(C_l, Q_l, P_l)$，$f_l$为映射$(P_l, E, C_l)$，令$F=\prod\limits_{l\in L}X_l$，$f$为$x\to (f_l(x))_{l\in L}$，因此$f$为$\alpha$映射．
+			对任意$l\in L$，令$l=(C_l, Q_l, P_l)$，$f_l$为映射$(P_l, E, C_l)$，令$F=\prod\limits_{l\in L}X_l$，$f$为$x\mapsto (f_l(x))_{l\in L}$，因此$f$为$\alpha$映射．
 			\par
 			对任意$E$到$H$的映射$h$，令$G$为满足第三个条件的集合，$j$为$G$到$H$的规范映射，$g$为$E$到\\$G$的映射并且其图和$h$相等，则$h=j\circ g$，故$g$是$E$到$G$的$\alpha$映射．令$G'\subset m$，并和$G$等势，令$k$为$G$到$G'$的双射．因此，存在$l$，使$X_l=G'$．故$k\circ g= f_l$，$q=j\circ k^{-1}\circ pr_l$，进而$h=q\circ f$，因而补充结构规则\ref{CSTcor15}的第一个条件成立．进而，根据第三个条件，补充结构规则\ref{CSTcor15}的第二个条件成立，得证．
 			
