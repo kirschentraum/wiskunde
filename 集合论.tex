@@ -10456,12 +10456,12 @@
 				\par
 				当$x\in A$时，$f(x)=1$；当$x\in E-A$时，$f(x)=0$，
 				\par
-				则称$f$为$E$的子集$A$的特征函数，记作$\psi_A$．
+				则称$f$为$E$的子集$A$的特征函数，记作$\phi_A$．
 			\end{de}
 			
 			\begin{cor}\label{cor314}
 				\hfill\par
-				对于$E$的子集$A$、$B$，$A=B\Leftrightarrow \psi_A=\psi_B$．
+				对于$E$的子集$A$、$B$，$A=B\Leftrightarrow \phi_A=\phi_B$．
 			\end{cor}
 			证明：根据定义可证．
 			
@@ -10469,11 +10469,11 @@
 				\hfill\par
 				对于$E$的子集$A$、$B$：
 				\par
-				（1）$\psi_E-A(x)=1-\psi_A(x)$．
+				（1）$\phi_E-A(x)=1-\phi_A(x)$．
 				\par
-				（2）$\psi_A\cap B(x)=\psi_A(x)\psi_B(x)$．
+				（2）$\phi_A\cap B(x)=\phi_A(x)\phi_B(x)$．
 				\par
-				（3）$\psi_A\cup B(x)+\psi_A\cap B(x)= \psi_A(x)+\psi_B(x)$．
+				（3）$\phi_A\cup B(x)+\phi_A\cap B(x)= \phi_A(x)+\phi_B(x)$．
 			\end{theo}
 			证明：根据定义可证．
 			
@@ -11693,18 +11693,18 @@
 			\begin{de}
 				\textbf{序数的展开（développement d'un ordinal），序数的展开的最大指数（plus grand indice d'une développement d'un ordinal）}
 				\par
-				对任意序数$a>0$，如果单减有限序列$(b_i)_{i\in [1, k]}$，使$a=\sum\limits_{i\in [1, k]}{\omega_0}^{b_i}$，则称$(b_i)_{i\in [1, k]}$为$a$的展开，$b_1$为$a$的展开的最大指数，记作$\psi(a)$．
+				对任意序数$a>0$，如果单减有限序列$(b_i)_{i\in [1, k]}$，使$a=\sum\limits_{i\in [1, k]}{\omega_0}^{b_i}$，则称$(b_i)_{i\in [1, k]}$为$a$的展开，$b_1$为$a$的展开的最大指数，记作$\phi(a)$．
 			\end{de}
 			
 			\begin{cor}\label{cor354}
 				\hfill\par
 				$a$、$b$为序数：
 				\par
-				（1）$a<{\omega_0}^{\psi(a)+1}$．
+				（1）$a<{\omega_0}^{\phi(a)+1}$．
 				\par
-				（2）如果$\psi(a)<\psi(b)$，则$a<b$．
+				（2）如果$\phi(a)<\phi(b)$，则$a<b$．
 				\par
-				（3）如果$a<b$，则$\psi(a)\leq \psi(b)$．
+				（3）如果$a<b$，则$\phi(a)\leq \phi(b)$．
 				\par
 				（4）$a$、$b$为序数，$a<{\omega_0}^b$，则$a+{\omega_0}^b={\omega_0}^b$．
 			\end{cor}
@@ -11712,7 +11712,7 @@
 			\par
 			（1）根据补充定理\ref{cor257}（3）可证．
 			\par
-			（2）设$a$的展开有$n$项，则$a\leq {\omega_0}^{\psi(a)}n$，又因为$a<\omega_0\psi(a)+1$，因此$a<\omega_0\psi(b)$，故$a<b$．
+			（2）设$a$的展开有$n$项，则$a\leq {\omega_0}^{\phi(a)}n$，又因为$a<\omega_0\phi(a)+1$，因此$a<\omega_0\phi(b)$，故$a<b$．
 			\par
 			（3）	根据补充定理\ref{cor354}（1）可证．
 			\par
@@ -11787,13 +11787,13 @@
 				\hfill\par
 				（1）$a$为有限序数，$a\geq 2$，则$a^{\omega_0}=\omega_0$．
 				\par
-				（2）$a$为无穷序数，则$a^{\omega_0}={\omega_0}^{\psi(a)\omega_0}$．
+				（2）$a$为无穷序数，则$a^{\omega_0}={\omega_0}^{\phi(a)\omega_0}$．
 			\end{cor}
 			证明：
 			\par
 			（1）令$b$为有限序数，根据补充定理\ref{cor311}、补充定理\ref{cor339}（4），$a^b>b$，因此$a^{\omega_0}\geq \omega_0$．同时，由于$a^b$为有限序数，故$a^{\omega_0}\leq \omega_0$．得证．
 			\par
-			（2）根据补充定理\ref{cor273}，$a^{\omega_0}\geq {\omega_0}^{\psi(a)\omega_0}$，$a^{\omega_0}\leq {\omega_0}^{(\psi(a)+1)\omega_0}$，根据补充定理\ref{cor351}可证．
+			（2）根据补充定理\ref{cor273}，$a^{\omega_0}\geq {\omega_0}^{\phi(a)\omega_0}$，$a^{\omega_0}\leq {\omega_0}^{(\phi(a)+1)\omega_0}$，根据补充定理\ref{cor351}可证．
 			
 			\begin{cor}\label{cor359}
 				\hfill\par
@@ -11803,7 +11803,7 @@
 			
 			\begin{cor}\label{cor360}
 				\hfill\par
-				$a>0$，则$\{x|x\text{为不可约的序数}\text{与}x\leq a\}$的最大元为${\omega_0}^{\psi(a)}$．
+				$a>0$，则$\{x|x\text{为不可约的序数}\text{与}x\leq a\}$的最大元为${\omega_0}^{\phi(a)}$．
 			\end{cor}
 			证明：根据补充定理\ref{cor352}（2）、补充定理\ref{cor354}（3）可证．
 			
@@ -11817,22 +11817,22 @@
 				\hfill\par
 				当且仅当存在序数$b$使$c$等于${\omega_0}^{{\omega_0}^b}$时，$c$为$xy$的临界序数．
 			\end{cor}
-			证明：如果$c$是$xy$的临界序数．由于${\omega_0}^{\psi(c)c}>c$，故$c={\omega_0}^{\psi(c)}$．根据补充定理\ref{cor263}，$\psi(c)$\\不可约，根据补充定理\ref{cor352}（1），存在序数$b$使$c$等于${\omega_0}^{{\omega_0}^b}$．
+			证明：如果$c$是$xy$的临界序数．由于${\omega_0}^{\phi(c)c}>c$，故$c={\omega_0}^{\phi(c)}$．根据补充定理\ref{cor263}，$\phi(c)$\\不可约，根据补充定理\ref{cor352}（1），存在序数$b$使$c$等于${\omega_0}^{{\omega_0}^b}$．
 			\par
-			反过来，如果存在序数$b$使$c$等于${\omega_0}^{{\omega_0}^b}$，根据补充定理\ref{cor352}（1），$\psi(c)$不可约；由于$a<c$时，$a<{\omega_0}^{\psi(a)+1}$，因此$ac\leq {\omega_0}^{\psi(a)+1+\psi(c)}$，又因为$\psi(a)+1<\psi(c)$，根据补充定理\ref{cor354}（4），$ac\leq c$，同时，由于$ac\geq c$，因此$ac=c$．
+			反过来，如果存在序数$b$使$c$等于${\omega_0}^{{\omega_0}^b}$，根据补充定理\ref{cor352}（1），$\phi(c)$不可约；由于$a<c$时，$a<{\omega_0}^{\phi(a)+1}$，因此$ac\leq {\omega_0}^{\phi(a)+1+\phi(c)}$，又因为$\phi(a)+1<\phi(c)$，根据补充定理\ref{cor354}（4），$ac\leq c$，同时，由于$ac\geq c$，因此$ac=c$．
 			
 			\begin{cor}\label{cor363}
 				\hfill\par
 				令$c$为序数，则当且仅当存在序数$b$使$c$等于${\omega_0}^{{\omega_0}^b}$时，对任意序数$a>1$、$a\leq c$，均存在$x$使$c=a^x$．
 			\end{cor}
 			证明：
-			如果对任意序数$a>1$、$a\leq c$，均存在$x$使$c=a^x$，则令$a={\omega_0}^{\psi(c)}$，故$c={\omega_0}^{\psi(c)x}$，因此$\psi(c)x =\psi(c)$，故$c={\omega_0}^{\psi(c)}$．
+			如果对任意序数$a>1$、$a\leq c$，均存在$x$使$c=a^x$，则令$a={\omega_0}^{\phi(c)}$，故$c={\omega_0}^{\phi(c)x}$，因此$\phi(c)x =\phi(c)$，故$c={\omega_0}^{\phi(c)}$．
 			\par
-			如果$\psi(c)$可约：若$\psi(c)=a+b$，且$a>b$，则${\omega_0}^a<c$，${\omega_0}^{a2}>c$，矛盾；若$\psi(c)=a+b$，且$a<b$，则${\omega_0}^b<c$，${\omega_0}^{b2}>c$，矛盾；若$\psi(c)=2$，则$\omega_0+1<{\omega_0}^2$，$(\omega_0+1)^2>{\omega_0}^2$，矛盾；若$\psi(c)=a+a$，且$a>1$，则${\omega_0}^{a+1}<c$，${\omega_0}^{(a+1)2}>c$，矛盾．
+			如果$\phi(c)$可约：若$\phi(c)=a+b$，且$a>b$，则${\omega_0}^a<c$，${\omega_0}^{a2}>c$，矛盾；若$\phi(c)=a+b$，且$a<b$，则${\omega_0}^b<c$，${\omega_0}^{b2}>c$，矛盾；若$\phi(c)=2$，则$\omega_0+1<{\omega_0}^2$，$(\omega_0+1)^2>{\omega_0}^2$，矛盾；若$\phi(c)=a+a$，且$a>1$，则${\omega_0}^{a+1}<c$，${\omega_0}^{(a+1)2}>c$，矛盾．
 			\par
-			因此，$\psi(c)$不可约．根据补充定理\ref{cor352}（1），存在序数$b$使$\psi(c)= {\omega_0}^b$．
+			因此，$\phi(c)$不可约．根据补充定理\ref{cor352}（1），存在序数$b$使$\phi(c)= {\omega_0}^b$．
 			\par
-			反过来，如果$c={\omega_0}^{\psi(c)}$，$\psi(c)= {\omega_0}^b$，根据补充定理\ref{cor358}（1）、补充定理\ref{cor358}（2）、补充定理\ref{cor266}，对任意序数$a>1$、$a\leq c$，均存在$x$使$c=ax$．
+			反过来，如果$c={\omega_0}^{\phi(c)}$，$\phi(c)= {\omega_0}^b$，根据补充定理\ref{cor358}（1）、补充定理\ref{cor358}（2）、补充定理\ref{cor266}，对任意序数$a>1$、$a\leq c$，均存在$x$使$c=ax$．
 			
 			\begin{cor}\label{cor364}
 				\hfill\par
@@ -11873,7 +11873,7 @@
 			\par
 			如果$x_0=x_1$，则对任意$i\in N$，$x_0=x_1$，故$a=x_0$，命题得证．
 			\par
-			如果$x_0\neq x_1$，则$(x_i)_{i\in N}$为严格单增序列．设$\psi(a)=b$，则对任意$i\in N$，如果$b<a$，则存在$x_i\geq b+1$，故$x_{i+1}\geq a$，因此$a=x_{i+1}$，故$a<x_{i+2}$，矛盾．因此$a=b$，即$a\geq {\omega_0}^a$．同时，根据补充定理\ref{cor275}，$a\leq {\omega_0}^a$，得证．
+			如果$x_0\neq x_1$，则$(x_i)_{i\in N}$为严格单增序列．设$\phi(a)=b$，则对任意$i\in N$，如果$b<a$，则存在$x_i\geq b+1$，故$x_{i+1}\geq a$，因此$a=x_{i+1}$，故$a<x_{i+2}$，矛盾．因此$a=b$，即$a\geq {\omega_0}^a$．同时，根据补充定理\ref{cor275}，$a\leq {\omega_0}^a$，得证．
 			\par
 			（2）如果无穷序数$b<\mathop{sup}\limits_{i\in N}x_i$，则存在$i\in N$，使$x_i\leq b$，$x_{i+1}>b$，故$b$不是艾普塞朗数，得证．
 			
@@ -11889,7 +11889,7 @@
 			\end{cor}
 			证明：
 			\par
-			根据定义可证$\omega_0$是$x^y$（$x\geq 2$、$y\geq 1$）的临界序数．令$a$为艾普塞朗数，$x<a$且$x\geq 2$，则$x^a\leq {\omega_0}^{(\psi(x)+1)a}$，由于$a$不可约，故$\psi(x)+1<a$，因此$x^a\leq {\omega_0}^a$，进而可得$x^a=a$．
+			根据定义可证$\omega_0$是$x^y$（$x\geq 2$、$y\geq 1$）的临界序数．令$a$为艾普塞朗数，$x<a$且$x\geq 2$，则$x^a\leq {\omega_0}^{(\phi(x)+1)a}$，由于$a$不可约，故$\phi(x)+1<a$，因此$x^a\leq {\omega_0}^a$，进而可得$x^a=a$．
 			\par
 			反过来，根据定义，如果$a$是$x^y$（$x\geq 2$、$y\geq 1$）的临界序数，则$a$是艾普塞朗数或$\omega_0$．
 			
