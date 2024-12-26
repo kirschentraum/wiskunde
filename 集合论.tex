@@ -38,7 +38,7 @@
 
 \title{布尔巴基数学基础（第1卷）集合论学习笔记}
 \author{何嘉惠，黄芸芸}
-\date{二零二四年十月}
+\date{二零二四年十二月}
 
 \begin{document}
 
@@ -3113,7 +3113,9 @@
 				\par
 				（3）$pr_1\varnothing = \varnothing$，$pr_2\varnothing =\varnothing$．
 				\par
-				（4）	如果$X\neq \varnothing$，$Y\neq \varnothing$，则$pr_1(X\times Y)=X$，$pr_2(X\times Y)=X$．
+				（4）如果$X\neq \varnothing$，$Y\neq \varnothing$，则$pr_1(X\times Y)=X$，$pr_2(X\times Y)=X$．
+				\par
+				（5）$G_1$、$G_2$为图，且$G_1\subset G_2$，则p$r_1G_1\subset pr_1G_2$，$pr_2G_1\subset pr_2G_2$．
 			\end{cor}
 			证明：
 			\par
@@ -3123,21 +3125,23 @@
 			\par
 			（3）	令$x$、$y$为不是常数的字母，根据补充定理\ref{cor15}，$(x, y)\notin \varnothing$，因此“$\text{非}(\exists y)((x, y)\in \varnothing)$”，即$x\notin pr_1\varnothing$，根据补充定理\ref{cor14}（1）可证．
 			\par
-			（4）$\{x|(\exists y)((x, y)\in X\times Y))\}=\{x|(\exists y)(x\in X\text{与}y\in Y))\}$，等于$\{x|x\in X\text{与}(\exists y)(y\in Y)\}$，等于$\{x|x\in X\}$，得证．	
-			
-			\begin{cor}\label{cor32}
-				\hfill\par
-				$G_1$、$G_2$为图，且$G_1\subset G_2$，则p$r_1G_1\subset pr_1G_2$，$pr_2G_1\subset pr_2G_2$．
-			\end{cor}
-			证明：令$x$、$y$为不是常数的字母，由于$G_1\subset G_2$，因此$(x, y)\in G_1\Rightarrow (x, y)\in G_2$．
+			（4）$\{x|(\exists y)((x, y)\in X\times Y))\}=\{x|(\exists y)(x\in X\text{与}y\in Y))\}$，等于$\{x|x\in X\text{与}(\exists y)(y\in Y)\}$，等于$\{x|x\in X\}$，得证．
 			\par
-			根据证明规则\ref{C31}，$(\exists y)((x, y)\in G_1\Rightarrow (\exists y)((x, y)\in G_2$，$(\exists x)((x, y)\in G_1\Rightarrow (\exists x)((x, y)\\\in G_2$，根据证明规则\ref{C50}可证．				
+			（5）令$x$、$y$为不是常数的字母，由于$G_1\subset G_2$，因此$(x, y)\in G_1\Rightarrow (x, y)\in G_2$．
+			\par
+			根据证明规则\ref{C31}，$(\exists y)((x, y)\in G_1\Rightarrow (\exists y)((x, y)\in G_2$，$(\exists x)((x, y)\in G_1\Rightarrow (\exists x)((x, y)\\\in G_2$，根据证明规则\ref{C50}可证．
 
 			\begin{de}
 				\textbf{对应（correspondance），对应的图（graphe d'une correspondance）、出发域（ensemble de départ）、到达域（ensemble d'arrivée），通过一个对应对应\\（correspond par une correspondance）、对应的定义域（ensemble de définition d'une correspondance/domaine d'une correspondance）、对应的值域（ensemble des valeurs d'une correspondance/image d'une correspondance）}
 				\par
 				$G$为图，如果$pr_1G\subset A$且$pr_2G\subset B$，则称三元组$(G, A, B)$为$A$到$B$的对应，称$G$为\\$(G, A, B)$的图，$A$为$(G, A, B)$的出发域，$B$为$(G, A, B)$的到达域．如果$(x, y)\in G$，则称$y$通过$(G, A, B)$对应$x$，$pr_1G$称为$(G, A, B)$的定义域，$pr_2G$称为$(G, A, B)$的值域．
 			\end{de}
+						
+			\begin{cor}\label{cor32}
+				\hfill\par
+				$(G, A, B)$为对应，$B\subset B'$，则$(G, A, B)$为对应．
+			\end{cor}
+			证明：根据定义可证．				
 
 			\begin{de}
 				\textbf{元素到元素的公式（relation entre un élément et un élément）、公式定义的对应（correspondance définie par la relation）}
@@ -3185,7 +3189,7 @@
 				\hfill\par
 				$G$为图，$pr_1G\subset A$，则$G\langle A \rangle =pr_2G$．
 			\end{theo}
-			证明：根据定理\ref{theo12}、补充定理\ref{cor32}、补充定理\ref{cor34}、显式公理\ref{ex1}可证．
+			证明：根据定理\ref{theo12}、补充定理\ref{cor31}（5）、补充定理\ref{cor34}、显式公理\ref{ex1}可证．
 
 			\begin{de}
 				\textbf{切割（coupe）}
@@ -3392,8 +3396,11 @@
 				\textbf{对应的复合（composée de deux correspondances）}
 				\par
 				令$F$为$A$到$B$的对应，其图为$G$，$F'$为$B$到$C$的对应，其图为$G'$，则称$(G'\circ G, A, C)$为$F$和\\$F'$的复合，记作$F'\circ F$或者$F'F$．
+				\par
+				令$F$为$A$到$B'$的对应，其图为$G$，$F'$为$B$到$C$的对应，且$B'\subset B$，则$(G, A, B)$和$F'$的复合，也称为$F$和$F'$的复合，同样记作$F'\circ F$或者$F'F$．
 			\end{de}
-		
+			注：原书对应的符合仅包含前半段定义，后半段是对原定义的推广．在《布尔巴基数学基础》的其他书中，会使用推广的定义．
+					
 			\begin{cor}\label{cor54}
 				\hfill\par
 				$F$、$F'$为对应，则：
@@ -3500,32 +3507,36 @@
 			
 			\begin{cor}\label{cor63}
 				\hfill\par
-				$F$为函数图，$x\in pr_1F$，则$(x, y)\in F$为$y$上的函数性公式．
+				$(G, A, B)$为函数，$B\subset B'$，则$(G, A, B')$为函数．
 			\end{cor}
 			证明：根据定义可证．
 			
 			\begin{cor}\label{cor64}
 				\textbf{函数的值的基本性质}
 				\par
-				（1）$f$为函数，其图为$F$，则$(x\in pr_1F)\text{与}(y=f(x))\Leftrightarrow (x, y)\in F$．
+				（1）$F$为函数图，$x\in pr_1F$，则$(x, y)\in F$为$y$上的函数性公式．
 				\par
-				（2）$x\in pr_1F\Leftrightarrow (x, f(x))\in F$．
+				（2）$f$为函数，其图为$F$，则$(x\in pr_1F)\text{与}(y=f(x))\Leftrightarrow (x, y)\in F$．
 				\par
-				（3）$x\in pr_1F\Rightarrow f(x)\in pr_2F$．
+				（3）$x\in pr_1F\Leftrightarrow (x, f(x))\in F$．
+				\par
+				（4）$x\in pr_1F\Rightarrow f(x)\in pr_2F$．
 			\end{cor}
 			证明：
 			\par
-			（1）如果$(x\in pr_1F)$，根据证明规则\ref{C46}、补充定理\ref{cor63}，$(y=f(x))\Leftrightarrow (x, y)\in F$．根据补充定理\ref{cor29}，$(x, y)\in F\Rightarrow (x\in pr_1F)$．得证．
+			（1）根据定义可证．
 			\par
-			（2）根据补充定理\ref{cor64}（1）可证．
+			（2）如果$(x\in pr_1F)$，根据证明规则\ref{C46}、补充定理\ref{cor64}（1），$(y=f(x))\Leftrightarrow (x, y)\in F$．根据补充定理\ref{cor29}，$(x, y)\in F\Rightarrow (x\in pr_1F)$．得证．
 			\par
-			（3）根据补充定理\ref{cor64}（2）、补充定理\ref{cor29}可证．
+			（3）根据补充定理\ref{cor64}（2）可证．
+			\par
+			（4）根据补充定理\ref{cor64}（3）、补充定理\ref{cor29}可证．
 			
 			\begin{cor}\label{cor65}
 				\hfill\par
 				$F$为函数图，$(\forall x)(x\in pr_1F\Rightarrow f(x)\in A)$，则$pr_2F\subset A$．
 			\end{cor}
-			证明：令$x$为不是常数的字母，由于$x\in pr_1F\Rightarrow f(x)\in A$，根据补充定理\ref{cor64}（1），$(x, y)\in F\Rightarrow (y=f(x))\text{与}(f(x)\in A)$，其等价于$(y=f(x))\text{与}(y\in A)$，因此$(\exists x)((x, y)\in F)\Rightarrow y\in A$，得证．
+			证明：令$x$为不是常数的字母，由于$x\in pr_1F\Rightarrow f(x)\in A$，根据补充定理\ref{cor64}（2），$(x, y)\in F\Rightarrow (y=f(x))\text{与}(f(x)\in A)$，其等价于$(y=f(x))\text{与}(y\in A)$，因此$(\exists x)((x, y)\in F)\Rightarrow y\in A$，得证．
 			
 			\begin{cor}\label{cor66}
 				\hfill\par
@@ -3557,13 +3568,13 @@
 				\hfill\par
 				$f$、$g$为函数，其图分别为$F$、$G$，且$F\subset G$，则$(f\text{的定义域})\subset (g\text{的定义域})$．
 			\end{cor}
-			证明：根据补充定理\ref{cor32}可证．
+			证明：根据补充定理\ref{cor31}（5）可证．
 			
 			\begin{cor}\label{cor68}
 				\hfill\par
 				$f$、$g$为函数，其图分别为$F$、$G$，且$pr_1F=pr_1G$，$(\forall x)(x\in pr_1F\Rightarrow f(x)=g(x))$，则$F$=$G$．如果$(f\text{的到达域})=(g\text{的到达域})$，则$f=g$．
 			\end{cor}
-			证明：根据补充定理\ref{cor64}（1），$(x\in pr_1F)\text{与}(y=f(x))\Leftrightarrow (x, y)\in F$，$(x\in pr_1G)\text{与}(y=f(x))\Leftrightarrow (x, y)\in G$．$(x, y)\in F\Rightarrow (x\in pr_1F)\text{与}y=g(x)$，因此$(x, y)\in F\Rightarrow (x, y)\in G$，同理可证$(x, y)\in G\Rightarrow (x, y)\in F$，根据补充定理\ref{cor27}（1），$F=G$．进而，如果$(f\text{的到达域})=(g\text{的到达域})$，根据定义，$f=g$．
+			证明：根据补充定理\ref{cor64}（2），$(x\in pr_1F)\text{与}(y=f(x))\Leftrightarrow (x, y)\in F$，$(x\in pr_1G)\text{与}(y=f(x))\Leftrightarrow (x, y)\in G$．$(x, y)\in F\Rightarrow (x\in pr_1F)\text{与}y=g(x)$，因此$(x, y)\in F\Rightarrow (x, y)\in G$，同理可证$(x, y)\in G\Rightarrow (x, y)\in F$，根据补充定理\ref{cor27}（1），$F=G$．进而，如果$(f\text{的到达域})=(g\text{的到达域})$，根据定义，$f=g$．
 			
 			\begin{cor}\label{cor69}
 				\hfill\par
@@ -3593,15 +3604,15 @@
 			\end{cor}
 			证明：
 			\par
-			（1）令$f$的图为$F$，则$x\in f^{-1}\langle X \rangle \Leftrightarrow (\exists y)(y\in X\text{与}(x, y) \in F)$，根据补充定理\ref{cor64}（1），等价于$(\exists y)(y\in X\text{与}(x\in A)\text{与}(y=f(x)))$，等价于$(\exists y)(y=f(x))\text{与}x\in A\text{与}f(x) \in X$．$x\in A \Rightarrow (\exists y)((x, y)\in F)$，根据补充定理\ref{cor64}(1)，$x\in A \Rightarrow (\exists y)(y=f(x))$，因此$x\in f^{-1}\langle X \rangle \Leftrightarrow x\in A\text{与}f(x) \in X$．
+			（1）令$f$的图为$F$，则$x\in f^{-1}\langle X \rangle \Leftrightarrow (\exists y)(y\in X\text{与}(x, y) \in F)$，根据补充定理\ref{cor64}（2），等价于$(\exists y)(y\in X\text{与}(x\in A)\text{与}(y=f(x)))$，等价于$(\exists y)(y=f(x))\text{与}x\in A\text{与}f(x) \in X$．$x\in A \Rightarrow (\exists y)((x, y)\in F)$，根据补充定理\ref{cor64}(2)，$x\in A \Rightarrow (\exists y)(y=f(x))$，因此$x\in f^{-1}\langle X \rangle \Leftrightarrow x\in A\text{与}f(x) \in X$．
 			\par
-			（2）由于$f$为$A$到$B$的映射，根据补充定理\ref{cor64}（3），$f(x)\in B$，根据补充定理\ref{cor70}（1），$x\in f^{-1}\langle B \rangle \\\Leftrightarrow x\in A$．
+			（2）由于$f$为$A$到$B$的映射，根据补充定理\ref{cor64}（4），$f(x)\in B$，根据补充定理\ref{cor70}（1），$x\in f^{-1}\langle B \rangle \\\Leftrightarrow x\in A$．
 			\par
 			（3）$x\in f^{-1}(y)$即$x\in f^{-1}\langle\{y\}\rangle$，根据补充定理\ref{cor70}（1）可证．
 			\par
 			（4）根据补充定理\ref{cor70}（3）可证．
 			\par
-			（5）令$f$的图为$F$，$f(x)\in f\langle X \rangle \Leftrightarrow (\exists z)(z\in X\text{与}(z, f(x))\in F)$．由于$x\in X$，因此$x\in A$，根据补充定理$\ref{cor64}$（2），$(x, f(x)) \in F$，因此$x\in X\text{与}(x, f(x)) \in F$，故$(\exists z)(z\in X\text{与}(z, f(x))\in F)$，得证．
+			（5）令$f$的图为$F$，$f(x)\in f\langle X \rangle \Leftrightarrow (\exists z)(z\in X\text{与}(z, f(x))\in F)$．由于$x\in X$，因此$x\in A$，根据补充定理$\ref{cor64}$（3），$(x, f(x)) \in F$，因此$x\in X\text{与}(x, f(x)) \in F$，故$(\exists z)(z\in X\text{与}(z, f(x))\in F)$，得证．
 			\par
 			（6）$f\langle \{x\} \rangle =\{y|(\exists z)(z\in \{x\}\text{与}(z, y)\in F)\}$，等于$\{y|(\exists z)(z=x\text{与}(x, y)\in F)\}$，等于$\{y|(x, y)\in F)\}$，等于$\{y|y=f(x)\}$，即$\{f(x)\}$．
 			\par
@@ -3640,9 +3651,9 @@
 				\par
 				$f$为函数，定义域为$A$，$X\subset A$，则$(x\in X\text{与}y=f(x))$为对于$x$、$y$生成图的公式，并且，其对于$x$、$y$生成的图$G$为函数图，且$pr_1G=X$．
 			\end{cor}
-			证明：令$f$的图为$F$，根据补充定理\ref{cor64}（1），$(x\in A\text{与}y=f(x))\Leftrightarrow (x, y)\in F$，根据补充证明规则\ref{Ccor18}，$(x\in X\text{与}y=f(x))$为对于$x$、$y$生成图的公式．
+			证明：令$f$的图为$F$，根据补充定理\ref{cor64}（2），$(x\in A\text{与}y=f(x))\Leftrightarrow (x, y)\in F$，根据补充证明规则\ref{Ccor18}，$(x\in X\text{与}y=f(x))$为对于$x$、$y$生成图的公式．
 			\par
-			因此，$(x, y)\in G\Leftrightarrow x\in X\text{与}y=f(x)$，令$f$的图为$F$，根据补充定理\ref{cor64}（1），等价于$x\in X\text{与}(x, y)\in F$，则$pr_1G=\{x|x\in X\text{与}x\in A\}$，即$pr_1G=X$．对于$(x, y)\in G$、$(x, y')\in G$，有$(x, y)\in F$、$(x, y')\in F$，由于$F$为函数图，故$y=y'$，因此，$G$为函数图．
+			因此，$(x, y)\in G\Leftrightarrow x\in X\text{与}y=f(x)$，令$f$的图为$F$，根据补充定理\ref{cor64}（2），等价于$x\in X\text{与}(x, y)\in F$，则$pr_1G=\{x|x\in X\text{与}x\in A\}$，即$pr_1G=X$．对于$(x, y)\in G$、$(x, y')\in G$，有$(x, y)\in F$、$(x, y')\in F$，由于$F$为函数图，故$y=y'$，因此，$G$为函数图．
 
 			\begin{de}
 				\textbf{限制（restriction）}
@@ -3654,7 +3665,7 @@
 				\hfill\par
 				$f$为函数，$x\subset (f\text{的定义域})$，则$f|X$和$f$在$X$上重合，并且，$f$为$f|X$在其定义域上的延拓．
 			\end{cor}
-			证明：令$f$的图为$F$，$f|X$的图为$G$，$x$、$y$为不是常数的字母．由于$(x\in X\text{与}y=f(x))\\\Rightarrow y=f(x)$，因此，$F\subset G$．根据补充定理\ref{cor64}（1）、补充证明规则\ref{Ccor16}（1），$(x\in X\text{与}y=f(x))\Leftrightarrow y=f|X(x)$，则$x\in X\Leftrightarrow f(x)=f|X(x)$，因此，$f|X$和$f$在$X$上重合．又因为$X$为$f|X$的定义域，因此，$f$为$f|X$在其定义域上的延拓．
+			证明：令$f$的图为$F$，$f|X$的图为$G$，$x$、$y$为不是常数的字母．由于$(x\in X\text{与}y=f(x))\\\Rightarrow y=f(x)$，因此，$F\subset G$．根据补充定理\ref{cor64}（2）、补充证明规则\ref{Ccor16}（1），$(x\in X\text{与}y=f(x))\Leftrightarrow y=f|X(x)$，则$x\in X\Leftrightarrow f(x)=f|X(x)$，因此，$f|X$和$f$在$X$上重合．又因为$X$为$f|X$的定义域，因此，$f$为$f|X$在其定义域上的延拓．
 			
 			\begin{cor}\label{cor73}
 				\hfill\par
@@ -3666,9 +3677,9 @@
 			\end{cor}
 			证明：
 			\par
-			（1）设$x\in X$，根据补充定理\ref{cor64}（1），$(x, f(x))\in F$．令$f|X$的图为$G$，则$y=f(x)\Leftrightarrow (x, y)\in G$，即$y=f(x)\Leftrightarrow y=f|X(x)$，因此$f(x)=f|X(x)$．
+			（1）设$x\in X$，根据补充定理\ref{cor64}（2），$(x, f(x))\in F$．令$f|X$的图为$G$，则$y=f(x)\Leftrightarrow (x, y)\in G$，即$y=f(x)\Leftrightarrow y=f|X(x)$，因此$f(x)=f|X(x)$．
 			\par
-			（2）$(x, z)\in F\circ \Delta_X\Leftrightarrow (\exists y)((x, y)\in \Delta_X\text{与}(y, z)\in F)$，根据补充定理\ref{cor59}，等价于$x\in X\text{与}(x, z)\in F$，根据补充定理\ref{cor64}（1），等价于$x\in X\text{与}y=f(x)$，得证．
+			（2）$(x, z)\in F\circ \Delta_X\Leftrightarrow (\exists y)((x, y)\in \Delta_X\text{与}(y, z)\in F)$，根据补充定理\ref{cor59}，等价于$x\in X\text{与}(x, z)\in F$，根据补充定理\ref{cor64}（2），等价于$x\in X\text{与}y=f(x)$，得证．
 
 			\begin{C}\label{C54}
 				\hfill\par
@@ -3686,7 +3697,7 @@
 			\par
 			根据定义，$pr_2F=(\text{对于}x\in A\text{形式为}T\text{的对象集合})$．
 			\par
-			根据补充定理\ref{cor64}（1），$y=F(x)\Leftrightarrow x\in A\text{与}y=T$．假设$x\in A$，则$y=F(x)\Leftrightarrow y=T$，因此$F(x)=T$．故$x\in A\Rightarrow F(x)=T$．
+			根据补充定理\ref{cor64}（2），$y=F(x)\Leftrightarrow x\in A\text{与}y=T$．假设$x\in A$，则$y=F(x)\Leftrightarrow y=T$，因此$F(x)=T$．故$x\in A\Rightarrow F(x)=T$．
 			\par
 			反过来，假设$F(x)=T$，则$x\in A$为真．故$x\in A\Leftrightarrow F(x)=T$．
 			\par
@@ -3699,7 +3710,7 @@
 			\end{metadef}
 
 			\begin{theo}\label{theo17}
-				\textbf{函数的复合是函数}
+				\textbf{映射的复合是映射}
 				\par
 				$f$为$A$到$B$的映射，$g$为$B$到$C$的映射，则$g\circ f$为$A$到$C$的映射．
 			\end{theo}
@@ -3767,7 +3778,7 @@
 			\par
 			根据补充定理\ref{cor35}、补充定理\ref{cor42}，$f\text{为满射}\Leftrightarrow pr_1F^{-1}=B$．
 			\par
-			根据补充定理\ref{cor64}（1），$(\forall x)(\forall y)(\forall z)((y, x)\in F\text{与}(z, x)\in F\Rightarrow (y=z))\\\Leftrightarrow (\forall x)(\forall y)(\forall z)(y\in A\text{与}z\in A\text{与}x=f(y)\text{与}x=f (z)\Rightarrow (y=z))$．
+			根据补充定理\ref{cor64}（2），$(\forall x)(\forall y)(\forall z)((y, x)\in F\text{与}(z, x)\in F\Rightarrow (y=z))\\\Leftrightarrow (\forall x)(\forall y)(\forall z)(y\in A\text{与}z\in A\text{与}x=f(y)\text{与}x=f (z)\Rightarrow (y=z))$．
 			假设$(\forall x)(\forall y)(\forall z)(y\in A\text{与}z\in A\text{与}x=f(y)\text{与}x=f (z)\Rightarrow (y=z))$，则$(\forall y)(\forall z)(y\in A\text{与}z\in A\text{与}f(y)=f(y)\text{与}f(y)=f (z)\Rightarrow (y=z))$，进而$(\forall y)(\forall z)(y\in A\text{与}z\in A\text{与}f(y)=f (z)\Rightarrow (y=z))$．
 			\par
 			反过来，假设$(\forall y)(\forall z)(y\in A\text{与}z\in A\text{与}f(y)=f (z)\Rightarrow (y=z))$，由于$y\in A\text{与}z\in A\text{与}x=f(y)\text{与}x=f (z)\Rightarrow f (y)=f (z)$，故$(\forall x)(\forall y)(\forall z)(y\in A\text{与}z\in A\text{与}x=f(y)\text{与}x=f (z)\Rightarrow (y=z))$．
@@ -3817,7 +3828,7 @@
 			\par
 			如果$f\circ s=Id_B$，则$f\langle s\langle B \rangle \rangle=B$，同时，根据定理\ref{theo12}，$f\langle s\langle B \rangle \rangle\subset f\langle A \rangle $，又因为$f\langle A \rangle \subset f\langle B \rangle $，故$f\langle A \rangle =f\langle B \rangle $，因此$f$为满射．
 			\par
-			如果$f$为满射，则$f\langle A \rangle =B$，根据补充定理\ref{cor35}，$x\in B\Leftrightarrow (\exists y)((y, x)\in F)$，根据补充定理\ref{cor64}（1），$(y, x)\in F\Leftrightarrow y\in A\text{与}x=f(y)$．令$T$为项$\tau_y(y\in A\text{与}x=f(y))$，根据证明规则\ref{C54}，$x\in B\Leftrightarrow f(T)=x)$．令$s$为映射$x\mapsto T(x\in B, T\in A)$，则$x\in B\Leftrightarrow f(s(x))=x$，即$f\circ s=Id_B$．
+			如果$f$为满射，则$f\langle A \rangle =B$，根据补充定理\ref{cor35}，$x\in B\Leftrightarrow (\exists y)((y, x)\in F)$，根据补充定理\ref{cor64}（2），$(y, x)\in F\Leftrightarrow y\in A\text{与}x=f(y)$．令$T$为项$\tau_y(y\in A\text{与}x=f(y))$，根据证明规则\ref{C54}，$x\in B\Leftrightarrow f(T)=x)$．令$s$为映射$x\mapsto T(x\in B, T\in A)$，则$x\in B\Leftrightarrow f(s(x))=x$，即$f\circ s=Id_B$．
 			如果$f$为单射，且$A\neq \varnothing$，根据补充定理\ref{cor14}（2），$(\exists x)(x\in A)$，因此可以添加辅助常数$a$，令$a\in A$．令$f$的图为$F$，$R$为公式$(y, x)\in F\text{或}(y=a\text{与}x\in B-f\langle A \rangle )$．由于$(y, x)\in F\Rightarrow y\in A\text{与}x\in B$，因此$R\Rightarrow (x, y)\in B\times A$，因此，该公式为对于$x$、$y$生成图的公式．令其生成的图为$P$．
 			\par
 			$R\text{与}(z|y)R\Leftrightarrow ((y, x)\in F\text{与}(z, x)\in F)\text{或}(y=a\text{与}z=a\text{与}x\in B-f\langle A \rangle )\text{或}((y, x)\in F \text{与}z=a\text{与}x\in B-f\langle A \rangle )\text{或}((z, x)\in F \text{与}y=a\text{与}x\in B\text{与}x\notin f\langle A \rangle )$．$由于(z, x)\in F\Rightarrow x\in f\langle A \rangle )$，$(y, x)\in F\Rightarrow x\in f\langle A \rangle $，根据补充证明规则\ref{Ccor5}（13），$R\text{与}(z|y) R\Rightarrow y=z$，故$P$为函数图．
@@ -3830,7 +3841,7 @@
 			\end{theo}
 			证明：根据定理\ref{theo19}，f和g均为双射．
 			\par
-			令$f$的图为$F$，$g$的图为$G$，假设$(x, y)\in F$，则$y\in B$，$y=f(x)$．由于$g(f(x))=x$，因此$g(y)=x$，根据补充定理\ref{cor64}（1），$(y, x)\in G$．
+			令$f$的图为$F$，$g$的图为$G$，假设$(x, y)\in F$，则$y\in B$，$y=f(x)$．由于$g(f(x))=x$，因此$g(y)=x$，根据补充定理\ref{cor64}（2），$(y, x)\in G$．
 			\par
 			假设$(y, x)\in $G，同理可得$(x, y)\in F$．
 			\par
@@ -4355,7 +4366,7 @@
 				\hfill\par
 				令函数$f=(F, A, B)$，$X\subset A$，则$(f\text{通过}A\text{的子集}X\text{导出的函数})=f|X$，并且$f$通过$A$的子集$X$导出的函数和$f$在$X$上重合．
 			\end{cor}
-			证明：设$f|X$的图为$G$，根据补充定理\ref{cor64}（1），$x\in X\text{与}y=f(x)\Leftrightarrow (x, y)\in G$，$x\in A\text{与}y=f(x)\Leftrightarrow (x, y)\in F$．根据补充定理\ref{cor23}（2），$x\in X\text{与}y\in B\Leftrightarrow (x, y)\in X\times B$．根据补充定理\ref{cor64}（3），$x\in A\Rightarrow f(x)\in B$．因此$(x, y)\in (F\cap X\times B)\Leftrightarrow x\in A\text{与}y=f(x)\text{与}x\in X\text{与}y\in B$，等价于$x\in X\text{与}y=f(x)$，得证．
+			证明：设$f|X$的图为$G$，根据补充定理\ref{cor64}（2），$x\in X\text{与}y=f(x)\Leftrightarrow (x, y)\in G$，$x\in A\text{与}y=f(x)\Leftrightarrow (x, y)\in F$．根据补充定理\ref{cor23}（2），$x\in X\text{与}y\in B\Leftrightarrow (x, y)\in X\times B$．根据补充定理\ref{cor64}（4），$x\in A\Rightarrow f(x)\in B$．因此$(x, y)\in (F\cap X\times B)\Leftrightarrow x\in A\text{与}y=f(x)\text{与}x\in X\text{与}y\in B$，等价于$x\in X\text{与}y=f(x)$，得证．
 			
 			\begin{cor}\label{cor106}
 				\hfill\par
@@ -14002,7 +14013,7 @@
 			\begin{STdef}
 				\textbf{态射集合（ensemble des morphismes），态射（morphisme）}
 				\par
-				令$M$为比集合论强的理论，$X$是仅有一个基集合的结构种类．$\sigma$为项，字母$x$、$y$、$s$、$t$互不相同，且都不是X的代表特征和公理包含的字母．
+				令$M$为比集合论强的理论，$X$是仅有一个基集合的结构种类．$\sigma$为项，字母$x$、$y$、$s$、$t$互不相同，且都不是$X$的代表特征和公理包含的字母．
 				\par
 				在理论$M$中，如果项$\sigma$满足下列条件，则称$\sigma$为$X$的态射集合：
 				\par
