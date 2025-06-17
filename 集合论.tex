@@ -6083,7 +6083,17 @@
 			
 			\begin{exer}\label{exer76}
 				\hfill\par
-				（1）公式$R$具有对称性并且在$E$上具有反身性．如果对任意互不相等的$x$、$y$、$z$、$t$，$x\in E\text{与}y\in E\text{与}z\in E\text{与}t\in E\text{与}R\text{与}(z|y)R\text{与}(t|y)R\text{与}(y|x)(z|y)R\text{与}(y|x)(t|y)R\Rightarrow (t|y)(z|x)R$，则称$R$具有$1$级非传递性．如果$A\subset E$，并且$x\in A\text{与}y\in A\Rightarrow R$，则称$A$关于$R$稳定．如果$a\in E$、$b\in E$，$a\neq b$，并且$(b|y)(a|x)R$为真，令$C(a, b)=\{x|x\in E\text{与}(x|y)(a|x)R\text{与}\\(x|y)(b|x)R\}$，求证：$C(a, b)$关于$R$稳定；任意$x\in C(a, b)$、$y\in C(a, b)并且x\neq y$，均有$C(x, y)\\=C(a, b)$；此时，集合$C(a, b)$称为$E$关于$R$的组成部分，则$C(a, b)$是$E$关于$R$的连通分量；$E$\\的两个不同组成部分的交集最多有一个元素，并且对于E的三个不同组成部分$A$、$B$、$C$，$A\cap B$、$B\cap C$、$C\cap A$至少有一个为空或者三者相同．
+				（1）公式$R$具有对称性并且在$E$上具有反身性．如果对任意互不相等的$x$、$y$、$z$、$t$，$x\in E\text{与}y\in E\text{与}z\in E\text{与}t\in E\text{与}R\text{与}(z|y)R\text{与}(t|y)R\text{与}(y|x)(z|y)R\text{与}(y|x)(t|y)R\Rightarrow (t|y)(z|x)R$，则称$R$具有$1$级非传递性．如果$A\subset E$，并且$x\in A\text{与}y\in A\Rightarrow R$，则称$A$关于$R$稳定．如果$a\in E$、$b\in E$，$a\neq b$，并且$(b|y)(a|x)R$为真，令$C(a, b)=\{x|x\in E\text{与}(x|y)(a|x)R\text{与}\\(x|y)(b|x)R\}$．集合$C(a, b)$称为$E$关于$R$的组成部分．
+				\par
+				求证：
+				\par
+				$C(a, b)$关于$R$稳定；
+				\par
+				对任意$x\in C(a, b)$、$y\in C(a, b)$并且$x\neq y$，均有$C(x, y)=C(a, b)$；
+				\par
+				$C(a, b)$是$E$关于$R$的连通分量；
+				\par
+				$E$的两个不同组成部分的交集最多有一个元素，并且对于E的三个不同组成部分$A$、$B$、$C$，$A\cap B$、$B\cap C$、$C\cap A$至少有一个为空或者三者相同．
 				\par
 				（2）反过来，设$(X_l)_{l\in L}$为$E$的覆盖，其中$l\in L\Rightarrow X_l\neq \varnothing$，并且：
 				\par
@@ -6097,20 +6107,30 @@
 			\end{exer}
 			证明：
 			\par
-			（1）设$x\in C(a, b)$、$y\in C(a, b)$，则$R(a, x)$、$R(b, x)$、$R(a, y)$、$R(b, y)$、$R(a, b)$，且$a\in E$、$b\in E$、$x\in E$、$y\in E$，根据定义，无论$a$、$b$、$x$、$y$中是否有相等的，$R$均为真．故$C(a, b)$关于$R$稳定．如果$x\in C(a, b)$、$y\in C(a, b)$并且$x\neq y$，则对任意$z\in C(x, y)$，则$z\in E$并且$(z|y)(a|x)R$、$(z|y)(b|x)R$，故$z\in C(a, b)$，反之，同理可证对任意$z\in C(a, b)$，有$z\in C(x, y)$，因此$C(x, y)=C(a, b)$．对任意$x\in C(a, b)$，则$(x|y)(a|x)R$成立，反过来，如果$x$是$a$所在的$E$关于$R$的连通分量的元素，根据数学归纳法可证$x\in C(a, b)$，故$C(a, b)$是$a$所在的$E$关于$R$的连通分量．若$E$的两个不同组成部分的交集有两个元素$x$、$y$，则二者均为\\$C(x, y)$，矛盾，故最多有一个元素．假设$A\cap B$、$B\cap C$、$C\cap A$均不为空，设$A\cap B=\{a\}$，$B\cap C=\{b\}$，$C\cap A=\{c\}$，若其中$a=b$，则$a=c$，三者相同，若三者均不相同，则$A=C(a, c)$，$B=C(a, b)$，$C=C(b, c)$，因此$(b|y)(a|x)R$、$(a|y)(c|x)R$、$(c|y)(b|x)R$，因此$b\in A$、$c\in B$、$a\in C$，故$A\cap B$、$B\cap C$、$C\cap A$均有不少于三个公共元素，矛盾．得证．
+			（1）设$x\in C(a, b)$、$y\in C(a, b)$，则$(x|y)(a|x)R$、$R(x|y)(b|x)R$、$(a|x)R$、$(b|x)R$、$(a|x)(b|y)R$均为真，且$a\in E$、$b\in E$、$x\in E$、$y\in E$，根据定义，无论$a$、$b$、$x$、$y$中是否有相同的，$R$均为真．故$C(a, b)$关于$R$稳定．
+			\par
+			如果$x\in C(a, b)$、$y\in C(a, b)$并且$x\neq y$，则对任意$z\in C(x, y)$，则$z\in E$并且\\$(z|y)(a|x)R$、$(z|y)(b|x)R$，故$z\in C(a, b)$；反过来，同理可证对任意$z\in C(a, b)$，有$z\in C(x, y)$，因此$C(x, y)=C(a, b)$．
+			\par
+			对任意$x\in C(a, b)$，则$(x|y)(a|x)R$成立，反过来，如果$x$是$a$所在的$E$关于$R$的连通分量的元素，根据数学归纳法可证$x\in C(a, b)$，故$C(a, b)$是$a$所在的$E$关于$R$的连通分量．
+			\par
+			若$E$的两个不同组成部分的交集有两个元素$x$、$y$，则二者均为$C(x, y)$，矛盾，故最多有一个元素．假设$A\cap B$、$B\cap C$、$C\cap A$均不为空，设$A\cap B=\{a\}$，$B\cap C=\{b\}$，$C\cap A=\{c\}$，若其中$a=b$，则$a=c$，三者相同，若三者均不相同，则$A=C(a, c)$，$B=C(a, b)$，$C=C(b, c)$，因此$(b|y)(a|x)R$、$(a|y)(c|x)R$、$(c|y)(b|x)R$，因此$b\in A$、$c\in B$、$a\in C$，故$A\cap B$、$B\cap C$、$C\cap A$均有不少于三个公共元素，矛盾．得证．
 			\par
 			（2）$(\exists l)(l\in L\text{与}x\in X_l)$为真，故$R$具有反身性；$(\exists l)(l\in L\text{与}x\in X_l\text{与}y\in X_l)\Leftrightarrow (\exists l)(l\in L\text{与}y\in X_l\text{与}x\in X_l)$，故$R$具有对称性．对任意互不相等的$x$、$y$、$z$、$t$如果$x\in E\text{与}y\in E\text{与}z\in E\text{与}t\in E\text{与}R\text{与}(z|y)R\text{与}(t|y)R\text{与}(y|x)(z|y)R\text{与}(y|x)(t|y)R$，则存在$l\in l$，使$\{x, y\}\subset X_i$，存在$m\in L$，使$\{y, z\}\subset X_m$，存在$n\in L$，使$\{z, x\}\subset X_n$，因此$l$、$m$、$n$相等，故$\{x, y, z\}\subset X_l$，同理存在$l' \in l$，使$\{x, y, t\}\subset X_l'$，因此$l=l'$，故$\{x, y, z, t\}\subset X_l$，因此，$(t|y)(z|x)R$，故$R$具有$1$级非传递性．
 			\par
-			（3）	充分必要条件为：
+			（3）	
+			对于具有$n-3$级非传递性的公式$R$，其组成部分的定义应为$C(a_1, a_2, \cdots a_{n-2})=\{x|x\in E\text{与}(x|y)(a_1|x)R\text{与}(x|y)(a_2|x)R\cdots\text{与}(x|y)(a_{n-2}|x)R\}$，其中对任意$i\in [1, n-2]$、$i\in [j, n-2]$，$(a_i|x)(a_j|y)R$均为真．
 			\par
-			第一，集族任意两个元素的交集最多有$n-3$个元素；
+			充分必要条件为：
 			\par
-			第二，集族中任意三个集合$A$、$B$、$C$，如果$A\cap B$、$B\cap C$、$C\cap A$均有$n-3$个元素，且其中$n-4$个元素是三个集合共有的，则全部$n-3$个元素均为三个集合共有．
+			第一，集族中任意两个集合的交集最多有$n-3$个元素；
 			\par
-			如果上述性质成立，考虑任何元素$x$，集族中包含$x$的集合，去掉$x$后，剩下的集合产生的公式具有$n-4$级非传递性，故充分性成立；
-			如果$R$具有$n-3$级非传递性，对任意元素$x\in E$，考虑与$x$满足$R$的元素集合$E'$（不包含元素$x$），令$R'=R\cap (E'\times E')$，则$R'$具有$n-4$级非传递性，因此任意集合$A$、$B$、$C$，上述性质对$n-1$成立，则对于$A\cup\{x\}$、$B\cup\{x\}$、$C\cup\{x\}$，上述性质对$n$成立，必要性成立．
+			第二，集族中任意三个集合$A$、$B$、$C$，如果$A\cap B$、$B\cap C$、$C\cap A$均有$n-3$个元素，则$A\cap B$、$B\cap C$、$C\cap A$三者相同．
 			\par
-			如果公式$R$具有$p$级非传递性，则集族任意两个元素的交集最多有$p$个元素，由于$q>p$，故$q$级非传递性的条件一成立；同时，如果集族中任意三个集合$A$、$B$、$C$，如果$A\cap B$、$B\cap C$、$C\cap A$均有$q$个元素，且其中$q-1$个元素是三个集合共有的，则令$M$有$q-p$个元素且$M\subset (A\cap B\cap C)$，令$A'=A-M$、$B'=B-M$、$C'=C-M$，则$A'\cap B'$、$B'\cap C'$、$C'\cap A'$均有$p-3$个元素，且其中$p-4$个元素是三个集合共有的，故全部$p3$个元素均属于$A'\cap B'\cap C'$，也就是说，$q$级非传递性的条件二成立．综上，$R$具有$q$级非传递性．
+			如果上述性质成立，对任意元素$x$，考虑集族中有元素$x$的集合，去掉这些集合中的$x$后，得到的新集合根据归纳假设，具有$n-4$级非传递性，故充分性成立；
+			\par
+			如果$R$具有$n-3$级非传递性，类似习题\ref{exer76}（1）可以证明，$E$的任何两个组成部分的交集最多有$n-3$个元素，同时，设$A$、$B$、$C$均为$E$的组成部分，如果$A\cup B$有$n-3$个元素$a_1$、$a_2$、$\cdots$、$a_{n-3}$，同时$A\cup B\cup C$的元素数目小于$n-3$，则令$x\in A\cup C$同时$x\notin B$、$y\in B\cup C$同时$x\notin A$，进而，$x\in C(a_1, a_2, \cdots, a_{n-3}, y)$，因此$x\in B$，矛盾．故必要性成立．
+			\par
+			如果公式$R$具有$p$级非传递性，则集族任意两个元素的交集最多有$p$个元素，由于$q>p$，故$q$级非传递性的条件一成立；同时，如果集族中任意三个集合$A$、$B$、$C$，如果$A\cap B$、$B\cap C$、$C\cap A$均有$q$个元素，则令$M$有$q-p$个元素且$M\subset (A\cap B\cap C)$，令$A'=A-M$、$B'=B-M$、$C'=C-M$，则$A'\cap B'$、$B'\cap C'$、$C'\cap A'$均有$p-3$个元素，故全部$p-3$个元素均属于$A'\cap B'\cap C'$，也就是说，$q$级非传递性的条件二成立．综上，$R$具有$q$级非传递性．
 			\par
 			注：习题\ref{exer76}（1）、（3）涉及尚未介绍的“自然数”知识．
 		
